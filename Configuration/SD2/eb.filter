@@ -1431,7 +1431,7 @@ Show # 聯盟 - 3.13祭祀 - 鞋子 - 攻擊格擋鞋
 
 # 【聯盟-3.12劫盜】3020
 
-Show # 聯盟 - 3.12劫盜 - 盜賊之印
+Hide # 聯盟 - 3.12劫盜 - 盜賊之印
     Class "Currency"
     BaseType "Rogue's Marker"
     SetTextColor 255 178 102
@@ -1439,7 +1439,7 @@ Show # 聯盟 - 3.12劫盜 - 盜賊之印
     SetBorderColor 255 178 102
     SetFontSize 40
 
-Show # 聯盟 - 3.12劫盜 - 劫盜目標
+Hide # 聯盟 - 3.12劫盜 - 劫盜目標
     Class "Heist Target"
     SetTextColor 74 230 58
     SetBackgroundColor 0 0 0 150
@@ -1447,7 +1447,7 @@ Show # 聯盟 - 3.12劫盜 - 劫盜目標
     SetFontSize 45
     MinimapIcon 2 Green Star
 
-Show # 聯盟 - 3.12劫盜 - 盜賊飾品
+Hide # 聯盟 - 3.12劫盜 - 盜賊飾品
     Class "Trinket"
     BaseType "Thief's Trinket"
     SetTextColor 0 51 0
@@ -1458,14 +1458,14 @@ Show # 聯盟 - 3.12劫盜 - 盜賊飾品
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 
-Show # 聯盟 - 3.12劫盜 - 契約書
+Hide # 聯盟 - 3.12劫盜 - 契約書
     BaseType "Contract"
     SetTextColor 100 50 0
     SetBackgroundColor 255 178 102
     SetBorderColor 204 102 0
     SetFontSize 40
 
-Show # 聯盟 - 3.12劫盜 - 合同
+Hide # 聯盟 - 3.12劫盜 - 合同
     Class "Quest Item"
     BaseType "Contract"
     SetTextColor 0 255 0
@@ -1476,7 +1476,7 @@ Show # 聯盟 - 3.12劫盜 - 合同
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 
-Show # 聯盟 - 3.12劫盜 - 藍圖
+Hide # 聯盟 - 3.12劫盜 - 藍圖
     BaseType "Blueprint"
     SetTextColor 0 0 204
     SetBackgroundColor 255 178 102
@@ -1486,7 +1486,7 @@ Show # 聯盟 - 3.12劫盜 - 藍圖
     MinimapIcon 2 Red Circle
     PlayEffect Red
 
-Show # 聯盟 - 3.12劫盜 - 劫盜裝備
+Hide # 聯盟 - 3.12劫盜 - 劫盜裝備
     Class "Heist Cloak" "Heist Brooch" "Heist Tool" "Heist Gear"
     SetTextColor 254 186 255
     SetBackgroundColor 128 0 128 255
@@ -1496,7 +1496,7 @@ Show # 聯盟 - 3.12劫盜 - 劫盜裝備
     MinimapIcon 2 Red Star
     PlayEffect Red
 
-Show # 聯盟 - 3.12劫盜 - 替代技能
+Hide # 聯盟 - 3.12劫盜 - 替代技能
     AlternateQuality True
     SetTextColor 0 255 255
     SetBorderColor 0 255 255
@@ -1505,7 +1505,7 @@ Show # 聯盟 - 3.12劫盜 - 替代技能
     MinimapIcon 0 Blue Star
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 贗品裝備
+Hide # 聯盟 - 3.12劫盜 - 贗品裝備
     Replica True
     SetTextColor 255 165 0 255
     SetBackgroundColor 177 123 63 111
@@ -1515,7 +1515,7 @@ Show # 聯盟 - 3.12劫盜 - 贗品裝備
     MinimapIcon 0 Orange UpsideDownHouse
     PlayEffect Orange
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 能量法杖
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 能量法杖
     Class "Wands"
     BaseType "Assembler Wand" "Congregator Wand" "Accumulator Wand"
     SetBorderColor 180 255 0
@@ -1524,7 +1524,7 @@ Show # 聯盟 - 3.12劫盜 - 裝備 - 能量法杖
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 中毒匕首
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 中毒匕首
     Class "Daggers"
     BaseType "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger"
     SetBorderColor 180 255 0
@@ -1533,7 +1533,7 @@ Show # 聯盟 - 3.12劫盜 - 裝備 - 中毒匕首
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 烈衝匕首
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 烈衝匕首
     Class "Rune Daggers"
     BaseType "Flickerflame Blade" "Flashfire Blade" "Infernal Blade"
     SetBorderColor 180 255 0
@@ -1542,7 +1542,7 @@ Show # 聯盟 - 3.12劫盜 - 裝備 - 烈衝匕首
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 混點爪
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 混點爪
     Class "Claws"
     BaseType "Shadow Fangs" "Malign Fangs" "Void Fangs"
     SetBorderColor 180 255 0
@@ -1551,7 +1551,7 @@ Show # 聯盟 - 3.12劫盜 - 裝備 - 混點爪
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 盛怒斧
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 盛怒斧
     Class "One Hand Axes"
     BaseType "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe"
     SetBorderColor 180 255 0
@@ -1560,7 +1560,7 @@ Show # 聯盟 - 3.12劫盜 - 裝備 - 盛怒斧
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 物轉元劍
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 物轉元劍
     Class "One Hand Swords"
     BaseType "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade"
     SetBorderColor 180 255 0
@@ -1569,7 +1569,7 @@ Show # 聯盟 - 3.12劫盜 - 裝備 - 物轉元劍
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 聯盟 - 3.12劫盜 - 裝備 - 熾熱衝擊錘
+Hide # 聯盟 - 3.12劫盜 - 裝備 - 熾熱衝擊錘
     Class "One Hand Maces"
     BaseType "Flare Mace" "Crack Mace" "Boom Mace"
     SetBorderColor 180 255 0
