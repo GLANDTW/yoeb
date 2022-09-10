@@ -12,6 +12,19 @@
 [Type]=="Cosmic Reliquary Key" #	[StashItem]	 == "true" // 
 [Type]=="Decaying Reliquary Key" #	[StashItem]	 == "true" // 
  
+ 
+ //	[Type] == "Timeless Eternal Empire Splinter"         # 	[StashItem]	 == "true"	//	//永恆不朽帝國裂片
+//	[Type] == "Timeless Karui Splinter"                         # 	[StashItem]	 == "true"	//	//永恆卡魯裂片
+	[Type] == "Timeless Maraketh Splinter"                         # 	[StashItem]	 == "true"	//	//永恆馬拉克斯裂片
+	[Type] == "Timeless Templar Splinter"                         # 	[StashItem]	 == "true"	//	//永恆聖宗裂片
+//	[Type] == "Timeless Vaal Splinter"                                 # 	[StashItem]	 == "true"	//	//永恆瓦爾裂片
+	[Type] == "Timeless Eternal Emblem"         # 	[StashItem]	 == "true"	//	//永恆不朽帝國徽印
+	[Type] == "Timeless Karui Emblem"                 # 	[StashItem]	 == "true"	//	//永恆卡魯徽印
+	[Type] == "Timeless Maraketh Emblem"         # 	[StashItem]	 == "true"	//	//永恆馬拉克斯徽印
+	[Type] == "Timeless Templar Emblem"         # 	[StashItem]	 == "true"	//	//永恆聖宗徽印
+	[Type] == "Timeless Vaal Emblem"                 # 	[StashItem]	 == "true"	//	//永恆瓦爾徽印
+ 
+ 
 
 [Type]=="Tainted Chromatic Orb" # [StashItem]  == "true"
 [Type]=="Tainted Orb of Fusing" # [StashItem]  == "true"
