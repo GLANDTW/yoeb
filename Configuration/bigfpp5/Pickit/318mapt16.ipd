@@ -24,7 +24,7 @@
 	[Type] == "Timeless Templar Emblem"         # 	[StashItem]	 == "true"	//	//永恆聖宗徽印
 	[Type] == "Timeless Vaal Emblem"                 # 	[StashItem]	 == "true"	//	//永恆瓦爾徽印
  
- 
+ [Type] == "Awakened Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．覺醒
 
 [Type]=="Tainted Chromatic Orb" # [StashItem]  == "true"
 [Type]=="Tainted Orb of Fusing" # [StashItem]  == "true"
