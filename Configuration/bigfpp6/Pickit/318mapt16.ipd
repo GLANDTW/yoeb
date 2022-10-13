@@ -40,11 +40,11 @@
 	[Type] == "Mirror Shard"                 # 	[StashItem]	 == "true"	//
 	[Type] == "Ancient Shard"                 # 	[StashItem]	 == "true"	//
 	[Type] == "Exalted Shard"                 # 	[StashItem]	 == "true"	//
-//	[Type] == "Timeless Eternal Empire Splinter"         # 	[StashItem]	 == "true"	//
-	[Type] == "Timeless Karui Splinter"                         # 	[StashItem]	 == "true"	//
+	[Type] == "Timeless Eternal Empire Splinter"         # 	[StashItem]	 == "true"	//
+//	[Type] == "Timeless Karui Splinter"                         # 	[StashItem]	 == "true"	//
 	[Type] == "Timeless Maraketh Splinter"                         # 	[StashItem]	 == "true"	//
 	[Type] == "Timeless Templar Splinter"                         # 	[StashItem]	 == "true"	//
-//	[Type] == "Timeless Vaal Splinter"                                 # 	[StashItem]	 == "true"	//
+	[Type] == "Timeless Vaal Splinter"                                 # 	[StashItem]	 == "true"	//
 	[Type] == "Timeless Eternal Emblem"         # 	[StashItem]	 == "true"	//
 	[Type] == "Timeless Karui Emblem"                 # 	[StashItem]	 == "true"	//
 	[Type] == "Timeless Maraketh Emblem"         # 	[StashItem]	 == "true"	//
@@ -381,41 +381,3 @@
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [local_display_aura_mana_regeneration_rate_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		//塑界者之籽 瑪瑙護身符																							
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [max_power_charges] >= "1" && 	[ForceSellItem]	 == "true" // 		//艾拉黛絲 瑪瑙護身符																							
 	
-
-
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-							
