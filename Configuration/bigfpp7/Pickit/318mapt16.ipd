@@ -97,7 +97,7 @@
 				
 	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #	[StashItem]	 == "true" // 	//
 	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #	[StashItem]	 == "true" // 	//
-	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #	[StashItem]	 == "true" // 	//
+	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #	[ForceSellItem]	 == "true" // 	//
 //	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #	[ForceSellItem]	 == "true" // 	//
 				
 				
