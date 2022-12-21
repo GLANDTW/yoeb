@@ -1,10 +1,9 @@
 //	//				//中文判斷																				
-	//3.20 12/21 閃打
+	//3.20 12/22 閃打
 
-[6551] >= "1" # [IgnoreMap] == "true" // Elder Maps
-[13855] >= "1" # [IgnoreMap] == "true" // Guardian Maps
-[13858] >= "1" # [IgnoreMap] == "true" // Guardian Maps
-
+[map_contains_citadel] >= "1" # [IgnoreMap] == "true" 
+[map_elder_boss_variation] >= "1" # [IgnoreMap] == "true" 
+[map_atlas_influence_type] >= "1" # [IgnoreMap] == "true" 
 
 	//避開王房地圖//(預設)				//中文判斷																				
 	[Type]=="Graveyard Map" #	[SkipBossArena]	=="true"	//墮影墓場	不打這張圖的王																				
