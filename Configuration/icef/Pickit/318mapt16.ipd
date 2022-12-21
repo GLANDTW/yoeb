@@ -1,19 +1,17 @@
-//3.20新增 111年12月13日
+//3.20新增 111年12月21日
 
 //3.20 12/11 開啟大量有價物品版本//
 
 
 //卡蘭德之觸
 [Type] == "Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 
-//[Type]=="Man With Bear" #[StashItem] == "true" //				
-//[Type]=="Alivia's Grace" #[StashItem] == "true" //				
-//[Type]=="Auspicious Ambitions" #[StashItem] == "true" //				劫盜百等武器
+
 [Type]=="Divine Beauty" #[StashItem] == "true" //				神聖石卡（有價）
 [Type]=="The Wedding Gift" #[StashItem] == "true" //				蜘蛛刀卡（有價）
 [Type]=="The Insane Cat" #[StashItem] == "true" //				魔血卡（有價）
 [Type]=="Ever-Changing" #[StashItem] == "true" //				
 [Type]=="A Dusty Memory" #[StashItem] == "true" //				
-//[Type]=="The Return of the Rat" #[StashItem] == "true" //				
+		
 [Type]=="The Finishing Touch" #[StashItem] == "true" //				
 				
 				
@@ -21,44 +19,27 @@
 [Type]=="Fracturing Shard" #[StashItem] == "true" //				破裂石碎片
 				
 				
-//[Type]=="Urn Relic" #[StashItem] == "true" //				聖物1
-//[Type]=="Tome Relic" #[StashItem] == "true" //				聖物2
-//[Type]=="Coffer Relic" #[StashItem] == "true" //				聖物3
-//[Type]=="Censer Relic" #[StashItem] == "true" //				聖物4
-//[Type]=="Papyrus Relic" #[StashItem] == "true" //				聖物5
-//[Type]=="Candlestick Relic" #[StashItem] == "true" //				聖物6
-//[Type]=="Processional Relic" #[StashItem] == "true" //				聖物7
-				
-				
-[Type]=="Sanctified Relic" #[StashItem] == "true" //				3.20專屬聖物道具
 
 
 //下面是3.19以前
-//[Type] == "Feathered Arrow Quiver" &&  [Rarity] == "Unique" # [StashItem] == "true"
-//[Type] == "Feathered Arrow Quiver" &&  [Rarity] == "Unique" # [base_cast_speed_+%] >= "1" &&   [ForceSellItem]	 == "true" //
-//[Type] == "Feathered Arrow Quiver" &&  [Rarity] == "Unique" # [local_display_grants_skill_call_of_steel] >= "1" &&   [ForceSellItem]	 == "true" //
 
 [Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
 //[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
 //[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
 [Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
-//[Type] == "Mortal Grief"             # 	[StashItem]	 == "true" 	//	//凡人的哀傷	拾取且存倉
-//[Type] == "Mortal Rage"              # 	[StashItem]	 == "true" 	//	//凡人的憤怒	拾取且存倉
-//[Type] == "Mortal Ignorance"         # 	[StashItem]	 == "true" 	//	//凡人的無知	拾取且存倉
-//[Type] == "Mortal Hope"              # 	[StashItem]	 == "true" 	//	//凡人的希望	拾取且存倉
-//[Type] == "Sacrifice at Dawn"        # 	[StashItem]	 == "true" 	//	//黎明的奉獻	拾取且存倉
-//[Type] == "Sacrifice at Noon"        # 	[StashItem]	 == "true" 	//	//正午的奉獻	拾取且存倉
-//[Type] == "Sacrifice at Dusk"        # 	[StashItem]	 == "true" 	//	//黃昏的奉獻	拾取且存倉
-//[Type] == "Sacrifice at Midnight"    # 	[StashItem]	 == "true" 	//	//午夜的奉獻	拾取且存倉
-//[Type] == "Lingering Remnants" # 	[StashItem]	 == "true" // 1.0 C	//	殘墟(瓦爾密殿-物品等級:83-已汙染)	拾取且存倉
+
 //[Type] == "Last Hope" # 	[StashItem]	 == "true" // 1.0 C	//	最後希望(凡人的希望)	拾取且存倉
+
 //[Type] == "Sambodhi's Vow" # 	[StashItem]	 == "true" // 1.0 C	//	菩提誓約(凡人碎片)	拾取且存倉
+
 //[Type]=="Something Dark" #	[StashItem]	 == "true"	//	//黑暗的東西(藍圖)	拾取且存倉
+
 [Type]=="Gemcutter's Mercy" #	[StashItem]	 == "true"	//	//寶石切割者的憐憫(卓越寶石)	拾取且存倉
+
 //[Type] == "Awakened Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．覺醒	拾取且存倉
+
 //[Type] == "Stacked Deck" # 	[StashItem]	 == "true"	//	//豐裕牌組	拾取且存倉
 
-//[Type] == "Lingering Remnants" # [StashItem] == "true" // 殘墟 拾取且存倉
 
 //[Type]=="Niko's Memory" # [StashItem]  == "true" // 
 //[Type]=="Alva's Memory" # [StashItem]  == "true" // 
@@ -66,13 +47,7 @@
 [Type]=="Einhar's Memory" # [StashItem]  == "true" // 
 [Type]=="Engraved Ultimatum" # [StashItem]  == "true" // 
 [Type]=="Mirrored Tablet" # [StashItem]  == "true" // 
-[Type]=="Forgotten Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Visceral Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Shiny Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Archive Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Oubliette Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Cosmic Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Decaying Reliquary Key" # [StashItem]  == "true" //
+
 
 //編輯時間：2022/9/7
 [Type]=="Tainted Chromatic Orb" # [StashItem]  == "true"
@@ -165,9 +140,15 @@
 
 [Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 
-[Category] == "Map" && [Rarity] == "Rare" # [6551] >= "1" && [StashItem] == "true" // Elder Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 
-[Category] == "Map" && [Rarity] == "Rare" # [13855] >= "1" && [StashItem] == "true" // Sirus Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+
+																		
+[Type]== "Forge of the Phoenix Map"#[StashItem]== "true"//火鳳凰熔核 #																								
+[Type]== "Lair of the Hydra Map"#[StashItem]== "true"//九頭蛇冰窟 #																								
+[Type]== "Maze of the Minotaur Map"#[StashItem]== "true"//牛頭人謎域 #																								
+[Type]== "Pit of the Chimera Map"#[StashItem]== "true"//奇美拉魔坑 #		
 
 
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
