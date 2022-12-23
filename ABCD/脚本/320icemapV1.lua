@@ -42,12 +42,12 @@ SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
-SetNeedFlaskData(pos,flask,modsData,minLv)--设置药瓶摆放
+--SetNeedFlaskData(pos,flask,modsData,minLv)--设置药瓶摆放
 SetNeedFlaskData(1,"不朽生命藥劑","熱情洋溢的,FlaskPartialInstantRecovery3|密封之,FlaskBleedCorruptingBloodImmunity1",90)
 SetNeedFlaskData(2,"不朽生命藥劑","煨煨的,FlaskPartialInstantRecovery1|阻尼之FlaskIgniteImmunity1",90)
-SetNeedFlaskData(3,"寶鑽藥劑","學者的,FlaskChargesUsed2|穿孔之,FlaskBuffCriticalChanceWhileHealing2_",)
-SetNeedFlaskData(4,"紫晶藥劑","調查員的,FlaskIncreasedDuration2|鷹之,FlaskBuffAttackSpeedWhileHealing2_____")
-SetNeedFlaskData(5,"水銀藥劑","調查員的,FlaskEffectReducedDuration2|教團之,JunMaster2LocalFlaskSkillManaCostDuringFlaskEffect1")
+SetNeedFlaskData(3,"寶鑽藥劑","學者的,FlaskChargesUsed2|穿孔之,FlaskBuffCriticalChanceWhileHealing2_",90)
+SetNeedFlaskData(4,"紫晶藥劑","調查員的,FlaskIncreasedDuration2|鷹之,FlaskBuffAttackSpeedWhileHealing2_____",90)
+SetNeedFlaskData(5,"水銀藥劑","調查員的,FlaskEffectReducedDuration2|教團之,JunMaster2LocalFlaskSkillManaCostDuringFlaskEffect1",90)
 
 
 --SetNeedFlaskData(1,"不朽生命藥劑","nil")
