@@ -3,7 +3,13 @@
 //3.20 12/11 開啟大量有價物品版本//
 
 
-[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+[Type] == "Crimson Temple Map" # [StashItem] == "true"
+[Type] == "Haunted Mansion Map" # [StashItem] == "true"
+[Type] == "Crater Map" # [StashItem] == "true"
+[Type] == "Strand Map" # [StashItem] == "true"
+[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+
 
 //卡蘭德之觸
 [Type] == "Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 
@@ -140,9 +146,6 @@
 [Type] == "The Hoarder" # [StashItem] == "true" // 8.0 C//寶箱(崇高石)拾取且存倉ex
 
 
-[Type] == "Crimson Temple Map" # [StashItem] == "true"
-
-[Type] == "Strand Map" # [StashItem] == "true"
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 
