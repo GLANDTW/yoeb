@@ -6,7 +6,12 @@
 [map_atlas_influence_type] >= "1" # [IgnoreMap] == "true" 
 
 	//避開王房地圖//(預設)				//中文判斷																				
-																				
+				
+
+
+[Type] == "Ashen Wood Map" # [RunMap] == "true"
+[Type] == "Ghetto Map" # [RunMap] == "true"
+																
 	[Type]=="Strand Map" #	[RunMap]	=="true"	//致命岩灘	打這張圖V																																							
 
 	[Type]=="Haunted Mansion Map" #	[RunMap]	=="true"	//幽魂宅邸	打這張圖V																																							
