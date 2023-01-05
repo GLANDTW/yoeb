@@ -7,6 +7,11 @@
 [Type] == "Haunted Mansion Map" # [StashItem] == "true"
 [Type] == "Crater Map" # [StashItem] == "true"
 [Type] == "Strand Map" # [StashItem] == "true"
+
+[Type] == "Ashen Wood Map" # [StashItem] == "true"
+[Type] == "Ghetto Map" # [StashItem] == "true"
+
+
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
 [Type] == "Synthesised Map" # [StashItem] == "true" //
