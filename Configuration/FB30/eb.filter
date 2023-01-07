@@ -4462,9 +4462,7 @@ Show # 裝備 - 特殊裝備 - 3色連洞 (1*3體積)
 
 Show # 裝備 - 特殊裝備 - 3色連洞 (2*2體積)
     LinkedSockets >= 3
-    LinkedSockets <= 4
-    Height = 2
-    Width = 2
+    LinkedSockets <= 6
     SocketGroup "RGB"
     SetTextColor 255 0 0
     SetBackgroundColor 255 255 255
