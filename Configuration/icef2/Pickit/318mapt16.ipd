@@ -196,6 +196,8 @@
 //ªZ¾¹																												
 //Å]Ãz¤§²ª=3D~10D
 
+[Type] == "Riveted Boots" && [Rarity] == "Unique" #  [StashItem]  == "true" //
+
 [Type]== "Siege Axe" && [Rarity] == "Unique" #  [StashItem] == "true" // Soul Taker ¶}½£©ò¯}«°©ò
 
          [Type]== "Spine Bow" && [Rarity] == "Unique" # [StashItem] == "true" // Reach of the Council / Voltaxic Rift
