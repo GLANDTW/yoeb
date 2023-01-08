@@ -283,7 +283,7 @@
 
 	//Âù¥É§Ù«ü¡G¦B¤õ¡B¤õ¹p¡B¹p¦B§Ù¡B·N§Ó©I³ê¡B¯T¤ý§Ù																											
 
-	[Type]== "Two-Stone Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
+//	[Type]== "Two-Stone Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//¤T¬Û§Ù«ü¡GÅÑ¸o¡BÃ¹¨½																											
 //	[Type]== "Prismatic Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 																									
 	//µõ¤ß¤b																											
