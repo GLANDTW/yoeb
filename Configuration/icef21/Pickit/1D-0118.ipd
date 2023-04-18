@@ -1,0 +1,150 @@
+
+//[Category] == "Map" && [MapTier] >= "15" # [StashItem] == "true" // Take all Maps & Ignore all Contract/Blueprints/Incubators
+//[Category] == "Map" && [Rarity] == "Unique" # [StashItem] == "true" 
+
+
+
+[Type]=="Sulphur Vents Map" # [StashItem] == "true"
+[Type]=="Crimson Temple Map" #[StashItem] == "true"
+[Type] == "City Square Map" # [StashItem] == "true"
+[Type] == "Toxic Sewer Map" # [StashItem] == "true"
+
+[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Sirus Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
+[Category] == "Map" && [Rarity] == "Rare" && [map_atlas_influence_type] >= "1" # [StashItem] == "true" // 6831 Shaper Maps
+
+[Type] == "Synthesised Map" # [StashItem] == "true"
+[Type] == "Pit of the Chimera Map" # [StashItem] == "true"
+[Type] == "Lair of the Hydra Map" # [StashItem] == "true"
+[Type] == "Forge of the Phoenix Map" # [StashItem] == "true"
+[Type] == "Maze of the Minotaur Map" # [StashItem] == "true"
+
+
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #  [StashItem] == "true" // Pick all unique Viridian Jewels
+[Type] == "Cobalt Jewel" && [Rarity] == "Unique" # [StashItem] == "true" // Pick all unique Cobalt Jewels
+[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [StashItem] == "true" // Pick all unique Crimson Jewels
+
+
+
+[Type] == "Siege Axe" && [Rarity] == "Unique" # [StashItem] == "true"
+[Type] == "Imperial Skean" && [Rarity] == "Unique" # [critical_strike_chance_+%_for_spells_if_you_have_killed_recently] >= "1" && [StashItem] == "true" // Divinarius
+[Type] == "Ancient Gauntlets" && [Rarity] == "Unique" # [base_rage_cost_+%] <= "1" && [StashItem] == "true"
+[Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [StashItem] == "true"
+[Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [base_block_%_damage_taken]>="1" &&[ForceSellItem] == "true"
+[Type] == "Spidersilk Robe" && [Rarity] == "Unique" # [maximum_life_+%] = "10" && [StashItem] == "true" // The Covenant / Soul Mantle
+[Type] == "Champion Kite Shield" && [Rarity] == "Unique" # [energy_shield_%_of_armour_rating_gained_on_block] >= "1" && [StashItem] == "true" // Aegis Aurora
+[Type] == "Riveted Boots" && [Rarity] == "Unique" # [StashItem] == "true" // Ralakesh's Impatience
+[Type] == "Heavy Belt" && [Rarity] == "Unique" # [additional_dexterity] >= "30" && [StashItem] == "true"
+[Type] == "Leather Belt" && [Rarity] == "Unique" #  [additional_strength] >= "40" && [StashItem] == "true"
+[Type] == "Ruby Flask" && [Rarity] == "Unique" # [local_flask_area_of_effect_+%_during_flask_effect] >= "1" && [StashItem] == "true" Dying Sun
+
+[Type] == "The Apothecary" # [StashItem] == "true"
+[Type] == "The Price Of Devotion" # [StashItem] == "true"
+[Type] == "House of Mirrors" # [StashItem] == "true" // Mirror of Kalandra
+[Type] == "The Insane Cat" #[StashItem] == "true"
+[Type] == "Unrequited Love" # [StashItem] == "true" // 19x Mirror Shard
+[Type] == "The Doctor" # [StashItem] == "true" // Headhunter
+[Type] == "The Demon" # [StashItem] == "true" // Headhunter Two-Implicit Corrupted
+[Type] == "The Fiend" # [StashItem] == "true" // Headhunter Corrupted
+[Type] == "Love Through Ice" # [StashItem] == "true" // Unnatural Instinct Two-Implicit Corrupted
+[Type] == "The Immortal" # [StashItem] == "true" // House of Mirrors
+[Type] == "The Shieldbearer" # [StashItem] == "true"
+[Type] == "The Sustenance" # [StashItem] == "true" // Energy From Within Two-Implicit Corrupted
+[Type] == "The Soul" # [StashItem] == "true" // Soul Taker
+[Type] == "Choking Guilt" # [StashItem] == "true"
+[Type] == "The Nurse" # [StashItem] == "true" // The Doctor
+[Type] == "The Cheater" # [StashItem] == "true" // Level 6 Awakened Support Gem Quality: +20% Corrupted
+[Type] == "Wealth and Power" # [StashItem] == "true" // Level 4 Enlighten Corrupted
+
+[Type] == "Orb of Alteration" # [StashItem] == "true"
+[Type] == "Blessed Orb" # [StashItem] == "true"
+[Type] == "Chaos Orb" # [StashItem] == "true"
+[Type] == "Chromatic Orb" # [StashItem] == "true"
+[Type] == "Divine Orb" # [StashItem] == "true"
+[Type] == "Exalted Orb" # [StashItem] == "true"
+[Type] == "Gemcutter's Prism" # [StashItem] == "true"
+[Type] == "Jeweller's Orb" # [StashItem] == "true"
+[Type] == "Mirror of Kalandra" # [StashItem] == "true"
+[Type] == "Orb of Alchemy" # [StashItem] == "true"
+[Type] == "Orb of Fusing" # [StashItem] == "true"
+[Type] == "Orb of Scouring" # [StashItem] == "true"
+[Type] == "Fracturing Orb" # [StashItem] == "true"
+[Type] == "Awakened Sextant" # [StashItem] == "true"
+
+[Type] == "Abyssal Delirium Orb" # [StashItem] == "true"
+[Type] == "Blighted Delirium Orb" # [StashItem] == "true"
+[Type] == "Diviner's Delirium Orb" # [StashItem] == "true"
+[Type] == "Fine Delirium Orb" # [StashItem] == "true"
+[Type] == "Fossilised Delirium Orb" # [StashItem] == "true"
+[Type] == "Imperial Delirium Orb" # [StashItem] == "true"
+[Type] == "Portentous Delirium Orb" # [StashItem] == "true"
+[Type] == "Singular Delirium Orb" # [StashItem] == "true"
+[Type] == "Skittering Delirium Orb" # [StashItem] == "true"
+[Type] == "Thaumaturge's Delirium Orb" # [StashItem] == "true"
+[Type] == "Timeless Delirium Orb" # [StashItem] == "true"
+[Type] == "Whispering Delirium Orb" # [StashItem] == "true"
+[Type] == "Amorphous Delirium Orb" # [StashItem] == "true"
+[Type] == "Armoursmith's Delirium Orb" # [StashItem] == "true"
+[Type] == "Blacksmith's Delirium Orb" # [StashItem] == "true"
+[Type] == "Cartographer's Delirium Orb" # [StashItem] == "true"
+[Type] == "Decadent Delirium Orb" # [StashItem] == "true"
+[Type] == "Delirium Orb" # [StashItem] == "true"
+[Type] == "Foreboding Delirium Orb" # [StashItem] == "true"
+[Type] == "Fragmented Delirium Orb" # [StashItem] == "true"
+[Type] == "Jeweller's Delirium Orb" # [StashItem] == "true"
+[Type] == "Obscured Delirium Orb" # [StashItem] == "true"
+[Type] == "Primal Delirium Orb" # [StashItem] == "true"
+[Type] == "Simulacrum Splinter" # [StashItem] == "true"
+[Type] == "Simulacrum" # [StashItem] == "true"
+
+[Type] == "Golden Oil" # [StashItem] == "true"
+[Type] == "Silver Oil" # [StashItem] == "true"
+[Type] == "Opalescent Oil" # [StashItem] == "true"
+[Type] == "Crimson Oil" # [StashItem] == "true"
+[Type] == "Black Oil" # [StashItem] == "true"
+[Type] == "Azure Oil" # [StashItem] == "true"
+[Type] == "Violet Oil" # [StashItem] == "true"
+
+[Type] == "Abrasive Catalyst" # [StashItem] == "true"
+[Type] == "Fertile Catalyst" # [StashItem] == "true"
+[Type] == "Imbued Catalyst" # [StashItem] == "true"
+[Type] == "Intrinsic Catalyst" # [StashItem] == "true"
+[Type] == "Prismatic Catalyst" # [StashItem] == "true"
+[Type] == "Tempering Catalyst" # [StashItem] == "true"
+[Type] == "Turbulent Catalyst" # [StashItem] == "true"
+
+[Type] == "Orb of Annulment" # [StashItem] == "true"
+[Type] == "Ancient Orb" # [StashItem] == "true"
+[Type] == "Ancient Shard" # [StashItem] == "true"
+[Type] == "Mirror Shard" # [StashItem] == "true"
+
+[Type] == "Tainted Chromatic Orb" # [StashItem] == "true"
+[Type] == "Tainted Orb of Fusing" # [StashItem] == "true"
+[Type] == "Tainted Jeweller's Orb" # [StashItem] == "true"
+[Type] == "Tainted Blessing" # [StashItem] == "true"
+[Type] == "Tainted Chaos Orb" # [StashItem] == "true"
+[Type] == "Tainted Exalted Orb" # [StashItem] == "true"
+[Type] == "Tainted Mythic Orb" # [StashItem] == "true"
+[Type] == "Tainted Divine Teardrop" # [StashItem] == "true"
+[Type] == "Tainted Blacksmith's Whetstone" # [StashItem] == "true"
+[Type] == "Tainted Armourer's Scrap" # [StashItem] == "true"
+
+[Type] == "Eldritch Chaos Orb" # [StashItem] == "true"
+[Type] == "Eldritch Exalted Orb" # [StashItem] == "true"
+[Type] == "Eldritch Orb of Annulment" # [StashItem] == "true"
+
+[Type] == "Empower Support" # [StashItem] == "true"
+[Type] == "Enhance Support" # [StashItem] == "true"
+[Type] == "Enlighten Support" # [StashItem] == "true"
+
+[Type] == "Screaming Invitation" # [StashItem] == "true"
+[Type] == "Incandescent Invitation" # [StashItem] == "true"
+[Type] == "Maven's Invitation: The Elderslayers" # [StashItem] == "true"
+
+[Sockets] == "6" && [Linked] >= "6" # [SellUnid]=="true" // Sell 6L6S
+[Sockets] == "6"  # [SellUnid]=="true" // Sell 6S
+
+[Type] == "Einhar's Memory" # [StashItem] == "true"
+
+//[Type] == "Rogue's Marker" # [StashItem] == "true"
+[Type] == "Voidborn Reliquary Key" # [StashItem] == "true"
