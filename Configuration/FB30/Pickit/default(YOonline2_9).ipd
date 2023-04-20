@@ -423,4 +423,10 @@
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [chance_to_grant_nearby_enemies_unholy_might_on_kill_%] >= "1" && 	[ForceSellItem]	 == "true" // 		//心靈抽取 瑪瑙護身符																							
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [local_display_aura_mana_regeneration_rate_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		//塑界者之籽 瑪瑙護身符																							
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [max_power_charges] >= "1" && 	[ForceSellItem]	 == "true" // 		//艾拉黛絲 瑪瑙護身符																							
-																		
+							
+							
+							
+							
+	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Normal"  #	[ForceSellItem]	 == "true" // 	//	普通地圖
+	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Magic"  #	[ForceSellItem]	 == "true" // 	//	藍地圖
+	[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #	[ForceSellItem]	 == "true" // 	//	黃地圖
