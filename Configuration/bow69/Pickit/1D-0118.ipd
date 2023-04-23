@@ -11,6 +11,7 @@
 [Type] == "Toxic Sewer Map" # [StashItem] == "true"
 [Type] == "Canyon Map" # [StashItem] == "true"
 [Type] == "Arcade Map" # [StashItem] == "true"
+[Type]=="Cemetery Map" # [StashItem] == "true"
 
 [Type] == "Ashen Wood Map" # [StashItem] == "true"
 [Type] == "Ghetto Map" # [StashItem] == "true"
