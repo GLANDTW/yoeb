@@ -90,7 +90,7 @@
 [Type]=="Tainted Divine Teardrop" # [StashItem]  == "true"
  
  
- [Type] == "Rogue's Marker" # [StashItem]  == "true"
+ //[Type] == "Rogue's Marker" # [StashItem]  == "true"
  
  
 
