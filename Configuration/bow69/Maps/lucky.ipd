@@ -5,6 +5,7 @@
 [Type]=="Sulphur Vents Map" #	[RunMap]=="true"
 [Type] == "Canyon Map" # [RunMap] == "true"
 [Type] == "Arcade Map" # [RunMap] == "true"
+[Type]=="Cemetery Map" # [RunMap] == "true"
 
 // Upgrade to BLUE
 //[Rarity] == "Normal" #[UpgradeToMagic] == "true"
