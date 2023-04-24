@@ -4,15 +4,13 @@
 
 //3.20 1/15 ·s¼Wµê½ÏÆ_°Í
 
-
 [Type]=="Sulphur Vents Map" # [StashItem] == "true"
 [Type]=="Crimson Temple Map" #[StashItem] == "true"
 [Type] == "City Square Map" # [StashItem] == "true"
 [Type] == "Toxic Sewer Map" # [StashItem] == "true"
-
-
-[Type] == "Ashen Wood Map" # [StashItem] == "true"
-[Type] == "Ghetto Map" # [StashItem] == "true"
+[Type] == "Canyon Map" # [StashItem] == "true"
+[Type] == "Arcade Map" # [StashItem] == "true"
+[Type]=="Cemetery Map" # [StashItem] == "true"
 
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
