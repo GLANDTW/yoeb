@@ -1,8 +1,10 @@
-
 [Type] == "City Square Map" #[RunMap] == "true"
 [Type] == "Toxic Sewer Map" #[RunMap] == "true"
 [Type]=="Crimson Temple Map" #	[RunMap]=="true"
 [Type]=="Sulphur Vents Map" #	[RunMap]=="true"
+[Type] == "Canyon Map" # [RunMap] == "true"
+[Type] == "Arcade Map" # [RunMap] == "true"
+[Type]=="Cemetery Map" # [RunMap] == "true"
 
 // Upgrade to BLUE
 //[Rarity] == "Normal" #[UpgradeToMagic] == "true"
