@@ -1,8 +1,10 @@
-
 [Type] == "City Square Map" #[RunMap] == "true"
 [Type] == "Toxic Sewer Map" #[RunMap] == "true"
 [Type]=="Crimson Temple Map" #	[RunMap]=="true"
 [Type]=="Sulphur Vents Map" #	[RunMap]=="true"
+[Type] == "Canyon Map" # [RunMap] == "true"
+[Type] == "Arcade Map" # [RunMap] == "true"
+[Type]=="Cemetery Map" # [RunMap] == "true"
 
 // Upgrade to BLUE
 //[Rarity] == "Normal" #[UpgradeToMagic] == "true"
@@ -20,45 +22,48 @@
 
 
 
-	//3.17 è¨ŽåŽ­?„è?ç¶´é¿???éª° ï¼ˆå?å¿…å…©?‹ã€å…©?‹ä?èµ·æ”¹ï¼?	
+	//3.17 è¨ŽåŽ­??��?ç¶´é?¿????éª° ï¼?å?å¿?�å…�??��?��?å?��??��?èµ·æ?�¹ï�?	
 	[3248] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true
 	[3248] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true
-	[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?ªç‰©?å?_%_?ƒç??·å®³	?¿é?//?ªç‰©?å?_%_?ƒç??·å®³?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?ªç‰©?å?_%_?ƒç??·å®³	?¿é?//?ªç‰©?å?_%_?ƒç??·å®³?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?ªç‰©?å?_%_?©ç??·å®³	?¿é?//?ªç‰©?å?_%_?©ç??·å®³?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?ªç‰©?å?_%_?©ç??·å®³	?¿é?//?ªç‰©?å?_%_?©ç??·å®³?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?©å®¶?¡æ??žå¾©?Ÿå‘½?é??›å??½é?è­·ç›¾	?¿é?//?©å®¶?¡æ??žå¾©?Ÿå‘½?é??›å??½é?è­·ç›¾?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?©å®¶?¡æ??žå¾©?Ÿå‘½?é??›å??½é?è­·ç›¾	?¿é?//?©å®¶?¡æ??žå¾©?Ÿå‘½?é??›å??½é?è­·ç›¾?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°?‚ç©º?–é?è©›å?å½±éŸ¿	?¿é?//?©å®¶?—åˆ°?‚ç©º?–é?è©›å?å½±éŸ¿?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°?‚ç©º?–é?è©›å?å½±éŸ¿	?‘ä??•é€™å€?																			
-	[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°?†å¼±è©›å?	?¿é?//?©å®¶?—åˆ°?†å¼±è©›å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°?†å¼±è©›å?	?¿é?//?©å®¶?—åˆ°?†å¼±è©›å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_player_has_level_X_enfeeble]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°è¡°å¼±è©›å?å½±éŸ¿	?‘ä??•é€™å€?																			
-//	[map_player_has_level_X_enfeeble]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°è¡°å¼±è©›å?å½±éŸ¿	?‘ä??•é€™å€?																			
-	[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°?ƒç?è¦å®³è©›å?å½±éŸ¿	?¿é?//?©å®¶?—åˆ°?ƒç?è¦å®³è©›å?å½±éŸ¿?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶?—åˆ°?ƒç?è¦å®³è©›å?å½±éŸ¿	?¿é?//?©å®¶?—åˆ°?ƒç?è¦å®³è©›å?å½±éŸ¿?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_rare_monsters_have_nemesis_mod]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//ç¨€?‰æ€ªæ?å¾©ä?å±¬æ€??‘ä??•é€™å€?																			
-//	[map_rare_monsters_have_nemesis_mod]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//ç¨€?‰æ€ªæ?å¾©ä?å±¬æ€??‘ä??•é€™å€?																			
-//	[map_base_ground_fire_damage_to_deal_per_minute]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?°å?è£¡æ??ƒç??°é¢	?¿é?//?°å?è£¡æ??ƒç??°é¢?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_base_ground_fire_damage_to_deal_per_minute]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?°å?è£¡æ??ƒç??°é¢	?¿é?//?°å?è£¡æ??ƒç??°é¢?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_ground_ice]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?°å?è£¡æ??°ç·©?°é¢	?¿é?//?°å?è£¡æ??°ç·©?°é¢?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_ground_ice]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?°å?è£¡æ??°ç·©?°é¢	?‘ä??•é€™å€?																			
-	[map_ground_lightning]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?°å?è£¡æ??Ÿé›»?°é¢	?¿é?//?°å?è£¡æ??Ÿé›»?°é¢?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_ground_lightning]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?°å?è£¡æ??Ÿé›»?°é¢	?‘ä??•é€™å€?																			
-	[map_base_ground_desecration_damage_to_deal_per_minute] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//æ±™æ??°é¢	?¿é?//æ±™æ??°é¢?„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_base_ground_desecration_damage_to_deal_per_minute] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//æ±™æ??°é¢	?‘ä??•é€™å€?																			
-//	[map_players_block_chance_+%] < "0" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?ä??¼æ?	?‘ä??•é€™å€?																			
-//	[map_players_block_chance_+%] < "0" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?ä??¼æ?	?‘ä??•é€™å€?																			
-	[map_player_has_level_X_vulnerability] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?†å¼±è©›å?	?¿é?//?†å¼±è©›å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-//	[map_player_has_level_X_vulnerability] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?†å¼±è©›å?	?‘ä??•é€™å€?																			
-	[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?¡æ??·å?	?¿é?//?¡æ??·å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?¡æ??·å?	?¿é?//?¡æ??·å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?°å??ªç‰©?¿å??ƒç??°å¸¸?€???‘ä??•é€™å€?																			
-	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Rare #	[RerollMods]	=="true"	//?°å??ªç‰©?¿å??ƒç??°å¸¸?€???‘ä??•é€™å€?																			
-	[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?ä??€å¤§æ?	?¿é?//?ä??€å¤§æ??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
-	[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?ä??€å¤§æ?	?¿é?//?ä??€å¤§æ??„å?ï¼Œç”¨?¹é€ æ?C?»éª°																				
+	[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?ªç?��??å?_%_??ç??·å®³	?¿é?//?ªç?��??å?_%_??ç??·å®³??��?ï¼?ç?��?¹é??æ?C?»éª°																				
+	[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?ªç?��??å?_%_??ç??·å®³	?¿é?//?ªç?��??å?_%_??ç??·å®³??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?ªç?��??å?_%_?©ç??·å®³	?¿é?//?ªç?��??å?_%_?©ç??·å®³??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?ªç?��??å?_%_?©ç??·å®³	?¿é?//?ªç?��??å?_%_?©ç??·å®³??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?©å®¶?¡æ??žå¾©?Ÿå?��??é???��??½é?è­·ç?��??¿é?//?©å®¶?¡æ??žå¾©?Ÿå?��??é???��??½é?è­·ç?��??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?©å®¶?¡æ??žå¾©?Ÿå?��??é???��??½é?è­·ç?��??¿é?//?©å®¶?¡æ??žå¾©?Ÿå?��??é???��??½é?è­·ç?��??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶??�åˆ�??�ç©�??��?è©?��?å½±éŸ¿	?¿é?//?©å®¶??�åˆ�??�ç©�??��?è©?��?å½±éŸ¿??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶??�åˆ�??�ç©�??��?è©?��?å½±éŸ¿	??��???�é€?�å€?																			
+	[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶??�åˆ�??�å¼±è©›�?	?¿é?//?©å®¶??�åˆ�??�å¼±è©›�???��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶??�åˆ�??�å¼±è©›�?	?¿é?//?©å®¶??�åˆ�??�å¼±è©›�???��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_player_has_level_X_enfeeble]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶??�åˆ°è¡°å¼±è©›�?å½±éŸ¿	??��???�é€?�å€?																			
+//	[map_player_has_level_X_enfeeble]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶??�åˆ°è¡°å¼±è©›�?å½±éŸ¿	??��???�é€?�å€?																			
+	[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?©å®¶??�åˆ�??ç?è¦?å®³è©?��?å½±éŸ¿	?¿é?//?©å®¶??�åˆ�??ç?è¦?å®³è©?��?å½±éŸ¿??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?©å®¶??�åˆ�??ç?è¦?å®³è©?��?å½±éŸ¿	?¿é?//?©å®¶??�åˆ�??ç?è¦?å®³è©?��?å½±éŸ¿??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_rare_monsters_have_nemesis_mod]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//ç¨???�æ€ªæ?å¾©ä?å±¬æ????��???�é€?�å€?																			
+//	[map_rare_monsters_have_nemesis_mod]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//ç¨???�æ€ªæ?å¾©ä?å±¬æ????��???�é€?�å€?																			
+//	[map_base_ground_fire_damage_to_deal_per_minute]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?°å?è£¡æ???ç??°é?¢	?¿é?//?°å?è£¡æ???ç??°é?¢??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_base_ground_fire_damage_to_deal_per_minute]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?°å?è£¡æ???ç??°é?¢	?¿é?//?°å?è£¡æ???ç??°é?¢??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_ground_ice]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?°å?è£¡æ??°ç·©?°é?¢	?¿é?//?°å?è£¡æ??°ç·©?°é?¢??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_ground_ice]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?°å?è£¡æ??°ç·©?°é?¢	??��???�é€?�å€?																			
+	[map_ground_lightning]>= "1" && [Rarity]="Magic" #	[RerollMods]	=="true"	//?°å?è£¡æ??Ÿé?��?°é?¢	?¿é?//?°å?è£¡æ??Ÿé?��?°é?¢??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_ground_lightning]>= "1" && [Rarity]="Rare" #	[RerollMods]	=="true"	//?°å?è£¡æ??Ÿé?��?°é?¢	??��???�é€?�å€?																			
+	[map_base_ground_desecration_damage_to_deal_per_minute] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//æ±?��??°é?¢	?¿é?//æ±?��??°é?¢??��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_base_ground_desecration_damage_to_deal_per_minute] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//æ±?��??°é?¢	??��???�é€?�å€?																			
+//	[map_players_block_chance_+%] < "0" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//??ä??¼æ?	??��???�é€?�å€?																			
+//	[map_players_block_chance_+%] < "0" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//??ä??¼æ?	??��???�é€?�å€?																			
+	[map_player_has_level_X_vulnerability] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//??�å¼±è©›�?	?¿é?//??�å¼±è©›�???��?ï¼?ç?��?¹é?� �?C?»éª°																				
+//	[map_player_has_level_X_vulnerability] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//??�å¼±è©›�?	??��???�é€?�å€?																			
+	[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?¡æ??·å?	?¿é?//?¡æ??·å???��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//?¡æ??·å?	?¿é?//?¡æ??·å???��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//?°å??ªç?��?¿å???ç??°å¸¸??????��???�é€?�å€?																			
+	[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Rare #	[RerollMods]	=="true"	//?°å??ªç?��?¿å???ç??°å¸¸??????��???�é€?�å€?																			
+	[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Magic" #	[RerollMods]	=="true"	//??ä???�å¤§�?	?¿é?//??ä???�å¤§�???��?ï¼?ç?��?¹é?� �?C?»éª°																				
+	[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Rare" #	[RerollMods]	=="true"	//??ä???�å¤§�?	?¿é?//??ä???�å¤§�???��?ï¼?ç?��?¹é?� �?C?»éª°																				
 	
-	 [map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Magic" # [RerollMods] =="true" //?¡æ??·å? ?¿é?//?¡æ??·å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°                    
-	[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Rare" # [RerollMods] =="true" //?¡æ??·å? ?¿é?//?¡æ??·å??„å?ï¼Œç”¨?¹é€ æ?C?»éª°
+[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Magic" # [RerollMods] =="true" //?¡æ??·å? ?¿é?//?¡æ??·å???��?ï¼?ç?��?¹é?� �?C?»éª°                    
+
+[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Rare" # [RerollMods] =="true" //?¡æ??·å? ?¿é?//?¡æ??·å???��?ï¼?ç?��?¹é?� �?C?»éª°
  
-	[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #  [RerollMods]  =="true"            //è¢«æ€ªå·??	[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #  [RerollMods]  =="true"             //è¢«æ€ªå·??
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #  [RerollMods]  =="true"            //è¢«æ?�ªå�??	
+
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #  [RerollMods]  =="true"             //è¢«æ?�ªå�??
