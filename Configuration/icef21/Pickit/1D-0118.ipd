@@ -4,15 +4,13 @@
 
 //3.20 1/15 新增虛誕鑰匙
 
-
 [Type]=="Sulphur Vents Map" # [StashItem] == "true"
 [Type]=="Crimson Temple Map" #[StashItem] == "true"
 [Type] == "City Square Map" # [StashItem] == "true"
 [Type] == "Toxic Sewer Map" # [StashItem] == "true"
-
-
-[Type] == "Ashen Wood Map" # [StashItem] == "true"
-[Type] == "Ghetto Map" # [StashItem] == "true"
+[Type] == "Canyon Map" # [StashItem] == "true"
+[Type] == "Arcade Map" # [StashItem] == "true"
+[Type]=="Cemetery Map" # [StashItem] == "true"
 
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
@@ -47,6 +45,7 @@
 [Type] == "A Chilling Wind" # [StashItem] == "true" // 凜冽之風 
 [Type] == "Matryoshka" # [StashItem] == "true" // 俄羅斯娃娃 有價				
 
+[Type] == "Divine Vessel" # [StashItem] == "true" //
 
 //下面是3.19以前
 
