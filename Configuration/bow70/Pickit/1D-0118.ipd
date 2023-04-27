@@ -45,6 +45,7 @@
 [Type] == "A Chilling Wind" # [StashItem] == "true" // 凜冽之風 
 [Type] == "Matryoshka" # [StashItem] == "true" // 俄羅斯娃娃 有價				
 
+[Type] == "Divine Vessel" # [StashItem] == "true" //
 
 //下面是3.19以前
 
