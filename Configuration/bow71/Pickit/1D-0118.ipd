@@ -1,8 +1,10 @@
+//[Type] == "Quicksilver Flask"&& [ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
+
 //3.20新增 111年12月21日
-
 //3.20 12/11 開啟大量有價物品版本//
-
 //3.20 1/15 新增虛誕鑰匙
+
+
 
 [Type]=="Sulphur Vents Map" # [StashItem] == "true"
 [Type]=="Crimson Temple Map" #[StashItem] == "true"
@@ -12,6 +14,13 @@
 [Type] == "Arcade Map" # [StashItem] == "true"
 [Type]=="Cemetery Map" # [StashItem] == "true"
 
+[Type]=="Sulphur Vents Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type]=="Crimson Temple Map"&& [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "City Square Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "Toxic Sewer Map" && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "Canyon Map" # && [MapTier] <= "14" # [ForceSellItem] == "true"
+[Type] == "Arcade Map" # && [MapTier] <= "14"  # [ForceSellItem] == "true"
+[Type]=="Cemetery Map" # && [MapTier] <= "14 "# [ForceSellItem] == "true"
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
