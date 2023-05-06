@@ -144,7 +144,7 @@ SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
 SetTaskMiGongDataByLv(79,3)--大于等于80级 做迷宫3
 
 g_openQlkMaxMapTianFuCnt=nil--数值型 满多少天赋后不开奇拉克任务nil为一直开
-g_useMinLvMapTianFuCnt=60--地图天赋满多少点后 就从低阶地图开始取
+g_useMinLvMapTianFuCnt=100--地图天赋满多少点后 就从低阶地图开始取
 SetYiJieShuaTuModeByMapCnt(60,nil,2)--)--根据仓库里的地图数量设置异界刷图模式 可添加多个 他是从地图数量多到少来判断的
 SetOpenMapMasterData(3)
 SetUseBuffSkill("傲貓祝福","Aspect_of_the_Cat")--
