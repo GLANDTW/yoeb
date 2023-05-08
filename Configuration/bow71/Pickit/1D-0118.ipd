@@ -1,16 +1,21 @@
-//ºÖº¸ÀY
+//°»¬d³ø§i
+//[Type] == "Influenced Scouting Report" 			#[ForceSellItem]== "true" // ¶Õ¤O
+//[Type] == "Vaal Scouting Report" 				#[ForceSellItem]== "true" // ¥Ëº¸
+//[Type] == "Singular Scouting Report" 				#[ForceSellItem]== "true" // ¨ô¶V
+//[Type] == "Explorer's Scouting Report" 			#[ForceSellItem]== "true" // ±´ÀI®a
+[Type] == "Otherworldly Scouting Report" 			#[StashItem] == "true" // ¶W¤Z
 
-[Type]== "Praetor Crown" && [Rarity] == "Unique" # [life_+%_with_no_corrupted_equipped_items] >= "1" && [StashlItem] == "true" // Voll's Vision
+//ºÖº¸ÀY
+[Type]=="Praetor Crown" && [Rarity] == "Unique" #[UniqueName]=="Voll's Vision"	#[StashItem] == "true"
 
 //©£©i¤â
-
-[Type]== "Titan Gauntlets" && [Rarity] == "Unique" # [StashlItem] == "true" // Veruso's Battering Rams / Craiceann's Pincers
-
-[Type]== "Titan Gauntlets" && [Rarity] == "Unique" # [cannot_be_shocked_while_at_maximum_endurance_charges] >= "1" && [ForceSellItem] == "true" // Veruso's Battering Rams
+[Type]=="Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"
 
 //·ù»}
+[Type]=="Rawhide Boots" && [Rarity] == "Unique" #[UniqueName]=="Seven-League Step"	#[StashItem] == "true"
 
-[Type]== "Rawhide Boots" && [Rarity] == "Unique" # [StashlItem] == "true" // Seven-League Step
+//¦è¨½¶µÁå
+[Type]=="Jade Amulet" && [Rarity] == "Unique" #[UniqueName]=="Hyrri's Truth"	#[StashItem] == "true"
 
 
 
