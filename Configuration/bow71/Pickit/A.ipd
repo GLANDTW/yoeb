@@ -13,7 +13,7 @@
 //¦è¨½¶µÁå
 //[Type]=="Jade Amulet" && [Rarity] == "Unique" #[UniqueName]=="Hyrri's Truth"	#[StashItem] == "true"
 
-
+[Type] == "Ezomyte Burgonet" && [Rarity] == "Unique" # [UniqueName] == "Abyssus" && [StashItem] == "true"//
 
 //2023/4/27´ú¸Õ85ÃÄ¾¯
 

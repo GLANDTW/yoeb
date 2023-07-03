@@ -215,6 +215,7 @@
 
  [Sockets] == "6" && [Linked] >= "6"   #[ForceSellItem] == "true" // //¤»³s¥þ½æ
 
+[Type] == "Ezomyte Burgonet" && [Rarity] == "Unique" # [UniqueName] == "Abyssus" && [StashItem] == "true" //
 
 	[Type] == "Spiraled Wand" && [Rarity] == "Unique" # [UniqueName] == "Amplification Rod" && [StashItem] == "true"	//¼W´T§ú Á³¯¾ªk§ú
 	[Type] == "Fishing Rod" && [Rarity] == "Unique" # [UniqueName] == "Song of the Sirens" && [StashItem] == "true"	//®ü§¯¾y¦± ³½¬ñ
