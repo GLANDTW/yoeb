@@ -1,20 +1,18 @@
-[Type] == "City Square Map" #[RunMap] == "true"
-[Type] == "Toxic Sewer Map" #[RunMap] == "true"
-[Type]=="Crimson Temple Map" #	[RunMap]=="true"
-[Type]=="Sulphur Vents Map" #	[RunMap]=="true"
-[Type] == "Canyon Map" # [RunMap] == "true"
-[Type] == "Arcade Map" # [RunMap] == "true"
-[Type]=="Cemetery Map" # [RunMap] == "true"
+[Type] == "Wharf Map" # [RunMap] == "true" //
+[Type] == "Mud Geyser Map" # [RunMap] == "true" //
+[Type] == "Crimson Temple Map" # [RunMap] == "true" //
+[Type] == "City Square Map" # [RunMap] == "true" //
+[Type] == "Cemetery Map" # RunMap] == "true" //
+[Type] == "Bazaar Map" # [RunMap] == "true" //
+[Type] == "Leyline Map" # [RunMap] == "true" //
 
-[Type] == "City Square Map" # [ExitAfterBossKill] == "true"
-[Type] == "Toxic Sewer Map" # [ExitAfterBossKill] == "true"
-[Type]=="Crimson Temple Map" # [ExitAfterBossKill] == "true"
-[Type]=="Sulphur Vents Map" # [ExitAfterBossKill] == "true"
-[Type] == "Canyon Map" # [ExitAfterBossKill] == "true"
-[Type] == "Arcade Map" # [ExitAfterBossKill] == "true"
-[Type]=="Cemetery Map" # [ExitAfterBossKill] == "true"
-
-
+[Type] == "Wharf Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Crimson Temple Map" # [ExitAfterBossKill] == "true" //
+[Type] == "City Square Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Cemetery Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Bazaar Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Leyline Map" # [ExitAfterBossKill] == "true" //
 
 // Upgrade to BLUE
 //[Rarity] == "Normal" #[UpgradeToMagic] == "true"
