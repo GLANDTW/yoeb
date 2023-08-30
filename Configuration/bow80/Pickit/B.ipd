@@ -165,7 +165,7 @@
 [Type] == "Armourer's Scrap" # [StashItem] == "true" //	//Å@¥Ò¤ù
 [Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//¬Á¼þ¼u¯]
 [Type] == "Blessed Orb" # [StashItem] == "true" //	//¯¬ºÖ¥Û
-
+[Type] == "Forbidden Tome" #[StashItem] == "true" // ¸T§Ò¤§®Ñ 
 
 [Type] == "Singular Scouting Report" # [StashItem] == "true" //	//¨ô¶V°»¬d³ø§i
 [Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//¶W¤Z°»¬d³ø§i
