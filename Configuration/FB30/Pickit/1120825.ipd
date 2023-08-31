@@ -40,9 +40,9 @@
 [Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//岡姆之魂
 [Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//盟誓之跡
 [Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//幻彩菱織 腰帶
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite Two-" && [StashItem] == "true"	//貝雷克的火與雷之樂
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip Two-" && [StashItem] == "true"	//貝雷克的冰與雷之曲
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass Two-" && [StashItem] == "true"	//貝雷克的冰與火之歌
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//貝雷克的火與雷之樂
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//貝雷克的冰與雷之曲
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//貝雷克的冰與火之歌
 [Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//亡者呼喚 紫晶戒指
 [Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//西里的真理
 [Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//優雅迷鏡
