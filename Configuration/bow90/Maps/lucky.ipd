@@ -2,7 +2,7 @@
 [Type] == "Mud Geyser Map" # [RunMap] == "true" //
 [Type] == "Crimson Temple Map" # [RunMap] == "true" //
 [Type] == "City Square Map" # [RunMap] == "true" //
-[Type] == "Cemetery Map" # RunMap] == "true" //
+[Type] == "Cemetery Map" # [RunMap] == "true" //
 [Type] == "Bazaar Map" # [RunMap] == "true" //
 [Type] == "Leyline Map" # [RunMap] == "true" //
 
