@@ -52,6 +52,9 @@
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
 
 
+
+[Type] == "Crimson Temple Map" && [Rarity] == "Rare" # [StashItem] == "true" //
+
 //[Type] == "Wharf Map" && [Rarity] == "Magic" # [StashItem] == "true" //
 [Type] == "Mud Geyser Map" && [Rarity] == "Magic"# [StashItem] == "true" //
 [Type] == "Crimson Temple Map" && [Rarity] == "Magic" # [StashItem] == "true" //
@@ -63,7 +66,7 @@
 //[Type] == "Wharf Map" && [Rarity] == "Normal" # [StashItem] == "true" //
 [Type] == "Mud Geyser Map" && [Rarity] == "Normal"# [StashItem] == "true" //
 [Type] == "Crimson Temple Map" && [Rarity] == "Normal" # [StashItem] == "true" //
-//[Type] == "City Square Map"&& [Rarity] == "Normal"# [StashItem] == "true" //
+[Type] == "City Square Map"&& [Rarity] == "Normal"# [StashItem] == "true" //
 [Type] == "Cemetery Map" && [Rarity] == "Normal"# StashItem] == "true" //
 //[Type] == "Bazaar Map" && [Rarity] == "Normal"# [StashItem] == "true" //
 //[Type] == "Leyline Map" && [Rarity] == "Normal"# [StashItem] == "true" //
