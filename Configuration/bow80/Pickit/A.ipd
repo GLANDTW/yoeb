@@ -18,20 +18,20 @@
 [Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	//轟天雷
 [Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" // //伊瑞的栽培
 //3.22季初傳送門
-//[Type] == "Portal" #  [StashItem] == "true"//傳送門
+[Type] == "Portal" #  [StashItem] == "true"//傳送門
 
 //弓箭手套裝//
 [Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//福爾的遠見
 [Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//西里的戰衣星辰皮甲
-//[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//岡姆之魂
-//[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//盟誓之跡
-//[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//幻彩菱織 腰帶
+[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//岡姆之魂
+[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//盟誓之
+[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//幻彩菱織 腰帶
 [Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//貝雷克的火與雷之樂
-//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//貝雷克的冰與雷之曲
-//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//貝雷克的冰與火之歌
-//[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//亡者呼喚 紫晶戒指
-//[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//西里的真理
-//[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//優雅迷鏡
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//貝雷克的冰與雷之曲
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//貝雷克的冰與火之歌
+[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//亡者呼喚 紫晶戒指
+[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//西里的真理
+[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//優雅迷鏡
 
 //迷宮裝//
 //[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Springleaf" && [StashItem] == "true"	//新生之徽
