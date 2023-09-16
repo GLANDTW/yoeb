@@ -52,7 +52,7 @@
 
 
 
-[Type] == "Crimson Temple Map" && [Rarity] == "Rare" # [StashItem] == "true" //
+//[Type] == "Crimson Temple Map" && [Rarity] == "Rare" # [StashItem] == "true" //
 
 //[Type] == "Wharf Map" && [Rarity] == "Magic" # [StashItem] == "true" //
 [Type] == "Mud Geyser Map" && [Rarity] == "Magic"# [StashItem] == "true" //
