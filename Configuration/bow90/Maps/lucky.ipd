@@ -11,7 +11,7 @@
 [Type] == "Wharf Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Crimson Temple Map" # [ExitAfterBossKill] == "true" //
-[Type] == "City Square Map" # [ExitAfterBossKill] == "true" //
+//[Type] == "City Square Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Cemetery Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Bazaar Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Leyline Map" # [ExitAfterBossKill] == "true" //
