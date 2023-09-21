@@ -30,7 +30,7 @@
 //[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//¨©¹p§Jªº¦B»P¹p¤§¦±
 //[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//¨©¹p§Jªº¦B»P¤õ¤§ºq
 //[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//¤`ªÌ©I³ê µµ´¹§Ù«ü
-[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//¦è¨½ªº¯u²z
+//[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//¦è¨½ªº¯u²z
 //[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//Àu¶®°gÃè
 
 
@@ -50,7 +50,7 @@
 //[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //¶]¤ô
 
 
-//[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //µµ´¹
+[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //µµ´¹
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //¦Ç©¥
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500Å@¥Ò
 
@@ -171,12 +171,12 @@
 //©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò//
 
 //[Type] == "Orb of Alteration" # [StashItem] == "true"////§ï³y¥Û¬B¨ú¥B¦s­Ü
-[Type] == "Orb of Regret"# [StashItem] == "true"////«á®¬¥Û¬B¨ú¥B¦s­Ü//
-[Type] == "Orb of Unmaking"# [StashItem] == "true"////ºM¾P¥Û¬B¨ú¥B¦s­Ü
-[Type] == "Enkindling Orb"# [StashItem] == "true"////ÂI¿U¥Û¬B¨ú¥B¦s­Ü
-[Type] == "Instilling Orb" # [StashItem] == "true" //	//ºwª`¥Û
-[Type] == "Orb of Scouring"# [StashItem] == "true"////­«Å± ¬B¨ú¥B¦s­Ü
-[Type] == "Regal Orb" # [StashItem] == "true"////´I»¨
+//[Type] == "Orb of Regret"# [StashItem] == "true"////«á®¬¥Û¬B¨ú¥B¦s­Ü//
+//[Type] == "Orb of Unmaking"# [StashItem] == "true"////ºM¾P¥Û¬B¨ú¥B¦s­Ü
+//[Type] == "Enkindling Orb"# [StashItem] == "true"////ÂI¿U¥Û¬B¨ú¥B¦s­Ü
+//[Type] == "Instilling Orb" # [StashItem] == "true" //	//ºwª`¥Û
+//[Type] == "Orb of Scouring"# [StashItem] == "true"////­«Å± ¬B¨ú¥B¦s­Ü
+//[Type] == "Regal Orb" # [StashItem] == "true"////´I»¨
 [Type] == "Orb of Horizons"# [StashItem] == "true"////¦a¥­¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Enhance Support" #[StashItem] == "true"////¼W´T»²§U
 //[Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//¿i¤M¥Û
@@ -196,7 +196,7 @@
 
 //©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò//
 
-[Type] == "Vaal Orb" # [StashItem] == "true" //	//¥Ëº¸Ä_¯]
+//[Type] == "Vaal Orb" # [StashItem] == "true" //	//¥Ëº¸Ä_¯]
 [Type] == "Chaos Orb" # [StashItem] == "true"////²V¨P¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Divine Orb" # [StashItem] == "true"////¯«¸t¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Exalted Orb" # [StashItem] == "true"////±R°ª¥Û¬B¨ú¥B¦s­Ü
