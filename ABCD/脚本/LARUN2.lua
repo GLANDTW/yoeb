@@ -30,9 +30,9 @@ g_duobiHpVal=0.2
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 
 SetNeedSkillLineData(93,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,24)
-SetNeedSkillLineData(95,"狙擊者印記,nil|召喚寒冰魔像,nil|擊中時印記輔助,nil|幻步,nil",nil,5,nil)
+SetNeedSkillLineData(95,"狙擊者印記,nil|鮮血狂怒,nil|擊中時印記輔助,nil|幻步,nil",nil,5,nil)
 SetNeedSkillLineData(94,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
-SetNeedSkillLineData(99,"魔改箭矢輔助,nil|箭雨,nil|龍捲射擊,nil|誘捕箭矢,nil|誘捕,nil",nil,3,nil)
+SetNeedSkillLineData(99,"魔改箭矢輔助,nil|箭雨,nil|龍捲射擊,nil|誘捕箭矢,nil|狂怒,nil",nil,3,nil)
 SetNeedSkillLineData(30,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",25,nil,nil)
 SetNeedSkillLineData(98,"閃電箭矢,nil|投射物返回輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil",nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,24)
 SetNeedSkillLineData(30,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|氣勢輔助,nil",25,nil,nil)
@@ -45,7 +45,7 @@ AddAttackSkillData("燃燒箭矢","Burning Arrow")
 AddAttackSkillData("普通攻击","melee")
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
-SetSkillLimitMaxLv("鋼筋鐵骨",nil,14)
+SetSkillLimitMaxLv("鋼筋鐵骨",nil,8)
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
@@ -154,16 +154,20 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",63,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(79,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(80,3)--大于等于80级 做迷宫3
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
 SetChangeLimitCnt("腰带",0)
 SetChangeLimitCnt("项链|戒指",0)
 
+g_yiJieLv=73				--够了多少级才去刷异界
+
+SetGoodsCaoZuo("异界地图","1|3")--多个大类设置捡存
+
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
 
-SetNeedAddTianFu("游侠=attack_speed568-投射物傷害和命中|dexterity990-敏捷|dexterity992-敏捷|dexterity995-敏捷|perfect_aim591-彈道學|bow_damage_and_speed498-弓的傷害|greater_impact638-鷹靈祝福|bow_damage508-弓的傷害和暴擊率|bow_damage507-弓的傷害和暴擊率|attack_damage_notable2120-山貓之靈|stun_recovery544-生命和避免暈眩|avoid_stun553-橡木之心|stun_recovery543-生命和避免暈眩|finesse993-嫻熟|mana1479-魔力和藥劑效果|mana1478-原始精神|dexterity989-敏捷|dexterity872-敏捷|weapon_elemental_damage1263-武器元素傷害|weapon_elemental_damage1264-武器元素傷害|weapon_ele_notable1700-自然之力|dexterity856-敏捷|might770-無畏|savant903-盜贼工藝|dexterity865-敏捷|attack_speed1231-攻擊速度|attack_speed1645-攻擊速度|attack_speed1646-攻擊速度|attack_damage_notable2242-多重射擊|intelligence957-智慧|aura_area_of_effect1203-光環效果範圍|reduced_mana_reservation1199-保留效用|aura_effect_reservation_cost_notable1558-魅力|dexterity866-敏捷|dexterity864-敏捷|bow_damage506-弓的傷害|bow_damage_and_speed500-弓的攻擊速度|bow_damage505-弓的攻擊速度|bow_damage_and_speed501-弓的攻擊速度|deadly_draw680-飛矢宗師|projectile_damage1233-投射物傷害|projectile_damage_pierce1685-穿透|projectile_pierce_notable1687-穿射箭矢|one_handed_damage636-武器元素傷害|shield_mastery440-自然合一|one_handed_damage637-武器元素傷害|claws_of_the_pride489-直覺|dexterity862-敏捷|life1216-生命|life1412-生命|alchemist532-藥草學|mastery_life146-生命專精-47642|evasion1692-閃避與元素抗性|evasion_resists_notable1691-死裡逃生|dexterity860-敏捷|dexterity867-敏捷|damage_area_projectile_speed_2296-擊中時獲得生命和魔力|projectile_damage_projectile_speed1628-聰穎盜贼|mastery_leech127-偷取專精-62252|accuracy587-命中和暴擊率|accuracy586-命中和暴擊率|deadeye588-潛意識|life1415-生命|life_life_leech1629-嗜血者|mark_generic1224-對標記敵人的傷害|mark_generic1225-對標記敵人的傷害|mark_generic_notable1226-標記獵物|intelligence927-智慧|intelligence926-智慧|mana1647-魔力|mind_drinker302-汲靈術|mastery_mana164-魔力專精-12119|dexterity848-敏捷|strength815-力量|dexterity981-敏捷|agility965-和諧之體|life703-生命|fitness617-血液抽取|mastery_bow34-弓專精-56951|mastery_elemental99-元素專精-17942|life1220-生命|mental_acuity1046-詭計|elemental_damage2136-元素傷害|elemental_damage_notable2138-元素專注|critical_strike_chance1019-暴擊率|assassination1239-刺殺|bow_damage_and_speed499-弓暴擊率和加成|bow_damage_and_speed502-弓暴擊率和加成|bow_damage_and_speed496-弓暴擊率和加成|king_of_the_hill529-強弩之弦|dexterity861-敏捷|weapon_elemental_damage2163-武器元素傷害|weapon_elemental_damage2164-武器元素傷害和異常狀態效果|weapon_elemental_damage2176-武器元素傷害和異常狀態效果|weapon_elemental_damage_notable2165-太古之力|dexterity873-敏捷|bow_critical_strike_chance675-投射物攻擊暴擊率|bow_critical_strike_chance674-投射物攻擊暴擊率|heartpierce676-致命鋒芒|dexterity858-敏捷|projectile_attacks2430-投射物傷害|projectile_attacks2433-投射物傷害和速度|projectile_attacks_notable2434-長射|") 
+SetNeedAddTianFu("游侠=attack_speed568-投射物傷害和命中|dexterity990-敏捷|dexterity992-敏捷|dexterity995-敏捷|perfect_aim591-彈道學|mana1479-魔力和藥劑效果|mana1478-原始精神|stun_recovery544-生命和避免暈眩|avoid_stun553-橡木之心|stun_recovery543-生命和避免暈眩|finesse993-嫻熟|intelligence957-智慧|dexterity848-敏捷|dexterity855-敏捷|dexterity856-敏捷|might770-無畏|savant903-盜贼工藝|dexterity872-敏捷|weapon_elemental_damage1263-武器元素傷害|weapon_elemental_damage1264-武器元素傷害|weapon_ele_notable1700-自然之力|dexterity865-敏捷|attack_speed1231-攻擊速度|attack_speed1645-攻擊速度|attack_speed1646-攻擊速度|attack_damage_notable2242-多重射擊|aura_area_of_effect1203-光環效果範圍|reduced_mana_reservation1199-保留效用|aura_effect_reservation_cost_notable1558-魅力|dexterity866-敏捷|dexterity864-敏捷|bow_damage506-弓的傷害|bow_damage_and_speed500-弓的攻擊速度|bow_damage505-弓的攻擊速度|bow_damage_and_speed501-弓的攻擊速度|deadly_draw680-飛矢宗師|mastery_bow34-弓專精-56951|dexterity860-敏捷|dexterity867-敏捷|intelligence927-智慧|intelligence926-智慧|mana1647-魔力|mind_drinker302-汲靈術|mastery_mana164-魔力專精-64875|projectile_damage1233-投射物傷害|projectile_damage_pierce1685-穿透|projectile_pierce_notable1687-穿射箭矢|life1415-生命|life_life_leech1629-嗜血者|mastery_life135-生命專精-47642|accuracy587-命中和暴擊率|accuracy586-命中和暴擊率|deadeye588-潛意識|damage_area_projectile_speed_2296-擊中時獲得生命和魔力|projectile_damage_projectile_speed1628-聰穎盜贼|mastery_leech127-偷取專精-62252|strength815-力量|dexterity981-敏捷|agility965-和諧之體|life703-生命|fitness617-血液抽取|life1220-生命|mental_acuity1046-詭計|critical_strike_chance1019-暴擊率|assassination1239-刺殺|evasion1692-閃避與元素抗性|evasion_resists_notable1691-死裡逃生|bow_damage_and_speed498-弓的傷害|greater_impact638-鷹靈祝福|mark_generic1224-對標記敵人的傷害|mark_generic1225-對標記敵人的傷害|mark_generic_notable1226-標記獵物|dexterity862-敏捷|life1216-生命|life1412-生命|alchemist532-藥草學|dual_wield_damage2125-移動速度和法術壓抑|attack_move_speed_notable1792-疾步|dual_wield_damage726-移動速度和法術壓抑|claws_of_the_pride489-直覺|one_handed_damage636-武器元素傷害|shield_mastery440-自然合一|bow_damage_and_speed499-弓暴擊率和加成|bow_damage_and_speed502-弓暴擊率和加成|bow_damage_and_speed496-弓暴擊率和加成|king_of_the_hill529-強弩之弦|dexterity861-敏捷|weapon_elemental_damage2163-武器元素傷害|weapon_elemental_damage2161-武器元素傷害，異常狀態機率|weapon_elemental_damage2162-武器元素傷害，異常狀態機率|weapon_elemental_damage_notable2165-太古之力|dexterity873-敏捷|bow_critical_strike_chance675-投射物攻擊暴擊率|bow_critical_strike_chance674-投射物攻擊暴擊率|heartpierce676-致命鋒芒|mastery_bow33-投射物專精-1167|mastery_elemental99-元素專精-17942|attack_channel_charge2394-法術壓抑|attack_channel_charge2393-法術壓抑|attack_channel_charge2395-法術壓抑|attack_channel_charge_notable2396-根深蒂固|mastery_attack14-法術壓抑專精-45317|dexterity858-敏捷|projectile_attacks2430-投射物傷害|projectile_attacks2433-投射物傷害和速度|projectile_attacks_notable2434-長射|life1167-生命和避免元素異常狀態|life1156-生命和避免元素異常狀態|life1120-生命和避免元素異常狀態|thick_skin1157-強化之膚|") 
 SetNeedAddTianFu("游侠升华=AscendancyDeadeye3-投射物傷害、攻擊速度|AscendancyDeadeye14-集風|AscendancyDeadeye5-投射物傷害、命中率|AscendancyDeadeye4-彈射|AscendancyDeadeye17-投射物傷害、命中率|AscendancyDeadeye6-無限彈藥|AscendancyDeadeye19-投射物傷害、攻擊速度|AscendancyDeadeye20_-風之守衛|") 
 
 

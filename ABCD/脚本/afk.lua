@@ -18,12 +18,12 @@ SetUseWeapon("弓|箭袋")
 g_needMinimizeGame=false			--最小化遊戲窗口 true为最小化 false或nil为不最小化
 g_imBoss=false					--如果是仓库号要为true 挂机号为false
 g_attackDis=50					--攻击距离
-g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
-g_timeOut=25*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
-g_addTianFu=true				--自动按设定好的配置加天赋 true为加 nil或false为不加
-g_shengJiBaoShi=true			--自动升级宝石 true为升级 nil或false为不升级
+g_yiJieTimeOut=1005*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
+g_timeOut=2500*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
+g_addTianFu=false				--自动按设定好的配置加天赋 true为加 nil或false为不加
+g_shengJiBaoShi=false			--自动升级宝石 true为升级 nil或false为不升级
 g_sellSkillGem=false				--自动卖超过40品质的技能宝石
-g_notHuanYaoLv=82				--大于等于多少级只捡蓝色以上药 
+g_notHuanYaoLv=10				--大于等于多少级只捡蓝色以上药 
 g_needAutoChangeEquip=false		--开启自动换装 true为换 nil或false为不换
 g_needAutoSetBaoShi=false		--开启自动换宝石 true为换 nil或false为不换
 g_bossGiveZhuangBei=false		--交易时仓库号给予缺少的高级换装中的装备 true为给 false为不给 是对仓库号设置的
@@ -58,15 +58,15 @@ g_yuyanCnt=nil				--够多少银币去预言，小于10银币或填nil将不会触发 如果设定去预言
 g_attackDis=65				--攻击距离
 g_duobiHpVal=0.2
 
-g_yiJieLv=70				--够了多少级才去刷异界
-g_checkSellMapCnt=40		--地图超过这个数量才会检测出售地图
+g_yiJieLv=99				--够了多少级才去刷异界
+g_checkSellMapCnt=9999		--地图超过这个数量才会检测出售地图
 g_destroyNoUseMap=false		--销毁上面设置不使用的地图 nil或false为不销毁
 g_mapUseFuHaoLv=75			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
 g_mapUseZengFuLv=nil			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
 g_mapUseDianJingLv=75		--大于等于多少级对白图使用点金石 nil为永远不使用
 g_mapUseTuiBianLv=60		--大于等于多少级对白图使用蜕变石 nil为永远不使用
 g_mapUseJiHuiLv=nil			--大于等于多少级对白图使用机会石 nil为永远不使用
-g_mapUseWaErLv=78			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
+g_mapUseWaErLv=80			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
 g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
@@ -96,8 +96,8 @@ AddAttackSkillData("瓦爾．閃電箭矢","Vaal Lightning Arrow",false,50,10)
 
 --SetNeedFlaskData(pos,flask,modsData,minLv)--设置药瓶摆放
 SetNeedFlaskData(1,"生命药剂","nil")
-SetNeedFlaskData(2,"生命药剂","nil")
-SetNeedFlaskData(3,"魔力药剂","耐久的,FlaskEffectNotRemovedOnFullMana1",50)
+SetNeedFlaskData(2,"水银药剂","nil")
+SetNeedFlaskData(3,"水银药剂","nil")
 SetNeedFlaskData(4,"紫晶药剂","nil")
 SetNeedFlaskData(5,"真银药剂","nil")
 
@@ -139,6 +139,6 @@ SetChangeLimitCnt("项链|戒指",0)
 
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
-SetNeedAddTianFu("游侠=attack_speed568-投射物傷害和命中|dexterity990-敏捷|dexterity992-敏捷|dexterity995-敏捷|perfect_aim591-彈道學|mana1479-魔力和藥劑效果|mana1478-原始精神|stun_recovery544-生命和避免暈眩|avoid_stun553-橡木之心|stun_recovery543-生命和避免暈眩|finesse993-嫻熟|intelligence957-智慧|dexterity848-敏捷|dexterity855-敏捷|dexterity856-敏捷|might770-無畏|dexterity872-敏捷|weapon_elemental_damage1263-武器元素傷害|weapon_elemental_damage1264-武器元素傷害|weapon_ele_notable1700-自然之力|dexterity865-敏捷|dexterity866-敏捷|dexterity864-敏捷|dexterity1986-敏捷|jewel_slot1960-基礎珠寶插槽|deadly_draw680-飛矢宗師|projectile_pierce_notable1687-穿射箭矢|attack_damage_notable2242-多重射擊|greater_impact638-鷹靈祝福|shield_mastery440-自然合一|weapon_elemental_damage_notable2165-太古之力|aura_area_of_effect1203-光環效果範圍|reduced_mana_reservation1199-保留效用|aura_effect_reservation_cost_notable1558-魅力|dexterity860-敏捷|dexterity867-敏捷|intelligence927-智慧|intelligence926-智慧|mana1647-魔力|mind_drinker302-汲靈術|mastery_mana164-魔力專精-64875|strength815-力量|dexterity981-敏捷|agility965-和諧之體|life703-生命|fitness617-血液抽取|life1220-生命|mental_acuity1046-詭計|critical_strike_chance1019-暴擊率|assassination1239-刺殺|life1415-生命|life_life_leech1629-嗜血者|mastery_life135-生命專精-47642|accuracy587-命中和暴擊率|accuracy586-命中和暴擊率|deadeye588-潛意識|damage_area_projectile_speed_2296-擊中時獲得生命和魔力|projectile_damage_projectile_speed1628-聰穎盜贼|mastery_leech127-偷取專精-62252|bow_damage506-弓的傷害|bow_damage_and_speed499-弓暴擊率和加成|bow_damage_and_speed502-弓暴擊率和加成|bow_damage_and_speed496-弓暴擊率和加成|king_of_the_hill529-強弩之弦|mastery_bow34-弓專精-56951|evasion1692-閃避與元素抗性|evasion_resists_notable1691-死裡逃生|mark_generic1224-對標記敵人的傷害|mark_generic1225-對標記敵人的傷害|mark_generic_notable1226-標記獵物|dexterity862-敏捷|life1216-生命|life1412-生命|alchemist532-藥草學|dual_wield_damage2125-移動速度和法術壓抑|attack_move_speed_notable1792-疾步|dual_wield_damage726-移動速度和法術壓抑|claws_of_the_pride489-直覺|intelligence1993-智慧|jewel_slot1961-基礎珠寶插槽|dagger_damage264-匕首傷害|dagger_damage_and_critical_strike_chance465-匕首暴擊率和暴擊加成|dagger_damage_and_critical_strike_multiplier262-匕首暴擊率和加成|dagger_damage_and_critical_strike_multiplier263-匕首暴擊率和加成|dagger_global_crit_notable2527-背刺|claw_damage274-爪的傷害|claw_damage1809-爪的傷害和攻擊速度|claw_damage491-爪的傷害和攻擊速度|claw_damage1810-爪的傷害和攻擊速度|eagle_talons273-鵲爪|dexterity861-敏捷|dexterity873-敏捷|bow_critical_strike_chance675-投射物攻擊暴擊率|bow_critical_strike_chance674-投射物攻擊暴擊率|heartpierce676-致命鋒芒|mastery_bow33-投射物專精-1167|mastery_elemental99-元素專精-17942|attack_channel_charge2394-法術壓抑|attack_channel_charge2393-法術壓抑|attack_channel_charge2395-法術壓抑|attack_channel_charge_notable2396-根深蒂固|mastery_attack14-法術壓抑專精-45317|dexterity858-敏捷|projectile_attacks2430-投射物傷害|projectile_attacks2433-投射物傷害和速度|projectile_attacks_notable2434-長射|life1167-生命和避免元素異常狀態|life1156-生命和避免元素異常狀態|life1120-生命和避免元素異常狀態|thick_skin1157-強化之膚|")
-SetNeedAddTianFu("游侠升华=AscendancyDeadeye3-投射物傷害、攻擊速度|AscendancyDeadeye14-集風|AscendancyDeadeye5-投射物傷害、命中率|AscendancyDeadeye4-彈射|AscendancyDeadeye17-投射物傷害、命中率|AscendancyDeadeye6-無限彈藥|AscendancyDeadeye19-投射物傷害、攻擊速度|AscendancyDeadeye20_-風之守衛|") 
-SetNeedAddTianFu("游侠珠宝=jewel_slot1960-基礎珠寶插槽-4-赤紅珠寶-Metadata/Items/Jewels/JewelStr-希望之絃-Thread of Hope|jewel_slot1961-基礎珠寶插槽-5-翠綠珠寶-Metadata/Items/Jewels/JewelDex-獅眼的隕落-Lioneye's Fall|") 
+SetNeedAddTianFu("游侠=evasion731-閃避和生命|")
+SetNeedAddTianFu("游侠升华=AscendancyDeadeye7-投射物傷害、投射物速度|AscendancyDeadeye8-狙擊|AscendancyDeadeye18-投射物傷害、投射物速度|AscendancyDeadeye6-無限彈藥|AscendancyDeadeye3-投射物傷害、攻擊速度|AscendancyDeadeye14-集風|") 
+SetNeedAddTianFu("异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_path_11-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_kirac_1_10-基拉克任務機率|atlas_kirac_1_9-基拉克任務機率|atlas_zana_1_6-重點偵察|atlas_kirac_1_8_-基拉克任務機率|atlas_kirac_1_7-基拉克任務機率|atlas_path_96-掉落複製地圖|atlas_path_94-掉落複製地圖|atlas_map_drops_8-掉落複製地圖|atlas_path_92-掉落複製地圖|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_90-掉落複製地圖|atlas_keystone_smallnodes_1-流浪之路|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_kirac_2_1-基拉克任務機率|atlas_kirac_2_2-基拉克任務機率|atlas_kirac_2_3-基拉克任務機率|atlas_map_tier_5_1-高階地圖機率|atlas_map_tier_5_2-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_keystone_enhanced_kirac_crafts-超載電路|atlas_map_tier_3_2-高階地圖機率|atlas_map_tier_4_2-高階地圖機率|atlas_map_tier_4_1-高階地圖機率|atlas_path_17-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_path_6-相鄰地圖掉落機率|atlas_path_5-相鄰地圖掉落機率|atlas_path_30_1-相鄰地圖掉落機率|atlas_map_drops_1-掉落複製地圖|atlas_map_drops_10-掉落複製地圖|atlas_map_drops_11-掉落複製地圖|atlas_path_4-相鄰地圖掉落機率|atlas_path_7-相鄰地圖掉落機率|atlas_path_88-掉落複製地圖|atlas_map_drops_12_-掉落複製地圖|atlas_path_87-掉落複製地圖|atlas_map_drops_13-掉落複製地圖|atlas_map_drops_16-掉落複製地圖|atlas_map_drops_15-掉落複製地圖|atlas_path_82-掉落複製地圖|atlas_map_drops_14-掉落複製地圖|atlas_path_85-掉落複製地圖|atlas_map_drops_4-掉落複製地圖|atlas_path_83-掉落複製地圖|atlas_map_drops_5-掉落複製地圖|atlas_path_84-掉落複製地圖|")

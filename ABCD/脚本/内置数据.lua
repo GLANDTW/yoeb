@@ -154,7 +154,7 @@ SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","½äÖ¸|ÏîÁ´|Ñü´ø|Ğ
 SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","Ä§Á¦Ò©¼Á","local_flask_mana_recovery_occurs_instantly_at_end_of_flask_effect",-3000)--¶Ô°üº¬ CD½áÊøÊ±²Å»Ø¸´À¶ µÄÒ©Æ¿½øĞĞ¼õ·Ö²Ù×÷
 SetAtuoChangeEquipData("°µÓ°|Ò°ÂùÈË|¾ö¶·Õß|Å®Î×|ÓÎÏÀ|Ê¥ÌÃÎäÉ®","ÉúÃüÒ©¼Á","local_unique_flask_cannot_recover_life_while_healing",-3000)--¶Ô°üº¬ CD½áÊøÊ±²Å»Ø¸´ÉúÃü µÄÒ©Æ¿½øĞĞ¼õ·Ö²Ù×÷
 
---SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,nil,nil,true,nil,function(gd)return not g_setAllSkillGemOk end )--¼¼ÄÜ±¦Ê¯Î´È«²¿×°±¸ÉÏ¾Í Ê°È¡ ³öÊÛÀ¶É« °×É« »ÆÉ«µÄÈıÉ«ÏàÁ¬×°±¸
+SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,nil,nil,true,nil,function(gd)return not g_setAllSkillGemOk end )--¼¼ÄÜ±¦Ê¯Î´È«²¿×°±¸ÉÏ¾Í Ê°È¡ ³öÊÛÀ¶É« °×É« »ÆÉ«µÄÈıÉ«ÏàÁ¬×°±¸
 --ÏÂÃæÕâÌõ¿É°´ÖÖ×ÓµÈ¼¶ÉèÖÃ½»Ò× ĞèÒªµÄ¿ÉÒÔÊ¹ÓÃËû
 --SetJiaoYiGoods("HarvestSeed",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.harvestSeedLv>=76 end)--ÉèÖÃÖÖ×ÓµÈ¼¶´óÓÚµÈÓÚ76µÄÖÖ×Ó½»Ò×
 
@@ -163,8 +163,10 @@ AddJiLuGoodsData("µÇÂ¼","µÇÂ¼")
 AddJiLuGoodsData("¿ªÍ¼","¿ªÍ¼")
 AddJiLuGoodsData("ËÀÍö","ËÀÍö")
 AddJiLuGoodsData("Metadata/Items/Currency/CurrencyDuplicate","¾µ×Ó")
-AddJiLuGoodsData("Metadata/Items/Currency/CurrencyModValues","ÉñÊ¥")
+AddJiLuGoodsData("Metadata/Items/Currency/CurrencyAddModToRare","³ç¸ß")
 AddJiLuGoodsData("Metadata/Items/Currency/CurrencyRerollRare","»ìãç")
+AddJiLuGoodsData("¶á±¦¿ªÍ¼","¶á±¦¿ªÍ¼")
+AddJiLuGoodsData("¶á±¦³É¹¦","¶á±¦³É¹¦")
 
 
 
