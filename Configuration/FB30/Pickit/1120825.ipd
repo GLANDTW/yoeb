@@ -1,3 +1,64 @@
+//3.22©uªì¯]Ä_
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Stormshroud" && [StashItem] == "true"    //­·¼ÉÅ¢¸n ºñ
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Quickening Covenant" && [StashItem] == "true"  //´_µd»}¬ù ºñ
+[Type] == "Crimson Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Primordial Might" && [StashItem] == "true"   //¥ý¯ª¤O¶q ¬õ
+[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //ºD©Ê
+[Type] == "Cobalt Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Fertile Mind" && [StashItem] == "true"       //Â×´I¤ßÆF
+[Type] == "A Mother's Parting Gift" #     [StashItem] == "true" //±ÓÂà´¼¥d(¥À¿ËªºÂ§ª«)
+[Type] == "Viridian Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Unnatural Instinct" && [StashItem] == "true"     //¯«·P
+[Type] == "Cobalt Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Fortress Covenant" && [StashItem] == "true"     //°í¾À»}¬ù
+
+//3.22©uªìªZ¾¹
+[Type] == "Short Bow" && [Rarity] == "Unique" #    [UniqueName] == "Quill Rain" && [StashItem] == "true"    //¤p«B
+[Type] == "Prophecy Wand" && [Rarity] == "Unique" #   [UniqueName] == "Void Battery" && [StashItem] == "true"    //¹q¦À
+[Type] == "Assassin Bow" && [Rarity] == "Unique" # [UniqueName] == "Darkscorn" && [StashItem] == "true"	//©]§u ·t±þ¤}
+[Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"	//§Ù«ß¤§¼v «Ò°êÂù¤b¤P
+[Type] == "Fiend Dagger" && [Rarity] == "Unique" #    [UniqueName] == "Arakaali's Fang" && [StashItem] == "true"   //»jµï¤M
+[Type] == "Spine Bow" && [Rarity] == "Unique" #    [UniqueName] == "Voltaxic Rift" && [StashItem] == "true"   //Å]¼É
+[Type] == "Maata's Teaching Karui Sceptre" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	//º¿¶ðªº±Ð¾É ¥d¾|Åv§ú
+[Type] == "Ezomyte Staff" && [Rarity] == "Unique" # [UniqueName] == "The Fulcrum" && [StashItem] == "true"// ¤äÂI ¦ã¯÷³Áªø§ú
+[Type] == "Engraved Greatsword" && [Rarity] == "Unique" # [UniqueName] == "Rakiata's Dance" &&  [StashItem] == "true"//µÜ°ò¨È¶ðªº»R¨B
+
+//3.22©uªì¨¾¨ã
+[Type] == "Necromancer Silks" && [Rarity] == "Unique" #  [UniqueName] == "Fleshcrafter" && [StashItem] == "true"    //¤HÅé¦K®v
+[Type] == "Sadist Garb" && [Rarity] == "Unique" #    [UniqueName] == "Inpulsa's Broken Heart" && [StashItem] == "true" //¦L¤RÂÄ
+[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	//ÅF¤Ñ¹p
+[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" // //¥ì·çªº®â°ö
+[Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	//Íº°Ç»\³\ªº«æÄ¼
+[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	//¦æ«Í¨«¦×
+[Type] == "Bone Circlet" && [Rarity] == "Unique" # [UniqueName] == "Wraithlord" &&     [StashItem] == "true"//«Õ»îÀY
+//¹w¥ü
+[Type] == "Omen of Connections" # [StashItem] == "true"////6L¹w¥ü
+[Type] == "Omen of Blanching" # [StashItem] == "true"////1~3¥Õ¹w¥ü
+[Type] == "Omen of the Jeweller" # [StashItem] == "true"////6S¹w¥ü
+[Type] == "Omen of Fortune" # [StashItem] == "true" //	°]´I¤§¹w¥ü
+
+//3.22©uªì¶Ç°eªù
+[Type] == "Portal" #  [StashItem] == "true"//¶Ç°eªù
+
+//¤}½b¤â®M¸Ë//
+[Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//ºÖº¸ªº»·¨£
+[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//¦è¨½ªº¾Ô¦ç¬P¨°¥Ö¥Ò
+[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//©£©i¤§»î
+[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//·ù»}¤§¸ñ
+[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//¤Û±mµÙÂ´ ¸y±a
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//¨©¹p§Jªº¤õ»P¹p¤§¼Ö
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//¨©¹p§Jªº¦B»P¹p¤§¦±
+[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//¨©¹p§Jªº¦B»P¤õ¤§ºq
+[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//¤`ªÌ©I³ê µµ´¹§Ù«ü
+[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//¦è¨½ªº¯u²z
+[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//Àu¶®°gÃè
+
+
+//°g®c¸Ë//
+[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Springleaf" && [StashItem] == "true"	//·s¥Í¤§À²
+[Type] == "Topaz Ring" && [Rarity] == "Unique" # [UniqueName] == "Kikazaru" && [StashItem] == "true"	//°ò¥[ÂÄ¾|
+[Type] == "Agate Amulet" && [Rarity] == "Unique" # [UniqueName] == "Shaper's Seed" && [StashItem] == "true"	//¶ì¬ÉªÌ¤§¬ó
+[Type] == "Leather Belt" && [Rarity] == "Unique" # [UniqueName] == "Immortal Flesh" && [StashItem] == "true"	//¥Ã¥Í
+[Type] == "Basket Rapier" && [Rarity] == "Unique" # [UniqueName] == "Aurumvorax" && [StashItem] == "true"	//ÆFÅ@ ½mªZªÌ²Ó¼C
+[Type] == "Glorious Plate" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Heart" && [StashItem] == "true"	//©£©iªº§§§Ó
+
+
 //æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?//
 //æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?//
 //æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?////æ°´é?ä»”å?//
@@ -68,23 +129,6 @@
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500Å@¥Ò
 
 //¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï//¦a¹Ï
-
-
-[Type] == "Wharf Map" # [StashItem] == "true" //
-[Type] == "Mud Geyser Map" # [StashItem] == "true" //
-[Type] == "Crimson Temple Map" # [StashItem] == "true" //
-[Type] == "City Square Map" # [StashItem] == "true" //
-[Type] == "Cemetery Map" # StashItem] == "true" //
-[Type] == "Bazaar Map" # [StashItem] == "true" //
-[Type] == "Leyline Map" # [StashItem] == "true" //
-
-[Type]=="Wharf Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type]=="Crimson Temple Map"&& [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Mud Geyser Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "City Square Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Cemetery Map" # && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Bazaar Map" # && [MapTier] <= "13"  # [ForceSellItem] == "true"
-[Type]=="Leyline Map" # && [MapTier] <= "13 "# [ForceSellItem] == "true"
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
