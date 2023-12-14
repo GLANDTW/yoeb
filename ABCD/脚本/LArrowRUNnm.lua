@@ -155,9 +155,21 @@ SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
 SetTaskMiGongDataByLv(76,3)--大于等于80级 做迷宫3
 
-SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
-SetChangeLimitCnt("腰带",3)
-SetChangeLimitCnt("项链|戒指",3)
+SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",0)
+SetChangeLimitCnt("腰带",0)
+SetChangeLimitCnt("项链|戒指",0)
+
+g_yiJieLv=85				--够了多少级才去刷异界
+g_checkSellMapCnt=1		--地图超过这个数量才会检测出售地图
+g_destroyNoUseMap=false		--销毁上面设置不使用的地图 nil或false为不销毁
+g_mapUseFuHaoLv=76			--大于等于多少级对蓝图使用富豪石 nil为永远不使用
+g_mapUseZengFuLv=nil			--大于等于多少级对蓝图使用增幅石 nil为永远不使用
+g_mapUseDianJingLv=76		--大于等于多少级对白图使用点金石 nil为永远不使用
+g_mapUseTuiBianLv=72		--大于等于多少级对白图使用蜕变石 nil为永远不使用
+g_mapUseJiHuiLv=nil			--大于等于多少级对白图使用机会石 nil为永远不使用
+g_mapUseWaErLv=82			--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
+g_mapUseDingZiLv=nil			--大于等于多少级使用制图钉 nil为永远不使用
+g_noUseMapLv=0				--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
 
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
