@@ -58,11 +58,11 @@
 
 
 //藥水//
-//[Type] == "Divine Life Flask"&& [ItemLevel] >= "60" && [ItemLevel] <="100" # [StashItem] == "true" // 不朽生命藥劑
-//[Type] == "Silver Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
-//[Type] == "Diamond Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
-//[Type] == "Jade Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
-//[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
+//[Type] == "Divine Life Flask"&& [ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" // 不朽生命藥劑
+[Type] == "Silver Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
+[Type] == "Diamond Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
+[Type] == "Jade Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
+[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 
 
 //[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
@@ -102,21 +102,15 @@
 [Type]=="The Insane Cat" #[StashItem] == "true" //				魔血卡（有價）
 [Type]=="Ever-Changing" #[StashItem] == "true" //				
 [Type]=="A Dusty Memory" #[StashItem] == "true" //				
-		
 [Type]=="The Finishing Touch" #[StashItem] == "true" //				
-				
-				
 [Type]=="Fracturing Orb" #[StashItem] == "true" //				破裂石
 [Type]=="Fracturing Shard" #[StashItem] == "true" //				破裂石碎片
-			
- 
 [Type] == "Brother's Gift" # [StashItem] == "true" // 兄弟之贈 有價
 [Type] == "Soul Quenched" # [StashItem] == "true" // 靈魂安息 
 [Type] == "Poisoned Faith" # [StashItem] == "true" // 有毒信仰 初期有價
 [Type] == "A Chilling Wind" # [StashItem] == "true" // 凜冽之風 
 [Type] == "Matryoshka" # [StashItem] == "true" // 俄羅斯娃娃 有價				
 [Type] == "I See Brothers" # [StashItem] == "true"////破裂石兩顆卡
-
 //[Type] == "Divine Vessel" # [StashItem] == "true" //眾神容器
 
 //下面是3.19以前
@@ -179,7 +173,7 @@
 [Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//玻璃彈珠
 [Type] == "Blessed Orb" # [StashItem] == "true" //	//祝福石
 
-[Type] == "Forbidden Tome" "&& 	[ItemLevel] >= "84" # [StashItem] == "true" // 禁忌之書 
+[Type] == "Forbidden Tome" && 	[ItemLevel] >= "84" # [StashItem] == "true" // 禁忌之書 
 
 [Type] == "Singular Scouting Report" # [StashItem] == "true" //	//卓越偵查報告
 [Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//超凡偵查報告
