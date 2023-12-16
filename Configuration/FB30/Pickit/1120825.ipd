@@ -231,6 +231,11 @@
 //[Type] =="Writhing Invitation" #[StashItem] == "true" ////ÄñÂ¶¤§ÁÜ¤£¾ß¤£¦s­Ü
 
 
+[Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //¿i¤M
+[Type] == "Armourer's Scrap" # [StashItem] == "true" //Å@¥Ò
+[Type] == "Glassblower's Bauble" # [StashItem] == "true" //¬Á¼þ¼u¯]
+
+
 //©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò//
 
 [Type] == "Chaos Orb" # [StashItem] == "true"////²V¨P¥Û¬B¨ú¥B¦s­Ü
