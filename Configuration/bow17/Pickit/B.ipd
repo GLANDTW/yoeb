@@ -95,7 +95,7 @@
 //卡蘭德之觸
 [Type] == "Ring" && [Rarity] == "Unique" # 	[StashItem]	 == "true" // 
 [Type] == "Voidborn Reliquary Key" # 	[StashItem]	 == "true" // 虛誕鑰匙
-
+[Type] == "Valdo's Puzzle Box" # [StashItem] == "true" // 瓦爾多謎盒
 
 [Type]=="Divine Beauty" #[StashItem] == "true" //				神聖石卡（有價）
 [Type]=="The Wedding Gift" #[StashItem] == "true" //				蜘蛛刀卡（有價）
