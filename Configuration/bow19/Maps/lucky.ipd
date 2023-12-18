@@ -1,9 +1,20 @@
 
 [Type] == "Crimson Temple Map" # [RunMap] == "true" //
 [Type] == "Temple Map" # [RunMap] == "true" //
+[Type] == "Canyon Map" # [RunMap] == "true" //	//ª¥¶§®l¨¦
+[Type] == "Orchard Map" # [RunMap] == "true" //	//±KªLªG¶é
+[Type] == "City Square Map" # [RunMap] == "true" //	//¦M«°¼s³õ
+[Type] == "Bog Map" # [RunMap] == "true" //	//¿`®ðªdªh
+
+
 
 [Type] == "Crimson Temple Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Temple Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Canyon Map" # [ExitAfterBossKill] == "true" //	//ª¥¶§®l¨¦
+[Type] == "Orchard Map" # [ExitAfterBossKill] == "true" //	//±KªLªG¶é
+[Type] == "City Square Map" # [ExitAfterBossKill] == "true" //	//¦M«°¼s³õ
+[Type] == "Bog Map" # [ExitAfterBossKill] == "true" //	//¿`®ðªdªh
+
 
 // Upgrade to BLUE
 //[Rarity] == "Normal" #[UpgradeToMagic] == "true"
