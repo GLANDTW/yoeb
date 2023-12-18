@@ -5,7 +5,7 @@
 [Type] == "City Square Map" # [RunMap] == "true" //	//¦M«°¼s³õ
 [Type] == "Bog Map" # [RunMap] == "true" //	//¿`®ðªdªh
 
-[Type] == "City Square Map" # [RunMap] == "true" //¥­³»
+[Type] == "Mesa Map" # [RunMap] == "true" //¥­³»
 [Type] == "Jungle Valley Map" # [RunMap] == "true" //¼@¬rªL¨¦
 [Type] == "Arid Lake Map" # [RunMap] == "true" //°®¬\´ò©¤
 
@@ -18,7 +18,7 @@
 [Type] == "Bog Map" # [ExitAfterBossKill] == "true" //	//¿`®ðªdªh
 
 
-[Type] == "City Square Map" # [ExitAfterBossKill] == "true" //¥­³»
+[Type] == "Mesa Map" # [ExitAfterBossKill] == "true" //¥­³»
 [Type] == "Jungle Valley Map" # [ExitAfterBossKill] == "true" //¼@¬rªL¨¦
 [Type] == "Arid Lake Map" # [ExitAfterBossKill] == "true" //°®¬\´ò©¤
 
