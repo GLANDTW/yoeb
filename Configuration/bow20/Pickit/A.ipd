@@ -197,7 +197,7 @@
 [Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//玻璃彈珠
 [Type] == "Blessed Orb" # [StashItem] == "true" //	//祝福石
 
-[Type] == "Forbidden Tome" && 	[ItemLevel] >= "84" # [StashItem] == "true" // 禁忌之書 
+[Type] == "Forbidden Tome" # [StashItem] == "true" // 禁忌之書 
 
 [Type] == "Singular Scouting Report" # [StashItem] == "true" //	//卓越偵查報告
 [Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//超凡偵查報告
