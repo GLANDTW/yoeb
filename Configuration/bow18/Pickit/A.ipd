@@ -72,6 +72,12 @@
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
 
 
+[Type] == "Mesa Map"  # [StashItem] == "true" //平頂
+[Type] == "Jungle Valley Map"  # [StashItem] == "true" //劇毒林谷
+[Type] == "Arid Lake Map"  # [StashItem] == "true" //乾枯湖岸
+
+
+
 [Type] == "Temple Map" && [Rarity] == "Magic" # [StashItem] == "true" //奪魂之殿
 [Type] == "Crimson Temple Map"&& [Rarity] == "Magic" # [StashItem] == "true" //緋紅神殿
 [Type] == "City Square Map" && [Rarity] == "Magic" # [StashItem] == "true" //危城廣場
