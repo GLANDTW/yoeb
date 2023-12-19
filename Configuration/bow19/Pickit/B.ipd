@@ -72,8 +72,30 @@
 //地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖//地圖
 
 
-//[Type] == "Temple Map" # [StashItem] == "true" // 奪魂之殿
-[Type] == "Crimson Temple Map" # [StashItem] == "true" // 緋紅神殿
+//[Type] == "Mesa Map"  # [StashItem] == "true" //平頂
+//[Type] == "Jungle Valley Map"  # [StashItem] == "true" //劇毒林谷
+[Type] == "Arid Lake Map"  # [StashItem] == "true" //乾枯湖岸
+
+
+
+//[Type] == "Temple Map" && [Rarity] == "Magic" # [StashItem] == "true" //奪魂之殿
+//[Type] == "Crimson Temple Map"&& [Rarity] == "Magic" # [StashItem] == "true" //緋紅神殿
+//[Type] == "City Square Map" && [Rarity] == "Magic" # [StashItem] == "true" //危城廣場
+//[Type] == "Bog Map" && [Rarity] == "Magic" # [StashItem] == "true" //瘴氣泥沼
+
+//[Type] == "Mesa Map" && [Rarity] == "Magic" # [StashItem] == "true" //平頂
+//[Type] == "Jungle Valley Map" && [Rarity] == "Magic" # [StashItem] == "true" //劇毒林谷
+[Type] == "Arid Lake Map" && [Rarity] == "Magic" # [StashItem] == "true" //乾枯湖岸
+
+//[Type] == "Temple Map" && [Rarity] == "Normal" # [StashItem] == "true" //奪魂之殿
+[Type] == "Crimson Temple Map"&& [Rarity] == "Normal" # [StashItem] == "true" //緋紅神殿
+//[Type] == "City Square Map" && [Rarity] == "Normal" # [StashItem] == "true" //危城廣場
+//[Type] == "Bog Map" && [Rarity] == "Normal" # [StashItem] == "true" //瘴氣泥沼
+
+//[Type] == "Mesa Map" && [Rarity] == "Normal" # [StashItem] == "true" //平頂
+//[Type] == "Jungle Valley Map" && [Rarity] == "Normal" # [StashItem] == "true" //劇毒林谷
+[Type] == "Arid Lake Map" && [Rarity] == "Normal" # [StashItem] == "true" //乾枯湖岸
+
 
 [Type] == "Temple Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
 [Type]=="Crimson Temple Map"&& [MapTier] <= "13" # [ForceSellItem] == "true"

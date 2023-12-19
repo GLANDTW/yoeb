@@ -73,28 +73,28 @@
 
 
 
-//[Type] == "Mesa Map"  # [StashItem] == "true" //¥­³»
-//[Type] == "Jungle Valley Map"  # [StashItem] == "true" //¼@¬rªL¨¦
+[Type] == "Mesa Map"  # [StashItem] == "true" //¥­³»
+[Type] == "Jungle Valley Map"  # [StashItem] == "true" //¼@¬rªL¨¦
 [Type] == "Arid Lake Map"  # [StashItem] == "true" //°®¬\´ò©¤
 
 
 
-//[Type] == "Temple Map" && [Rarity] == "Magic" # [StashItem] == "true" //¹Ü»î¤§·µ
-//[Type] == "Crimson Temple Map"&& [Rarity] == "Magic" # [StashItem] == "true" //ãn¬õ¯«·µ
-//[Type] == "City Square Map" && [Rarity] == "Magic" # [StashItem] == "true" //¦M«°¼s³õ
-//[Type] == "Bog Map" && [Rarity] == "Magic" # [StashItem] == "true" //¿`®ðªdªh
+[Type] == "Temple Map" && [Rarity] == "Magic" # [StashItem] == "true" //¹Ü»î¤§·µ
+[Type] == "Crimson Temple Map"&& [Rarity] == "Magic" # [StashItem] == "true" //ãn¬õ¯«·µ
+[Type] == "City Square Map" && [Rarity] == "Magic" # [StashItem] == "true" //¦M«°¼s³õ
+[Type] == "Bog Map" && [Rarity] == "Magic" # [StashItem] == "true" //¿`®ðªdªh
 
-//[Type] == "Mesa Map" && [Rarity] == "Magic" # [StashItem] == "true" //¥­³»
-//[Type] == "Jungle Valley Map" && [Rarity] == "Magic" # [StashItem] == "true" //¼@¬rªL¨¦
+[Type] == "Mesa Map" && [Rarity] == "Magic" # [StashItem] == "true" //¥­³»
+[Type] == "Jungle Valley Map" && [Rarity] == "Magic" # [StashItem] == "true" //¼@¬rªL¨¦
 [Type] == "Arid Lake Map" && [Rarity] == "Magic" # [StashItem] == "true" //°®¬\´ò©¤
 
-//[Type] == "Temple Map" && [Rarity] == "Normal" # [StashItem] == "true" //¹Ü»î¤§·µ
+[Type] == "Temple Map" && [Rarity] == "Normal" # [StashItem] == "true" //¹Ü»î¤§·µ
 [Type] == "Crimson Temple Map"&& [Rarity] == "Normal" # [StashItem] == "true" //ãn¬õ¯«·µ
-//[Type] == "City Square Map" && [Rarity] == "Normal" # [StashItem] == "true" //¦M«°¼s³õ
-//[Type] == "Bog Map" && [Rarity] == "Normal" # [StashItem] == "true" //¿`®ðªdªh
+[Type] == "City Square Map" && [Rarity] == "Normal" # [StashItem] == "true" //¦M«°¼s³õ
+[Type] == "Bog Map" && [Rarity] == "Normal" # [StashItem] == "true" //¿`®ðªdªh
 
-//[Type] == "Mesa Map" && [Rarity] == "Normal" # [StashItem] == "true" //¥­³»
-//[Type] == "Jungle Valley Map" && [Rarity] == "Normal" # [StashItem] == "true" //¼@¬rªL¨¦
+[Type] == "Mesa Map" && [Rarity] == "Normal" # [StashItem] == "true" //¥­³»
+[Type] == "Jungle Valley Map" && [Rarity] == "Normal" # [StashItem] == "true" //¼@¬rªL¨¦
 [Type] == "Arid Lake Map" && [Rarity] == "Normal" # [StashItem] == "true" //°®¬\´ò©¤
 
 //½æ¹Ï³]©w//
