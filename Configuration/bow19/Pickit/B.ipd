@@ -191,15 +191,11 @@
 [Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 [Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助
 [Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//磨刀石
-[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//護甲片
-[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//玻璃彈珠
-[Type] == "Blessed Orb" # [StashItem] == "true" //	//祝福石
+//[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//護甲片
+//[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//玻璃彈珠
+//[Type] == "Blessed Orb" # [StashItem] == "true" //	//祝福石
 
 [Type] == "Forbidden Tome" && 	[ItemLevel] >= "84" # [StashItem] == "true" // 禁忌之書 
-
-[Type] == "Singular Scouting Report" # [StashItem] == "true" //	//卓越偵查報告
-[Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//超凡偵查報告
-[Type] == "Influenced Scouting Report" # [StashItem] == "true" //	//勢力偵查報告
 
 //[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
 //[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
