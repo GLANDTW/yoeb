@@ -27,6 +27,7 @@
 [Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	//芮勒蓋許的急躁
 [Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	//行屍走肉
 [Type] == "Bone Circlet" && [Rarity] == "Unique" # [UniqueName] == "Wraithlord" &&     [StashItem] == "true"//幽魂頭
+[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" // 白狼頭
 //預兆
 [Type] == "Omen of Connections" # [StashItem] == "true"////6L預兆
 [Type] == "Omen of Blanching" # [StashItem] == "true"////1~3白預兆
