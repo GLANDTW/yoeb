@@ -195,8 +195,7 @@
 //[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//玻璃彈珠
 //[Type] == "Blessed Orb" # [StashItem] == "true" //	//祝福石
 
-[Type] == "Forbidden Tome" && 	[ItemLevel] >= "84" # [StashItem] == "true" // 禁忌之書 
-
+[Type] == "Forbidden Tome" # [StashItem] == "true" // 禁忌之書 
 //[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
 //[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
 
