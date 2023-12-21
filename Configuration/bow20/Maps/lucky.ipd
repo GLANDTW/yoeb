@@ -4,14 +4,16 @@
 [Type] == "Jungle Valley Map" # [RunMap] == "true" //
 [Type] == "Arid Lake Map" # [RunMap] == "true" //
 [Type] == "Mesa Map" # [RunMap] == "true" //
-
+[Type] == "City Square Map" # [RunMap] == "true" //危城廣場
+[Type] == "Bog Map"  # [RunMap] == "true" //瘴氣泥沼
 
 [Type] == "Crimson Temple Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Temple Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Jungle Valley Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Arid Lake Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Mesa Map" # [ExitAfterBossKill] == "true" //
-
+[Type] == "City Square Map" # [ExitAfterBossKill] == "true" //危城廣場
+[Type] == "Bog Map"  # [ExitAfterBossKill] == "true" //瘴氣泥沼
 
 // Upgrade to BLUE
 //[Rarity] == "Normal" #[UpgradeToMagic] == "true"
