@@ -249,7 +249,7 @@
 
 [Type] == "Fire Of Unknown Origin" # [StashItem] == "true"// 3.22尼米斯卡
 [Type] == "The Fortunate" # [StashItem] == "true"// 3.22神聖卡
-
+[Type] == "Defiance of Destiny" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	//拒絕命運
 
 [Type] == "The Apothecary" #[StashItem] == "true"////(魔血 5/5)拾取且存倉
 [Type] =="Incandescent Invitation" #[StashItem] == "true" ////熾熱之邀拾取且存倉
