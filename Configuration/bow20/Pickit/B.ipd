@@ -297,7 +297,7 @@
 [Type] == "Unrequited Love" # [StashItem] == "true" //單相思 (鏡碎片*19)
 [Type] == "Winter's Embrace" # [ForceSellItem] == "true" //恐懼戒指卡
 [Type] == "A Chilling Wind" # [ForceSellItem] == "true" //21/20瓦爾霜暴卡
-
+[Type] == "Defiance of Destiny" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	//拒絕命運
 
 //[Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Unique"  #[ForceSellItem] == "true" // //傳奇地圖傳奇地圖不撿，傳奇地圖售出
 
