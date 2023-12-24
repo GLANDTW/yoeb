@@ -74,7 +74,7 @@
 
 
 [Type] == "Mesa Map"  # [StashItem] == "true" //¥­³»
-//[Type] == "Jungle Valley Map"  # [StashItem] == "true" //¼@¬rªL¨¦
+[Type] == "Jungle Valley Map"  # [StashItem] == "true" //¼@¬rªL¨¦
 [Type] == "Arid Lake Map"  # [StashItem] == "true" //°®¬\´ò©¤
 
 
