@@ -5,7 +5,7 @@
 //[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inertia" && [StashItem] == "true" //慣性
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Unnatural Instinct" && [StashItem] == "true"     //神感
 [Type] == "Cobalt Jewel" && [Rarity] == "Unique" #    [UniqueName] == "Fortress Covenant" && [StashItem] == "true"     //堅壁誓約
-
+[Type] == "Niko's Memory" # [StashItem] == "true" //	//尼科的記憶 本季限定罪魂
 //3.22季初武器//
 //[Type] == "Short Bow" && [Rarity] == "Unique" #    [UniqueName] == "Quill Rain" && [StashItem] == "true"    //小雨
 //[Type] == "Prophecy Wand" && [Rarity] == "Unique" #   [UniqueName] == "Void Battery" && [StashItem] == "true"    //電池
