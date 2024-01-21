@@ -1,3 +1,13 @@
+[Type] == "Blueprint: Bunker" # [StashItem] == "true" //	//藍圖：碉堡
+[Type] == "Blueprint: Laboratory" # [StashItem] == "true" //	//藍圖：實驗室
+[Type] == "Blueprint: Prohibited Library" # [StashItem] == "true" //	//藍圖：禁忌館藏
+[Type] == "Blueprint: Records Office" # [StashItem] == "true" //	//藍圖：紀錄室
+[Type] == "Blueprint: Repository" # [StashItem] == "true" //	//藍圖：展覽室
+[Type] == "Blueprint: Smuggler's Den" # [StashItem] == "true" //	//藍圖：走私者巢穴
+[Type] == "Blueprint: Tunnels" # [StashItem] == "true" //	//藍圖：地道
+[Type] == "Blueprint: Underbelly" # [StashItem] == "true" //	//藍圖：地下道
+[Type] == "Blueprint: Mansion" # [StashItem] == "true" //	//藍圖：官邸
+
 //3.22季初珠寶
 //[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Stormshroud" && [StashItem] == "true"    //風暴籠罩 綠
 //[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Quickening Covenant" && [StashItem] == "true"  //復甦誓約 綠
