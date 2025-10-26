@@ -19,7 +19,10 @@ SetUseZhuangBeiTypeData("Str|StrInt|Int","手套")
 SetUseZhuangBeiTypeData("Str|StrDex|Dex","鞋子")
 SetUseZhuangBeiTypeData("StrInt","项链")
 
-g_attackDis=30			--攻击距离
+g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
+g_timeOut=20*60					--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
+
+g_attackDis=50				--攻击距离
 g_duobiHpVal=0.2
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
@@ -30,34 +33,45 @@ g_duobiHpVal=0.2
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 
 SetNeedSkillLineData(93,"燃燒箭矢,nil|氣勢輔助,nil",2,nil,nil)
-SetNeedSkillLineData(94,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,30)
-SetNeedSkillLineData(95,"魔改箭矢輔助,nil|狂怒,nil|暴擊獲得暴擊球輔助,nil|冰霜射擊,nil",nil,nil,nil)
-SetNeedSkillLineData(96,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
+SetNeedSkillLineData(96,"火砲砲塔,nil|元素攻擊傷害輔助,nil|快速攻擊輔助,nil|多重圖騰輔助,nil",nil,nil,nil)
+--綠紅綠紅
+SetNeedSkillLineData(90,"魔改箭矢輔助,nil|狂怒,nil|暴擊獲得暴擊球輔助,nil|冰霜射擊,nil",nil,nil,nil)
+--綠綠藍綠
+SetNeedSkillLineData(98,"鋼筋鐵骨,nil|元素淨化,nil|憤怒,nil",nil,nil,nil)
+--紅藍紅
 SetNeedSkillLineData(97,"狙擊者印記,nil|召喚寒冰魔像,nil|擊中時印記輔助,nil",nil,nil,nil)
-SetNeedSkillLineData(98,"彈片砲塔,nil|快速攻擊輔助,nil|猛毒投射物輔助,nil|齊射輔助,nil",30,nil,nil)
-SetNeedSkillLineData(99,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",16,nil,nil)
-SetNeedSkillLineData(100,"閃電箭矢,nil,1|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,12)
+--綠綠綠
+SetNeedSkillLineData(99,"電流箭矢,nil|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|幻影射手輔助,nil|三體輔助,nil|附加火焰傷害輔助,nil",nil,nil,nil)
+--綠綠紅綠藍紅
+--SetNeedSkillLineData(100,"閃電箭矢,nil,1|附加冰冷傷害輔助,nil|元素攻擊傷害輔助,nil|三體輔助,nil|啟發輔助,nil|幻影射手輔助,nil|附加火焰傷害輔助,nil",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,15)
+
+
+--綠紅綠紅
+--綠綠藍綠
+--紅藍紅
+--綠綠綠
+--綠綠紅綠藍紅
+
+
 
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
-AddAttackSkillData("閃電箭矢","Lightning Arrow",false,100,0)--添加攻击技能
-AddAttackSkillData("電流箭矢","Galvanic Arrow",false,50,0)--添加攻击技能
+AddAttackSkillData("電流箭矢","Galvanic Arrow",false,60,0)--添加攻击技能
 AddAttackSkillData("燃燒箭矢","Burning Arrow")
 AddAttackSkillData("普通攻击","melee")
+SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
-SetDebuffSkill(nil,"snipers_mark",nil,"curse_snipers_mark")--狙擊者印記
-SetSkillLimitMaxLv("鋼筋鐵骨",nil,14)
+SetSkillLimitMaxLv("鋼筋鐵骨",nil,10)
 
 -- SetYiJieZhaoHuanLingTiData(mapClassName,name,className)--设置异界时召唤的灵体数据 mapClassName=剧情图类名 name=灵体名 className=灵体类名
 
---药瓶摆放
 --SetNeedFlaskData(pos,flask,modsData,minLv)--设置药瓶摆放
-SetNeedFlaskData(1,"生命药剂","熱情洋溢的,FlaskPartialInstantRecovery3|密封之,FlaskBleedCorruptingBloodImmunity1",90)
-SetNeedFlaskData(2,"魔力药剂","耐久的,FlaskEffectNotRemovedOnFullMana1|奧術師之FlaskBuffReducedManaCostWhileHealing4",90)
-SetNeedFlaskData(3,"宝钻药剂","nil")
-SetNeedFlaskData(4,"紫晶药剂","nil")
-SetNeedFlaskData(5,"水银药剂","nil")
+SetNeedFlaskData(1,"生命药剂","nil")
+SetNeedFlaskData(2,"生命药剂","nil")
+SetNeedFlaskData(3,"水银药剂","nil")
+SetNeedFlaskData(4,"魔力药剂","nil")
+SetNeedFlaskData(5,"魔力药剂","nil")
 
 
 g_addHpVal=0.7--HP低于多少吃红药
@@ -94,10 +108,25 @@ SetAtuoChangeEquipData("游侠","弓","local_maximum_added_lightning_damage",5)--
 --游侠
 
 
---游侠--孔色
+--綠紅綠紅
+--綠綠藍綠
+--紅藍紅
+--綠綠綠
+--綠綠紅綠藍紅--衣服
+
+--zbPos 数字型 装备部位 2为衣服 3为主武器 4为副武器 5为头盔 6为项链 7为左戒指 8为右戒指 9为护手 10为鞋子 11为腰带
+--redCnt 数字型 红洞数量
+--greenCnt 数字型 绿洞数量
+--buleCnt 数字型 蓝洞数量
+--nType=有效场景 数字型 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
+--val 数字型 这一套孔色数据的分数，可填nil忽略 默认为100
+--needLine 逻辑型 是否相连了才算 true为是 nil或false为不是 可填nil忽略
+--紅綠藍
+
+--游侠--孔色衣服
 SetZhengTiColorVarData(2,2,3,1,nil,800,true)
-SetZhengTiColorVarData(2,2,2,1,nil,700,true)
-SetZhengTiColorVarData(2,1,3,1,nil,600,true)
+SetZhengTiColorVarData(2,1,3,1,nil,700,true)
+SetZhengTiColorVarData(2,0,3,1,nil,600,true)
 SetZhengTiColorVarData(2,1,2,1,nil,500,true)
 SetZhengTiColorVarData(2,1,3,0,nil,400,true)
 SetZhengTiColorVarData(2,1,2,0,nil,300,true)
@@ -107,33 +136,35 @@ SetZhengTiColorVarData(2,1,1,0,nil,150,true)
 SetZhengTiColorVarData(2,0,1,0,nil,100)
 SetZhengTiColorVarData(2,1,0,0,nil,60)
 SetZhengTiColorVarData(2,0,0,1,nil,50)
-
+--武器
 SetZhengTiColorVarData(3,0,5,1,nil,600,true)
 SetZhengTiColorVarData(3,0,4,1,nil,500,true)
 SetZhengTiColorVarData(3,0,3,1,nil,400,true)
 SetZhengTiColorVarData(3,0,3,0,nil,300,true)
+SetZhengTiColorVarData(3,1,2,0,nil,250,true)
 SetZhengTiColorVarData(3,0,2,0,nil,200,true)
 SetZhengTiColorVarData(3,0,1,0,nil,10)
-
+--富武器
 SetZhengTiColorVarData(4,3,0,0,nil,300,true)
 SetZhengTiColorVarData(4,2,0,0,nil,200,true)
 SetZhengTiColorVarData(4,1,0,0,nil,100)
-
+--頭盔
 SetZhengTiColorVarData(5,0,3,1,nil,400,true)
 SetZhengTiColorVarData(5,0,3,0,nil,300,true)
 SetZhengTiColorVarData(5,0,2,0,nil,200,true)
 SetZhengTiColorVarData(5,0,1,0,nil,100)
-
-SetZhengTiColorVarData(9,3,0,1,nil,500,true)
-SetZhengTiColorVarData(9,2,0,2,nil,400,true)
-SetZhengTiColorVarData(9,2,0,1,nil,300,true)
-SetZhengTiColorVarData(9,1,0,1,nil,200,true)
+--手套
+SetZhengTiColorVarData(9,2,2,0,nil,500,true)
+SetZhengTiColorVarData(9,2,1,0,nil,400,true)
+SetZhengTiColorVarData(9,1,2,0,nil,300,true)
+SetZhengTiColorVarData(9,0,2,0,nil,200,true)
 SetZhengTiColorVarData(9,0,0,1,nil,100)
 
-SetZhengTiColorVarData(10,2,2,0,nil,400,true)
-SetZhengTiColorVarData(10,1,2,0,nil,300,true)
-SetZhengTiColorVarData(10,0,2,0,nil,200,true)
-SetZhengTiColorVarData(10,0,1,0,nil,100)
+--鞋子
+SetZhengTiColorVarData(10,2,0,1,nil,400,true)
+SetZhengTiColorVarData(10,1,0,1,nil,300,true)
+SetZhengTiColorVarData(10,2,0,0,nil,200,true)
+SetZhengTiColorVarData(10,1,0,0,nil,100)
 
 
 
@@ -147,6 +178,8 @@ AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMa
 --高级换装设置
 SetGaoJiHuanZhuangData("游侠","簡易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","無盡之衣","Tabula Rasa",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
 SetGaoJiHuanZhuangData("游侠","皮帽","Metadata/Items/Armours/Helmets/HelmetDex1","金縷帽","Goldrim",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+SetGaoJiHuanZhuangData("游侠","短弓","MMetadata/Items/Weapons/TwoHandWeapons/Bows/Bow2","驟雨之弦","Quill Rain",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,5000)
+
 
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
@@ -154,7 +187,7 @@ SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a8q7级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
-SetTaskMiGongDataByLv(76,3)--大于等于80级 做迷宫3
+SetTaskMiGongDataByLv(82,3)--大于等于80级 做迷宫3
 
 SetChangeLimitCnt("武器|衣服|头盔|手套|鞋子",2)
 SetChangeLimitCnt("腰带",3)
@@ -167,3 +200,9 @@ SetNeedAddTianFu("游侠=attack_speed568-投射物傷害和命中|dexterity990-敏捷|dexter
 SetNeedAddTianFu("游侠升华=AscendancyDeadeye3-投射物傷害、攻擊速度|AscendancyDeadeye14-集風|AscendancyDeadeye5-投射物傷害、命中率|AscendancyDeadeye4-彈射|AscendancyDeadeye17-投射物傷害、命中率|AscendancyDeadeye6-無限彈藥|AscendancyDeadeye19-投射物傷害、攻擊速度|AscendancyDeadeye20_-風之守衛|") 
 
 
+
+
+SetSellGoodsData("冰川山丘","Metadata/Items/Maps/MapWorldsGorge",1,"0|1|2|")
+SetSellGoodsData("怒浪之港","Metadata/Items/Maps/MapWorldsPier",1,"0|1|2|")
+SetSellGoodsData("骨跡陵墓","Metadata/Items/Maps/MapWorldsBoneCrypt",1,"0|1|2|")
+SetSellGoodsData("洪災礦坑","Metadata/Items/Maps/MapWorldsFloodedMine",1,"0|1|2|")

@@ -23,7 +23,7 @@ SetDebuffSkill(nil,"izaro_temporal_chains",nil,"curse_temporal_chains")--Ê±¿ÕËøÁ
 SetDebuffSkill(nil,"izaro_vulnerability",nil,"curse_vulnerability")--´àÈõ
 SetDebuffSkill(nil,"izaro_elemental_weakness",nil,"curse_elemental_weakness")--ÔªËØÒªº¦
 SetDebuffSkill(nil,"despair",nil,"curse_chaos_weakness")--¾øÍû
-SetDebuffSkill(nil,"minion_focus_fire",nil,"minion_focussed_fire_target",10)--ÍöÓ¡
+SetDebuffSkill(nil,"minion_focus_fire",nil,"minion_focussed_fire_target","2|3")--ÍöÓ¡
 
 
 --SetUseTuTengData(className,ttClassName,dis,useDis,monHouMian)--ÉèÖÃÍ¼ÌÚÓĞĞ§·¶Î§¸ú·ÅÖÃ¾àÀë
@@ -32,17 +32,22 @@ SetDebuffSkill(nil,"minion_focus_fire",nil,"minion_focussed_fire_target",10)--Íö
 --dis Í¼ÌÚÓĞĞ§·¶Î§ Êı×ÖĞÍ ¿ÉÌînilºöÂÔ Ä¬ÈÏÎª 50 ÀëÄ¿±ê¹ÖÎï 50ÒÔÄÚ¾ÍËãÊÍ·ÅÁËÕâ¸öÍ¼ÌÚ
 --useDis Í¼ÌÚÀë¹ÖÊÍ·Å¾àÀë Êı×ÖĞÍ ¿ÉÌînilºöÂÔ Ä¬ÈÏÎª35  
 --monHouMian ÊÇ·ñ·ÅÔÚ¹ÖºóÃæ Âß¼­ĞÍ trueÎªÊÇ falseÓënilÎª²»ÊÇ ¿ÉÌînilºöÂÔ
+
 SetUseTuTengData("totem_taunt","Metadata/Monsters/Totems/TauntTotem",nil,nil,true)--ÓÕ¶üÍ¼ÌÚ
 SetUseTuTengData("ancestor_totem_slam","Metadata/Monsters/Totems/SlamTotem",35,nil,true)--ÏÈ×æÕ½Ê¿³¤
 SetUseTuTengData("totem_melee","Metadata/Monsters/Totems/MeleeTotem",35,nil,true)--ÏÈ×æÎÀÊ¿
 SetUseTuTengData("totem_life_regen","Metadata/Monsters/Totems/LifeRegenTotem")--»Ø´ºÍ¼ÌÚ
 SetUseTuTengData("totem_consume_corpse","Metadata/Monsters/Totems/ConsumeCorpseTotem")--ÍÌÊÉÍ¼ÌÚ
 SetUseTuTengData("flame_totem_channelled","Metadata/Monsters/Totems/HolyFireSprayTotem")--Ê¥ÑæÍ¼ÌÚ
+SetUseTuTengData("holy_flame_totem","Metadata/Monsters/Totems/HolyFireSprayTotem")--Ê¥ÑæÍ¼ÌÚ
 SetUseTuTengData("totem_earthquake","Metadata/Monsters/Totems/EarthquakeTotem")--Õğ²¨Í¼ÌÚ
 SetUseTuTengData("searing_bond","Metadata/Monsters/Totems/SearingBondTotem",nil,nil,true)--ÖËÈÈÁ¬½Ó Í¼ÌÚÊıÁ¿£ºskill_display_number_of_traps_allowed
 SetUseTuTengData("shrapnel_ballista_totem","Metadata/Monsters/Totems/ShotgunTotem")--É¢ÉäæåÅÚ
 SetUseTuTengData("siege_ballista","Metadata/Monsters/Totems/SnipeTotem")--¹¥³ÇÅÚÌ¨
-SetUseTuTengData("artillery_ballista_totem","Metadata/Monsters/Totems/MortarTotem")--»ğÁ¦åóÅÚ
+SetUseTuTengData("artillery_ballista","Metadata/Items/Gems/SkillGemArtilleryBallista",nil,nil,nil)--»ğÁ¦åóÅÚ
+SetUseTuTengData("shrapnel_ballista","Metadata/Items/Gems/SkillGemShrapnelBallista",nil,nil,nil)--—Æ¬³hËş
+
+
 
 --AddUseSkillData(useType,name,className,buffName,buffClassName,funcNeedUse)--Ôö¼ÓÊ¹ÓÃÒ»°ãµÄ¼¼ÄÜ³¡¾° useType=Ê¹ÓÃ³¡¾° 0=×ßÂ·Ê±Ê¹ÓÃ 1=´ò¹ÖÊ±Ê¹ÓÃ 2=ÄÜÓÃÁË¾ÍÓÃ
 --useType=Ê¹ÓÃ³¡¾° Êı×ÖĞÍ 0=×ßÂ·Ê±Ê¹ÓÃ 1=´ò¹ÖÊ±Ê¹ÓÃ 2=ÄÜÓÃÁË¾ÍÓÃ
@@ -59,7 +64,7 @@ AddUseSkillData(1,"¸ÖÌúÖ®·ô","steelskin")
 AddUseSkillData(1,"ÏÊÑª¿ñÅ­","blood_rage")
 AddUseSkillData(1,"±©·çÖ®¶Ü","tempest_shield","±©·çÖ®¶Ü","lightning_shield")
 AddUseSkillData(1,"µzÄÜÅûïL","arcane_cloak")
-AddUseSkillData(1,"¼á¾öÕ½ºğ","enduring_cry")
+AddUseSkillData(2,"¼á¾öÕ½ºğ","enduring_cry",nil,nil,function(sk,me)local hpf=me.hp/me.maxHp;local needUse=hpf<0.8;MYTRACE1("-----------------hpf:%g needUse:%s",hpf,tostring(needUse))return needUse --[[me.hp/me.maxHp<0.7]] end)
 AddUseSkillData(1,"¼¤ÀøÕ½ºğ","inspiring_cry")
 AddUseSkillData(1,"ÉîÔ¨Õ½ºğ","abyssal_cry")
 AddUseSkillData(1,"ÍşÏÅÕ½ºğ","intimidating_cry")
@@ -76,6 +81,7 @@ AddUseSkillData(1,"ÎÁÒßÊ¹Í½","corrosive_shroud",nil,nil,g_funcCheckWyst)
 --buffName=buffÃû 			¿ÉÌînilºöÂÔ µ«ÒªÈ·±£buffÀàÃûÌî¶Ô
 --buffClassName=buffÀàÃû 	¿ÉÌînilºöÂÔ µ«ÒªÈ·±£buffÃû×ÖÌî¶Ô   Èç¹ûbuffÃû»òÀàÃûÓë¼¼ÄÜÃû»òÀàÃû²»Ò»Ñù¾ÍĞèÒªÌîbuffµÄÃû»òÀàÃû
 --funcNeedUse=Ê¹ÓÃµÄ¼ì²âº¯Êı£¬ÄãÃÇ²»ĞèÒªÌî£¬ÊÇ¸ø×÷ÕßÓÃÀ´Ìí¼ÓÌØÊâ¼¼ÄÜµÄ½Ó¿Ú ÌînilºöÂÔ
+
 SetUseBuffSkill("·¨Êõ»ØÒô","spellslinger",nil,nil,g_funcCheckFshy)
 
 SetUseBuffSkill("Õ½Æì","banner_war","Õ÷‘ğÖ®Æì","bloodstained_banner_buff_aura")
@@ -90,7 +96,7 @@ SetUseBuffSkill("éWëŠÖ®½İ","herald_of_thunder")--
 SetUseBuffSkill("˜OµØÑb¼×","arctic_armour")
 SetUseBuffSkill("ÑªÓëÉ³","blood_sand_stance","Ñª×ËÌ¬","blood_stance")--É³×ËÌ¬,"sand_stance"
 SetUseBuffSkill("ÑªÈâÓëÑÒÊ¯","blood_sand_armour","ÑªÈâ","blood_armour")--ÑÒÊ¯,"sand_armour"
-SetUseBuffSkill("ÔªËØ¾»»¯","purity","ÔªËØ¾»»¯¹â»·","player_aura_resists")--
+SetUseBuffSkill("ÔªËØ¾»»¯","purity_of_elements","ÔªËØ¾»»¯¹â»·","player_aura_resists")--
 SetUseBuffSkill("»ğÑæœQ»¯","fire_resist_aura","»ğÑæœQ»¯¹â­h","player_aura_fire_resist")--
 SetUseBuffSkill("·ßÅ­","anger","·ßÅ­¹â»·","player_aura_fire_damage")--
 
