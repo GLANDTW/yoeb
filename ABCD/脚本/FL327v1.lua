@@ -34,15 +34,16 @@ g_useMoveSkillType=nil
 SetNeedSkillLineData(93,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
 SetNeedSkillLineData(94,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(95,"灰燼之捷,nil|純淨之捷,nil|撲殺輔助,nil",nil,nil,nil)
-SetNeedSkillLineData(95,"威嚇戰吼,nil|緊急詔令輔助,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil)
-SetNeedSkillLineData(99,"躍擊,nil|快速攻擊輔助,nil|脆弱詛咒,nil",nil,nil,nil)
-SetNeedSkillLineData(100,"大地震擊,nil|殘暴輔助,nil|近身戰輔助,nil|近戰物理傷害輔助,nil|拳霸輔助,nil|機率流血輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(96,"威嚇戰吼,nil|緊急詔令輔助,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil)
+SetNeedSkillLineData(98,"躍擊,nil|快速攻擊輔助,nil|脆弱詛咒,nil",nil,nil,nil)
+SetNeedSkillLineData(99,"大地震擊,nil|殘暴輔助,nil|近身戰輔助,nil|近戰物理傷害輔助,nil|拳霸輔助,nil|機率流血輔助,nil",nil,nil,nil)
 
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
-AddAttackSkillData("閃電箭矢","Lightning Arrow",false,100,0)--添加攻击技能
-AddAttackSkillData("電流箭矢","Galvanic Arrow",false,50,0)--添加攻击技能
-AddAttackSkillData("燃燒箭矢","Burning Arrow")
+AddAttackSkillData("碎地重擊","Earthshatter",false,100,0)--添加攻击技能
+AddAttackSkillData("大地震擊","Sunder",false,50,0)--添加攻击技能
+AddAttackSkillData("裂地之擊","Ground Slam",false,40,0)--添加攻击技能
+AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
