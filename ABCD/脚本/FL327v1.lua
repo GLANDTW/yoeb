@@ -21,6 +21,7 @@ SetUseZhuangBeiTypeData("StrInt|StrDex|DexInt","项链")
 
 g_attackDis=5			--攻击距离
 g_duobiHpVal=0.2
+g_useMoveSkillType=nil
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
 --val=每块宝石的比重值
