@@ -20,8 +20,7 @@ SetUseZhuangBeiTypeData("Str|StrDex|Dex","鞋子")
 SetUseZhuangBeiTypeData("StrInt","项链")
 
 g_attackDis=30			--攻击距离
-g_duobiHpVal=0.2
-g_duobiHpVal=0.3--打怪时HP少于多少逃跑
+g_duobiHpVal=0.4
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
 --val=每块宝石的比重值
