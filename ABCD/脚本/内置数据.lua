@@ -32,7 +32,6 @@ SetDebuffSkill(nil,"minion_focus_fire",nil,"minion_focussed_fire_target","2|3")-
 --dis 图腾有效范围 数字型 可填nil忽略 默认为 50 离目标怪物 50以内就算释放了这个图腾
 --useDis 图腾离怪释放距离 数字型 可填nil忽略 默认为35  
 --monHouMian 是否放在怪后面 逻辑型 true为是 false与nil为不是 可填nil忽略
-
 SetUseTuTengData("totem_taunt","Metadata/Monsters/Totems/TauntTotem",nil,nil,true)--诱饵图腾
 SetUseTuTengData("ancestor_totem_slam","Metadata/Monsters/Totems/SlamTotem",35,nil,true)--先祖战士长
 SetUseTuTengData("totem_melee","Metadata/Monsters/Totems/MeleeTotem",35,nil,true)--先祖卫士
@@ -44,10 +43,7 @@ SetUseTuTengData("totem_earthquake","Metadata/Monsters/Totems/EarthquakeTotem")-
 SetUseTuTengData("searing_bond","Metadata/Monsters/Totems/SearingBondTotem",nil,nil,true)--炙热连接 图腾数量：skill_display_number_of_traps_allowed
 SetUseTuTengData("shrapnel_ballista_totem","Metadata/Monsters/Totems/ShotgunTotem")--散射驽炮
 SetUseTuTengData("siege_ballista","Metadata/Monsters/Totems/SnipeTotem")--攻城炮台
-SetUseTuTengData("artillery_ballista","Metadata/Items/Gems/SkillGemArtilleryBallista",nil,nil,nil)--火力弩炮
-SetUseTuTengData("shrapnel_ballista","Metadata/Items/Gems/SkillGemShrapnelBallista",nil,nil,nil)--彈片砲塔
-
-
+SetUseTuTengData("artillery_ballista_totem","Metadata/Monsters/Totems/MortarTotem")--火力弩炮
 
 --AddUseSkillData(useType,name,className,buffName,buffClassName,funcNeedUse)--增加使用一般的技能场景 useType=使用场景 0=走路时使用 1=打怪时使用 2=能用了就用
 --useType=使用场景 数字型 0=走路时使用 1=打怪时使用 2=能用了就用
