@@ -19,7 +19,7 @@ SetUseZhuangBeiTypeData("Str|StrInt","手套")
 SetUseZhuangBeiTypeData("Str|StrDex","鞋子")
 SetUseZhuangBeiTypeData("StrInt|StrDex|DexInt","项链")
 
-g_attackDis=10			--攻击距离
+g_attackDis=5			--攻击距离
 g_duobiHpVal=0.2
 
 --SetNeedSkillLineData(val,str,invalidLv,pos)--设置换技能宝石数据 
