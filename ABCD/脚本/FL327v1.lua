@@ -34,7 +34,8 @@ g_useMoveSkillType=nil
 SetNeedSkillLineData(93,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
 SetNeedSkillLineData(94,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(95,"灰燼之捷,nil|純淨之捷,nil|撲殺輔助,nil",nil,nil,nil)
-SetNeedSkillLineData(96,"威嚇戰吼,nil|緊急詔令輔助,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil)
+SetNeedSkillLineData(96,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(97,"鮮血狂怒,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil)
 SetNeedSkillLineData(98,"躍擊,nil|快速攻擊輔助,nil|脆弱詛咒,nil",nil,nil,nil)
 SetNeedSkillLineData(99,"大地震擊,nil|殘暴輔助,nil|近身戰輔助,nil|近戰物理傷害輔助,nil|拳霸輔助,nil|機率流血輔助,nil",nil,nil,nil)
 
@@ -47,7 +48,7 @@ AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
-SetSkillLimitMaxLv("不朽怒嚎",nil,4)
+SetSkillLimitMaxLv("不朽怒嚎",nil,3)
 SetSkillLimitMaxLv("受傷時施放輔助",nil,1)
 SetSkillLimitMaxLv("脆弱","Metadata/Items/Gems/SkillGemVulnerability",20)
 
@@ -131,11 +132,11 @@ SetZhengTiColorVarData(3,0,0,1,nil,50)
 
 --头盔
 
-SetZhengTiColorVarData(5,3,0,1,nil,500,true)
-SetZhengTiColorVarData(5,3,1,0,nil,400,true)
+SetZhengTiColorVarData(5,3,1,0,nil,500,true)
+SetZhengTiColorVarData(5,3,0,1,nil,400,true)
 SetZhengTiColorVarData(5,3,0,0,nil,300,true)
-SetZhengTiColorVarData(5,2,3,0,nil,200,true)
-SetZhengTiColorVarData(5,1,0,0,nil,100)
+SetZhengTiColorVarData(5,2,1,0,nil,200,true)
+SetZhengTiColorVarData(5,1,1,0,nil,100)
 
 --手套
 
@@ -150,8 +151,8 @@ SetZhengTiColorVarData(9,1,0,0,nil,100)
 --鞋子
 
 SetZhengTiColorVarData(10,4,0,0,nil,700,true)
-SetZhengTiColorVarData(10,3,0,1,nil,600,true)
-SetZhengTiColorVarData(10,3,1,0,nil,500,true)
+SetZhengTiColorVarData(10,3,1,0,nil,600,true)
+SetZhengTiColorVarData(10,3,0,1,nil,500,true)
 SetZhengTiColorVarData(10,2,2,0,nil,400,true)
 SetZhengTiColorVarData(10,2,1,0,nil,300,true)
 SetZhengTiColorVarData(10,2,0,0,nil,200,true)
