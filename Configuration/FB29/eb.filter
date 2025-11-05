@@ -4398,6 +4398,15 @@ Show # 裝備 - 特殊裝備 - 3色連洞 (2*2體積)
     SetBorderColor 0 0 0
     SetFontSize 45
 
+Show # 裝備 - 特殊裝備 - ALL
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    SetTextColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 0
+    SetFontSize 45
+
+
 Show # 裝備 - 特殊裝備 - 石錘、破岩錘、堅錘Q10+
     Quality >= 10
     Rarity = Normal
