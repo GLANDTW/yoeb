@@ -34,15 +34,15 @@ g_useMoveSkillType=nil
 SetNeedSkillLineData(93,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
 SetNeedSkillLineData(94,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(95,"灰燼之捷,nil|純淨之捷,nil|撲殺輔助,nil",nil,nil,nil)
-SetNeedSkillLineData(96,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(96,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,72,nil)
 SetNeedSkillLineData(97,"鮮血狂怒,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil)
 SetNeedSkillLineData(98,"躍擊,nil|快速攻擊輔助,nil|脆弱詛咒,nil",nil,nil,nil)
-SetNeedSkillLineData(99,"大地震擊,nil|殘暴輔助,nil|近身戰輔助,nil|近戰物理傷害輔助,nil|拳霸輔助,nil|機率流血輔助,nil",nil,nil,nil)
-SetNeedSkillLineData(99,"碎地重擊,nil|殘暴輔助,nil|近身戰輔助,nil|近戰物理傷害輔助,nil|拳霸輔助,nil|機率流血輔助,nil",nil,nil,1)
+SetNeedSkillLineData(99,"閃現打擊,nil|殘暴輔助,nil|近身戰輔助,nil|多重打擊輔助,nil|護體輔助,nil|近戰物理傷害輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(99,"大地震擊,nil|殘暴輔助,nil|近身戰輔助,nil|近戰物理傷害輔助,nil|拳霸輔助,nil|機率流血輔助,nil",nil,72,nil)
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
-AddAttackSkillData("碎地重擊","Earthshatter",false,100,0)--添加攻击技能
-AddAttackSkillData("大地震擊","Sunder",false,50,0)--添加攻击技能
+AddAttackSkillData("大地震擊","Sunder",false,60,0)--添加攻击技能
+AddAttackSkillData("閃現打擊","Flicker Strike",false,50,0)--添加攻击技能
 AddAttackSkillData("裂地之擊","Ground Slam",false,40,0)--添加攻击技能
 AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
@@ -93,7 +93,7 @@ SetAtuoChangeEquipData("野蛮人","项链","additional_strength_and_intelligence",0.
 SetAtuoChangeEquipData("野蛮人","双手斧","local_maximum_added_fire_damage",5)--
 SetAtuoChangeEquipData("野蛮人","双手斧","local_maximum_added_cold_damage",5)--
 SetAtuoChangeEquipData("野蛮人","双手斧","local_maximum_added_lightning_damage",5)--
-SetAtuoChangeEquipData("野蛮人","双手斧","local_maximum_added_physical_damage",5)--每点物理伤害加xx点比重
+SetAtuoChangeEquipData("野蛮人","双手斧","local_maximum_added_physical_damage",15)--每点物理伤害加xx点比重
 
 
 --野蛮人
@@ -102,6 +102,7 @@ SetAtuoChangeEquipData("野蛮人","双手斧","local_maximum_added_physical_damage",5
 --野蛮人--孔色
 
 --衣服
+SetZhengTiColorVarData(2,4,2,0,nil,900,true)
 SetZhengTiColorVarData(2,6,0,0,nil,800,true)
 SetZhengTiColorVarData(2,5,1,0,nil,700,true)
 SetZhengTiColorVarData(2,4,2,0,nil,600,true)
@@ -187,9 +188,9 @@ SetChangeLimitCnt("项链|戒指",3)
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
 
 
-SetNeedAddTianFu("野蛮人=melee_damage687-近戰傷害和生命|melee_damage707-近戰傷害|melee_physical_damage1593-近戰物理傷害|melee_physical_damage1592-近戰物理傷害|melee_physical_damage1591-近戰物理傷害|strong_arm118-為戰而生|accuracy1144-命中|versatility1146-俊敏|weapon_damage1883-近戰傷害|two_handed_weapon_damage603-雙手武器近戰傷害|butchery641-屠戮|two_handed_weapon_damage12-雙手武器近戰傷害|attack_speed1889-近戰攻擊速度|strength822-力量|life_resistances1898-生命與元素抗性|life_resistances_notable1900-野蠻|life_resistances1899-生命與元素抗性|strength806-力量|strength791-力量|resolute_technique1138-堅毅之心|rage2100-擊中時獲得盛怒|rage2101-擊中時獲得盛怒|rage_notable2104-戰鬥冥想|strength787-力量|axe_damage_and_accuracy106-斧的傷害|axe_damage_and_attack_speed97-斧的傷害和攻擊速度|axe_damage_and_attack_speed98-斧的傷害和攻擊速度|axe_damage521-斧的傷害和攻擊速度|timberwolf105-屠殺 |strength781-力量|strength775-力量|strength793-力量|fortify_2387-最大護體|fortify_2386-最大護體|fortify_2385-最大護體|fortify_notable_2388-堅貞不渝|mastery_fortify8-護體專精-28469|strength794-力量|strength802-力量|two_handed_damage642-雙手武器近戰傷害|two_handed_weapon_attack_speed15-雙手武器近戰傷害和攻擊速度|two_hand_attack_speed1864-雙手武器傷害和攻擊速度|wrecking_ball435-崩雷|mastery_twohand242-雙手武器專精-27095|life599-生命|heart_of_the_gladiator825-戰士之心|life600-生命|troll's_blood203-戰士之血|strength829-力量|dexterity971-敏捷|strength774-力量|two_handed_weapon_damage13-雙手武器近戰傷害和偷取|two_handed_weapon_damage_and_accuracy9-雙手武器近戰傷害和偷取|two_hand_damage_notable1733-武術經驗|intelligence947-智慧|attack_mana_cost_node_2914-攻擊魔力消耗|attack_mana_cost_notable_2916-戰爭之靈|axe_damage_and_accuracy2470-元素抗性|axe_damage_and_accuracy2469-最大火焰抗性|axe_damage_and_accuracy_notable2471-稜彩之膚|strength809-力量|intelligence945-智慧|warcry_cooldown2707-戰吼冷卻時間恢復|warcry_damage2716-戰吼冷卻時間恢復|warcry_damage2715-戰吼冷卻時間恢復|warcry_cooldown_notable2709_-深呼吸|mastery_warcry254-戰吼專精-60034|life_and_armour1902-生命與護甲|life_armour_flask_life_notable1903-戰神|life_and_armour1901-生命與護甲|strength785-力量|warcry_empowered2710-竭盡攻擊傷害|warcry_empowered2712-戰吼速度和竭盡攻擊傷害|warcry_empowered_notable2713-縝密狂怒|life1169-生命|bloodless156-無血之體|life1221-生命|life1195-生命|strength820-力量|armour91-護甲和元素抗性|armour93-護甲和元素抗性|steel_skin1275-堅鋼之靈|strength832-力量|strength1005-力量|dexterity838-敏捷|endurance_charges2423-每顆耐力球護甲|endurance_charges2422-每顆耐力球暈眩持續時間|endurance_charges2424-每顆耐力球範圍效果|endurance_charges_notable2425-不屈之徒|life1213-生命|golem's_blood1088-魔像血統 |")
+SetNeedAddTianFu("野蛮人=melee_damage687-近戰傷害和生命|melee_damage707-近戰傷害|melee_physical_damage1593-近戰物理傷害|melee_physical_damage1592-近戰物理傷害|melee_physical_damage1591-近戰物理傷害|strong_arm118-為戰而生|accuracy1144-命中|versatility1146-俊敏|weapon_damage1883-近戰傷害|two_handed_weapon_damage603-雙手武器近戰傷害|butchery641-屠戮|two_handed_weapon_damage12-雙手武器近戰傷害|attack_speed1889-近戰攻擊速度|strength822-力量|life_resistances1898-生命與元素抗性|life_resistances_notable1900-野蠻|life_resistances1899-生命與元素抗性|strength806-力量|strength791-力量|resolute_technique1138-堅毅之心|rage2100-擊中時獲得盛怒|rage2101-擊中時獲得盛怒|rage_notable2104-戰鬥冥想|strength787-力量|axe_damage_and_accuracy106-斧的傷害|axe_damage_and_attack_speed97-斧的傷害和攻擊速度|axe_damage_and_attack_speed98-斧的傷害和攻擊速度|axe_damage521-斧的傷害和攻擊速度|timberwolf105-屠殺 |strength782-力量|strength785-力量|warcry_empowered2710-竭盡攻擊傷害|warcry_empowered2711-戰吼冷卻時間恢復和竭盡攻擊傷害|warcry_empowered_notable2713-縝密狂怒|mastery_warcry251-戰吼專精-14206|strength792-力量|life_leech142-生命偷取和攻擊速度|life_gain_on_hit146-生命偷取速度和攻擊速度|blood_drinker143-汲血者|strength818-力量|strength820-力量|strength778-力量|agility863-熟能生巧|savant954-靜修|life1195-生命|life1221-生命|life1169-生命|bloodless156-無血之體|strength793-力量|fortify_2387-最大護體|fortify_20664-護體持續時間|fortify_20665-護體持續時間|fortify_notable_2388-堅貞不渝|mastery_fortify8-護體專精-28469|strength794-力量|strength802-力量|two_handed_damage642-雙手武器近戰傷害|two_handed_weapon_attack_speed15-雙手武器近戰傷害和攻擊速度|two_hand_attack_speed1864-雙手武器傷害和攻擊速度|wrecking_ball435-崩雷|strikes_damage2731_-近戰傷害|strikes_range2732-近戰傷害和打擊範圍|strikes_range2733-近戰傷害和打擊範圍|blight_special_notable6-部落之怒|mastery_attack17-攻擊專精-39154|strength777-力量|warcry_speed2705-戰吼速度|warcry_speed2704-戰吼速度|warcry_notable1-告誡者|strength774-力量|intelligence947-智慧|attack_mana_cost_node_2914-攻擊魔力消耗|attack_mana_cost_notable_2916-戰爭之靈|mastery_mana_287-魔力專精-64875|strength832-力量|strength1005-力量|life1213-生命|golem's_blood1088-魔像血統 |dexterity838-敏捷|dexterity1990_-敏捷|maximum_frenzy_charges527-野性之心|endurance_charges2423-每顆耐力球護甲|endurance_charges2422-每顆耐力球暈眩持續時間|endurance_charges2424-每顆耐力球範圍效果|endurance_charges_notable2425-不屈之徒|axe_damage109-斧的傷害|axe_damage110-斧的傷害|axe_damage1079-斧的傷害|cleaving611-劈砍|strength775-力量|rage2112-擊中時獲得盛怒|rage2113-最大盛怒|rage2114_-最大盛怒|life599-生命|heart_of_the_gladiator825-戰士之心|strength809-力量|intelligence945-智慧|warcry_cooldown2707-戰吼冷卻時間恢復|warcry_damage2716-戰吼冷卻時間恢復|warcry_damage2715-戰吼冷卻時間恢復|warcry_cooldown_notable2709_-深呼吸|strength998-力量|strength1002-力量|agility876-超群身法|")
 
-SetNeedAddTianFu("野蛮人升华=AscendancyBerserker4-物理傷害、擊中獲得盛怒機率|AscendancyBerserker11-屠戮之慾|") 
+SetNeedAddTianFu("野蛮人升华=AscendancyBerserker4-物理傷害、擊中獲得盛怒機率|AscendancyBerserker11-屠戮之慾|AscendancyBerserker3-物理傷害，近戰打擊範圍|AscendancyBerserker10-先祖之怒|") 
 
 
 SetNeedAddTianFu([[异界地图天赋=atlas_path_22-相鄰地圖掉落機率|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_zana_1_11-偵查報告掉落機率|atlas_zana_1_3-偵查報告掉落機率|atlas_zana_1_6-重點偵察|atlas_zana_1_1-偵查報告掉落機率|atlas_zana_1_2-偵查報告掉落機率|atlas_path_96-聖甲蟲掉落率|atlas_map_tier_3_3-雕塑世界|atlas_map_tier_5_2-高階地圖機率|atlas_keystone_fortune_favours_doubled-大膽行動|atlas_map_tier_4_1-高階地圖機率|atlas_map_tier_5_1-高階地圖機率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-物品稀有度|atlas_map_drops_7-物品稀有度|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_map_tier_3_2-高階地圖機率|atlas_map_tier_3_1-高階地圖機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_tier_1_2_-高階地圖機率|atlas_map_tier_1_1-高階地圖機率|atlas_map_tier_1_3-雕塑山型|atlas_path_37-相鄰地圖掉落機率|atlas_path_30-相鄰地圖掉落機率|atlas_path_18-相鄰地圖掉落機率|atlas_path_17-相鄰地圖掉落機率|atlas_map_tier_2_1-高階地圖機率|atlas_map_tier_2_2-高階地圖機率|atlas_map_tier_2_3-雕塑天空|atlas_path_15-相鄰地圖掉落機率|atlas_path_2-相鄰地圖掉落機率|atlas_path_10-相鄰地圖掉落機率|atlas_path_19-相鄰地圖掉落機率|atlas_path_1-相鄰地圖掉落機率|atlas_path_20-相鄰地圖掉落機率|atlas_path_9-相鄰地圖掉落機率|atlas_path_6-相鄰地圖掉落機率|atlas_path_8-相鄰地圖掉落機率|atlas_path_13-相鄰地圖掉落機率|atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_5-相鄰地圖掉落機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|]])
