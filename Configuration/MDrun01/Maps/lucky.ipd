@@ -1,0 +1,67 @@
+[Rarity]== "Normal"#[UpgradeToMagic]== "true"//
+[Rarity]== "Magic"#[AugmentIfPossible]== "true"//
+
+[Type]=="CovesMap"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="CanyonMap"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="DunesMap"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="PrecinctMap"&&[Rarity]=="Normal"#[RunMap]=="true"
+
+[Type]=="CovesMap"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="CanyonMap"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="DunesMap"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="PrecinctMap"&&[Rarity]=="Magic"#[RunMap]=="true"
+
+[Type]=="SynthesisedMap"#[IgnoreMap]=="true"
+[Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
+[Category]=="Map"&&[Rarity]=="Rare"&&[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
+[Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
+[Category]=="Map"&&[Rarity]=="Rare"&&[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
+
+[Category]=="Map"&&[map_zana_influence]=="1"#[IgnoreMap]=="true"
+
+[Type]=="ForgeofthePhoenixMap"#[IgnoreMap]=="true"//#
+[Type]=="LairoftheHydraMap"#[IgnoreMap]=="true"//#
+[Type]=="MazeoftheMinotaurMap"#[IgnoreMap]=="true"//#
+[Type]=="PitoftheChimeraMap"#[IgnoreMap]=="true"//#
+
+[Type]=="Sanctuary#[IgnoreMap]==true"//
+[Type]=="Citadel#[IgnoreMap]==true"//
+[Type]=="Fortress#[IgnoreMap]==true"//
+[Type]=="Abomination#[IgnoreMap]==true"//
+[Type]=="Ziggurat#[IgnoreMap]==true"//
+
+
+// 
+[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
+[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
+[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
+[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
+[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
+[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
+[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
+[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
+[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
+[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
+//
+//
+[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
+[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
+//
+//
+//
+//
+[map_ground_ice]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
+[map_ground_ice]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
+//
+//
+//
+[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
+[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Rare #  [IgnoreMap] == "true" //
+[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
+[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
+[map_monsters_cannot_be_leeched_from] > "0" && [Rarity] == "Magic" #   [IgnoreMap] == "true" //
+[map_monsters_cannot_be_leeched_from]  > "0" && [Rarity] == "Rare" #   [IgnoreMap] == "true" //
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #    [IgnoreMap] == "true" //
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [IgnoreMap] == "true" //
+[map_player_cooldown_speed_+%_final] < "0" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
+[map_player_cooldown_speed_+%_final] < "0" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
