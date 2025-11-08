@@ -11,6 +11,11 @@
 [Type]=="Dunes Map"&&[Rarity]=="Magic"#[RunMap]=="true"
 [Type]=="Precinct Map"&&[Rarity]=="Magic"#[RunMap]=="true"
 
+[Type]=="Coves Map"#[ExitAfterBossKill]=="true"
+[Type]=="Canyon Map"#[ExitAfterBossKill]=="true"
+[Type]=="Dunes Map"#[ExitAfterBossKill]=="true"
+[Type]=="Precinct Map"#[ExitAfterBossKill]=="true"
+
 [Type]=="Synthesised Map"#[IgnoreMap]=="true"
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
