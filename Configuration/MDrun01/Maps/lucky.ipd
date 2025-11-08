@@ -11,6 +11,11 @@
 [Type]=="Dunes Map"&&[Rarity]=="Magic"#[RunMap]=="true"
 [Type]=="Precinct Map"&&[Rarity]=="Magic"#[RunMap]=="true"
 
+[Type]=="Coves Map"&&[Rarity]=="Rare"#[RunMap]=="true"
+[Type]=="Canyon Map"&&[Rarity]=="Rare"#[RunMap]=="true"
+[Type]=="Dunes Map"&&[Rarity]=="Rare"#[RunMap]=="true"
+[Type]=="Precinct Map"&&[Rarity]=="Rare"#[RunMap]=="true"
+
 [Type]=="Coves Map"#[ExitAfterBossKill]=="true"
 [Type]=="Canyon Map"#[ExitAfterBossKill]=="true"
 [Type]=="Dunes Map"#[ExitAfterBossKill]=="true"
@@ -47,26 +52,16 @@
 [map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
 [map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
 [map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
-//
-//
 [map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
 [map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
-//
-//
-//
-//
 [map_ground_ice]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
 [map_ground_ice]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
-//
-//
-//
-[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
-[map_monsters_avoid_ailments_%] >= "1" && [Rarity] == "Rare #  [IgnoreMap] == "true" //
-[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
-[map_additional_player_maximum_resistances_%] < "0" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
-[map_monsters_cannot_be_leeched_from] > "0" && [Rarity] == "Magic" #   [IgnoreMap] == "true" //
-[map_monsters_cannot_be_leeched_from]  > "0" && [Rarity] == "Rare" #   [IgnoreMap] == "true" //
-[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #    [IgnoreMap] == "true" //
-[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [IgnoreMap] == "true" //
-[map_player_cooldown_speed_+%_final] < "0" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
-[map_player_cooldown_speed_+%_final] < "0" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
+[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #  [RerollMods] == "true" //
+[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #  [RerollMods] == "true" //
+[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" #  [RerollMods] == "true" //
+[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Rare" #  [RerollMods] == "true" //
+[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #  [RerollMods] == "true" //
+[map_monsters_cannot_be_leeched_from] > "0" && [Rarity] == "Magic" #   [RerollMods] == "true" //
+[map_monsters_cannot_be_leeched_from]  > "0" && [Rarity] == "Rare" #   [RerollMods] == "true" //
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #    [RerollMods] == "true" //
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [RerollMods] == "true" //
