@@ -1,17 +1,17 @@
 [Rarity]== "Normal"#[UpgradeToMagic]== "true"//
-[Rarity]== "Magic"#[AugmentIfPossible]== "true"//
+//[Rarity]== "Magic"#[AugmentIfPossible]== "true"//
 
-[Type]=="CovesMap"&&[Rarity]=="Normal"#[RunMap]=="true"
-[Type]=="CanyonMap"&&[Rarity]=="Normal"#[RunMap]=="true"
-[Type]=="DunesMap"&&[Rarity]=="Normal"#[RunMap]=="true"
-[Type]=="PrecinctMap"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="Coves Map"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="Canyon Map"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="Dunes Map"&&[Rarity]=="Normal"#[RunMap]=="true"
+[Type]=="Precinct Map"&&[Rarity]=="Normal"#[RunMap]=="true"
 
-[Type]=="CovesMap"&&[Rarity]=="Magic"#[RunMap]=="true"
-[Type]=="CanyonMap"&&[Rarity]=="Magic"#[RunMap]=="true"
-[Type]=="DunesMap"&&[Rarity]=="Magic"#[RunMap]=="true"
-[Type]=="PrecinctMap"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="Coves Map"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="Canyon Map"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="Dunes Map"&&[Rarity]=="Magic"#[RunMap]=="true"
+[Type]=="Precinct Map"&&[Rarity]=="Magic"#[RunMap]=="true"
 
-[Type]=="SynthesisedMap"#[IgnoreMap]=="true"
+[Type]=="Synthesised Map"#[IgnoreMap]=="true"
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
@@ -19,16 +19,16 @@
 
 [Category]=="Map"&&[map_zana_influence]=="1"#[IgnoreMap]=="true"
 
-[Type]=="ForgeofthePhoenixMap"#[IgnoreMap]=="true"//#
-[Type]=="LairoftheHydraMap"#[IgnoreMap]=="true"//#
-[Type]=="MazeoftheMinotaurMap"#[IgnoreMap]=="true"//#
-[Type]=="PitoftheChimeraMap"#[IgnoreMap]=="true"//#
+[Type]=="Forge of the PhoenixMap"#[IgnoreMap]=="true"//#
+[Type]=="Lair of the Hydra Map"#[IgnoreMap]=="true"//#
+[Type]=="Maze of the Minotaur Map"#[IgnoreMap]=="true"//#
+[Type]=="Pit of the Chimera Map"#[IgnoreMap]=="true"//#
 
-[Type]=="Sanctuary#[IgnoreMap]==true"//
-[Type]=="Citadel#[IgnoreMap]==true"//
-[Type]=="Fortress#[IgnoreMap]==true"//
-[Type]=="Abomination#[IgnoreMap]==true"//
-[Type]=="Ziggurat#[IgnoreMap]==true"//
+[Type]=="Sanctuary"#[IgnoreMap]==true"//
+[Type]=="Citadel"#[IgnoreMap]==true"//
+[Type]=="Fortress"#[IgnoreMap]==true"//
+[Type]=="Abomination"#[IgnoreMap]==true"//
+[Type]=="Ziggurat"#[IgnoreMap]==true"//
 
 
 // 
