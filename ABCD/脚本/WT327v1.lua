@@ -103,7 +103,7 @@ SetUseZhuangBeiTypeData("Int|StrInt","鞋子")
 --nType 有效场景 nil为无论何时都有效 0为没在刷异界才有效 1为只在刷异界才有效
 
 --剧情主力技能设置
-SetNeedSkillLineData(10,"火球,Metadata/Items/Gems/SkillGemFireball,nil",5,nil,0)--5级失效
+SetNeedSkillLineData(78,"火球,Metadata/Items/Gems/SkillGemFireball,nil",5,nil,0)--5级失效
 SetNeedSkillLineData(77,"召唤愤怒狂灵,Metadata/Items/Gems/SkillGemSummonRagingSpirit|秘术增强(辅),Metadata/Items/Gems/SupportGemArcaneSurge|召唤生物伤害(辅),Metadata/Items/Gems/SupportGemMinionDamage",25,nil,0)
 SetNeedSkillLineData(89,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|附加閃電傷害輔助,Metadata/Items/Gems/SupportGemAddedLightningDamage",nil,nil,0)
 SetNeedSkillLineData(87,"殭屍復甦,Metadata/Items/Gems/SkillGemRaiseZombie|豢養狂熱輔助,Metadata/Items/Gems/SupportGemFeedingFrenzy|召喚幻影輔助,Metadata/Items/Gems/SupportGemSummonGhostOnKill",nil,nil,0)
@@ -114,6 +114,7 @@ SetNeedSkillLineData(79,"烈焰冲刺,Metadata/Items/Gems/SkillGemFlameDash|亵渎,Met
 
 --异界主力技能设置
 SetNeedSkillLineData(100,"召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|投射物返回輔助,Metadata/Items/Gems/SupportGemReturningProjectiles|精準破壞輔助,Metadata/Items/Gems/SupportGemControlledDestruction|穿透輔助,Metadata/Items/Gems/SupportGemPierce",nil,2,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)
+SetNeedSkillLineData(97,"瓦爾．赦免,MMetadata/Items/Gems/SkillGemVaalAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
 SetNeedSkillLineData(96,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
 SetNeedSkillLineData(94,"殭屍復甦,Metadata/Items/Gems/SkillGemRaiseZombie|召喚巨石魔像,Metadata/Items/Gems/SkillGemSummonRockGolem|召喚物生命輔助,Metadata/Items/Gems/SupportGemMinionLife|豢養狂熱輔助,Metadata/Items/Gems/SupportGemFeedingFrenzy",nil,9,1)--手套
 SetNeedSkillLineData(98,"迅捷,Metadata/Items/Gems/SkillGemHaste|元素淨化,Metadata/Items/Gems/SkillGemPurity|暴风之盾,Metadata/Items/Gems/SkillGemTempestShield|召唤圣物,Metadata/Items/Gems/SkillGemSummonRelic",nil,5,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)--頭盔
@@ -152,7 +153,7 @@ SetNeedZhaoHuanMonster("恶魔奴隶","Metadata/Monster/CageSpider/CageSpider2",3)
 --bossName 字符串型 灵体仓库号的名字
 --minLv 数字型 满多少级才会去仓库号家召唤 nil为忽略等级总是去
 --SetNeedZhaoHuanMonster("Flayed Lookout","Metadata/Monsters/LeagueBetrayal/BetrayalSkeletonRangedSpectre",7)
-SetHaveLingTiBossName("倫粘啟幌",70)--设置灵体仓库号 如果灵体号的灵体比身上的更好，他就会去灵体号所在位置召唤灵体
+SetHaveLingTiBossName("gost_go",30)--设置灵体仓库号 如果灵体号的灵体比身上的更好，他就会去灵体号所在位置召唤灵体
 SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone_AtlasUber",99999)
 --SetNeedZhaoHuanMonster("霜寒自動巡守","Metadata/Monsters/LeagueHeist/Robot/RobotClockworkGolemCold",99999)
 
