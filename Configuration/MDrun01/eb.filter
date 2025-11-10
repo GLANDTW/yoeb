@@ -2282,7 +2282,7 @@ Show # 聯盟 - 2.1魔符 - 魔符 - T1魔法
     SetBorderColor 0 0 0
     SetFontSize 37
 
-H # 聯盟 - 2.1魔符 - 魔符 - T1稀有
+Hide # 聯盟 - 2.1魔符 - 魔符 - T1稀有
     Rarity = Rare
     Class "Amulets"
     BaseType "Breakrib Talisman" "Ashscale Talisman" "Deep One Talisman" "Lone Antler Talisman" "Deadhand Talisman" "Bonespire Talisman" "Black Maw Talisman" "Undying Flesh Talisman" "Rot Head Talisman" "Mandible Talisman" "Writhing Talisman" "Chrysalis Talisman"
