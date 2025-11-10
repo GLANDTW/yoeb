@@ -47,6 +47,7 @@
 [Type] == "Omen of Blanching" # [StashItem] == "true"////
 [Type] == "Omen of the Jeweller" # [StashItem] == "true"////
 [Type] == "Omen of Fortune" # [StashItem] == "true" //	
+[Type] == "Incandescent Invitation" # [StashItem] == "true"//
 
 //3.22
 
