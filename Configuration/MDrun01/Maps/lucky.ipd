@@ -42,20 +42,20 @@
 
 
 // 
-[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
-[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
-[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
-[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
-[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" #  [IgnoreMap] == "true" //
-[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Rare" #  [IgnoreMap] == "true" //
-[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
-[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
-[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
-[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
-[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
-[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
-[map_ground_ice]>= "1" && [Rarity]="Magic" #  [IgnoreMap] == "true" //
-[map_ground_ice]>= "1" && [Rarity]="Rare" #  [IgnoreMap] == "true" //
+[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Magic" #  [RerollMods] == "true" //
+[map_monsters_reflect_%_elemental_damage] >= "1" && [Rarity] == "Rare" # [RerollMods] == "true" //
+[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #  [RerollMods] == "true" //
+[map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #  [RerollMods] == "true" //
+[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" //
+[map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Rare" #  [RerollMods] == "true" //
+[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Magic" #  [RerollMods] == "true" //
+[map_player_has_level_X_temporal_chains]>= "1" && [Rarity]="Rare" # [RerollMods] == "true" //
+[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Magic" # [RerollMods] == "true" //
+[map_player_has_level_X_vulnerability]>= "1" && [Rarity]="Rare" # [RerollMods] == "true" //
+[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Magic" # [RerollMods] == "true" //
+[map_player_has_level_X_elemental_weakness]>= "1" && [Rarity]="Rare" #  [RerollMods] == "true" //
+[map_ground_ice]>= "1" && [Rarity]="Magic" #  [RerollMods] == "true" //
+[map_ground_ice]>= "1" && [Rarity]="Rare" # [RerollMods] == "true" //
 [map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Magic" #  [RerollMods] == "true" //
 [map_monsters_reflect_%_physical_damage]>= "1" && [Rarity] == "Rare" #  [RerollMods] == "true" //
 [map_players_no_regeneration_including_es]>= "1" && [Rarity] == "Magic" #  [RerollMods] == "true" //
