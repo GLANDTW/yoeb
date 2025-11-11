@@ -99,9 +99,10 @@
 
 //
 
-[Category] == "Map" # [StashItem] == "true" 
-[Category] == "Map" && [MapTier] <= "10" # [ForceSellItem] == "true" 
-[Category] == "Map" && [MapTier] <= "5" # [ForceSellItem] == "true" 
+//[Category] == "Map" # [StashItem] == "true" 
+
+//[Category] == "Map" && [MapTier] <= "10" # [ForceSellItem] == "true" 
+//[Category] == "Map" && [MapTier] <= "5" # [ForceSellItem] == "true" 
 
 //
 [Type] == "Coves Map" && [MapTier] <= "13" # [ForceSellItem] == "true" 
