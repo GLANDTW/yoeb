@@ -38,7 +38,7 @@
 //[Type] == "Necromancer Silks" && [Rarity] == "Unique" # [UniqueName] == "Fleshcrafter" && [StashItem] == "true"  
 //[Type] == "Sadist Garb" && [Rarity] == "Unique" #  [UniqueName] == "Inpulsa's Broken Heart" && [StashItem] == "true" 
 //[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	
-[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
+//[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
 //[Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	
 [Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
 //[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" 
@@ -195,7 +195,7 @@
 //[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
 [Type] == "Blessed Orb" # [StashItem] == "true" //	//
 
-[Type] == "Forbidden Tome" # [StashItem] == "true" // 
+//[Type] == "Forbidden Tome" # [StashItem] == "true" // 
 
 [Type] == "Singular Scouting Report" # [StashItem] == "true" //	//
 [Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//
