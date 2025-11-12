@@ -123,11 +123,11 @@
 [Type]== "Maze of the Minotaur Map"#[StashItem]== "true"// #																								
 [Type]== "Pit of the Chimera Map"#[StashItem]== "true"// #		
 
-[Type] == "Sanctuary # [StashItem] == true" //
-[Type] == "Citadel # [StashItem] == true" //
-[Type] == "Fortress # [StashItem] == true" //
-[Type] == "Abomination # [StashItem] == true" //
-[Type] == "Ziggurat # [StashItem] == true" //
+[Type] == "Sanctuary" # [StashItem] == true" //
+[Type] == "Citadel" # [StashItem] == true" //
+[Type] == "Fortress" # [StashItem] == true" //
+[Type] == "Abomination" # [StashItem] == true" //
+[Type] == "Ziggurat" # [StashItem] == true" //
 
 
 
