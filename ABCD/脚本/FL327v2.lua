@@ -35,21 +35,13 @@ SetNeedSkillLineData(70,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
 SetNeedSkillLineData(75,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(76,"灰燼之捷,nil",nil,nil,nil)
 SetNeedSkillLineData(77,"純淨之捷,nil",24,nil,nil)
---頭盔RR
 SetNeedSkillLineData(82,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,24,nil) 
---頭盔RR 24淘汰
 SetNeedSkillLineData(83,"鮮血狂怒,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil) 
---手套GRR
 SetNeedSkillLineData(84,"躍擊,nil|快速攻擊輔助,nil",nil,nil,nil)
---頭盔RG
 SetNeedSkillLineData(85,"脆弱,nil",nil,nil,nil)
---鞋子R
 SetNeedSkillLineData(99,"緊急詔令輔助,nil|堅決戰吼,nil|裂地戰吼,nil|激勵戰吼,nil",nil,nil,nil)
---武器RRRR
 SetNeedSkillLineData(99,"自動竭盡,nil|威嚇戰吼,nil|將軍戰吼,nil|煉獄戰吼,nil",nil,nil,nil)
---RRRR
-SetNeedSkillLineData(100,"大地震擊,nil|殘暴輔助,nil|拳霸輔助,nil|近戰物理傷害輔助,nil|近身戰輔助,nil|機率流血輔助,nil",nil,nil,nil) --RRRRGR
---胸甲RRRRGR
+SetNeedSkillLineData(100,"大地震擊,nil|殘暴輔助,nil|拳霸輔助,nil|近戰物理傷害輔助,nil|近身戰輔助,nil|機率流血輔助,nil",nil,nil,nil)
 
 --添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
 -- AddAttackSkillData("碎地重擊","Earthshatter",false,100,0)--添加攻击技能
