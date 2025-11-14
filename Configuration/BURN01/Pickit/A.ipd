@@ -192,7 +192,7 @@
 [Type] == "Enhance Support" #[StashItem] == "true"////
 //[Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//
 //[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//
-//[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
+[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
 [Type] == "Blessed Orb" # [StashItem] == "true" //	//
 
 //[Type] == "Forbidden Tome" # [StashItem] == "true" // 
