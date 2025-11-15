@@ -211,6 +211,7 @@ AddNeedBuySkillTime(11,"a11q1")
 
 --剧情主力技能设置
 SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
+SetNeedSkillLineData(110,"電弧,nil|附加閃電傷害輔助,nil",2,nil,nil)
 SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(130,"神聖火舌圖騰,nil",12,nil,nil)
 SetNeedSkillLineData(77,"召唤愤怒狂灵,Metadata/Items/Gems/SkillGemSummonRagingSpirit|秘术增强(辅),Metadata/Items/Gems/SupportGemArcaneSurge|召唤生物伤害(辅),Metadata/Items/Gems/SupportGemMinionDamage",25,nil,0)
@@ -255,6 +256,7 @@ AddAttackSkillData("赦免","absolution")
 AddAttackSkillData("召唤愤怒狂灵","summon_raging_spirit")
 AddAttackSkillData("火球","fireball")
 AddAttackSkillData("裂地之擊","Ground Slam",false,40,0)--添加攻击技能
+AddAttackSkillData("电弧","arc",false,35.0)
 AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
 
