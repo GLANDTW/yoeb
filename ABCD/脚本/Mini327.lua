@@ -15,7 +15,7 @@ g_yuyanCnt=99				--够多少银币去预言
 
 -- 阶段1: 1-10级 - 1洞即可 (快速获得插槽)
 SetGoodsCaoZuo(
-    "衣服|头盔|手套|鞋子|法杖|盾",
+    "衣服|头盔|手套|鞋子|单手锤|盾",
     "0|2",
     nil, nil, nil, nil, nil, nil,
     "0", 1, nil, nil,
@@ -24,7 +24,7 @@ SetGoodsCaoZuo(
         local role = GetMyRole()
         if not role then return false end
         local lv = role:GetLevel()
-        return lv >= 1 and lv <= 10
+        return lv >= 1 and lv <= 11
     end
 )
 
@@ -39,7 +39,7 @@ SetGoodsCaoZuo(
         local role = GetMyRole()
         if not role then return false end
         local lv = role:GetLevel()
-        return lv >= 11 and lv <= 30
+        return lv >= 12 and lv <= 30
     end
 )
 
