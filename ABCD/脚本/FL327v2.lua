@@ -107,13 +107,11 @@ SetUseZhuangBeiTypeData("StrInt|StrDex|DexInt","项链")
 SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil) --2等失效
 SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(76,"灰燼之捷,nil",nil,nil,nil)
-SetNeedSkillLineData(77,"純淨之捷,nil",24,nil,nil)
-SetNeedSkillLineData(82,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,24,nil) 
+SetNeedSkillLineData(77,"純淨之捷,nil|撲殺輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(82,"威嚇戰吼,nil|緊急詔令輔助,nil",nil,nil,nil) 
 SetNeedSkillLineData(83,"鮮血狂怒,nil|受傷時施放輔助,nil|不朽怒嚎,nil",nil,nil,nil) 
-SetNeedSkillLineData(84,"躍擊,nil|快速攻擊輔助,nil",nil,nil,nil)
+SetNeedSkillLineData(90,"躍擊,nil|快速攻擊輔助,nil",nil,nil,nil)
 SetNeedSkillLineData(85,"脆弱,nil",nil,nil,nil)
-SetNeedSkillLineData(95,"緊急詔令輔助,nil|堅決戰吼,nil|裂地戰吼,nil|激勵戰吼,nil",nil,nil,nil)
-SetNeedSkillLineData(99,"自動竭盡,nil|威嚇戰吼,nil|將軍戰吼,nil|煉獄戰吼,nil",nil,nil,nil)
 SetNeedSkillLineData(100,"大地震擊,nil|殘暴輔助,nil|拳霸輔助,nil|近戰物理傷害輔助,nil|近身戰輔助,nil|機率流血輔助,nil",nil,nil,nil)
 
 --SetSkillLimitMaxLv(name,className,maxLv)--设置技能宝石最大等级 name=技能宝石物品名 className=技能宝石物品类名 maxLv=限制的最大等级
@@ -148,7 +146,7 @@ SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone
 --SetYiJieZhaoHuanLingTiData("1_5_2","驱刑者","Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriver")
 --SetYiJieZhaoHuanLingTiData("2_7_7","冷血酋长","Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrage")
 
-SetUseBuffSkill("自動竭盡","Autoexertion")
+--SetUseBuffSkill("自動竭盡","Autoexertion")
 
 --RemoveUseBuffSkill(name,className)--设置不使用的buff name=技能名 className=技能类名
 --RemoveUseBuffSkill("召喚巨石魔像","summon_rock_golem")
