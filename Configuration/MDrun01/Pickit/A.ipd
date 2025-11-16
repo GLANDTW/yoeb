@@ -116,7 +116,7 @@
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps																		
 
-[Category] == "Map" && [map_zana_influence] == "1" # [IgnoreMap] == "true" 
+[Category] == "Map" && [map_zana_influence] == "1" # [StashItem] == "true" 
 
 [Type]== "Forge of the Phoenix Map"#[StashItem]== "true"// #																								
 [Type]== "Lair of the Hydra Map"#[StashItem]== "true"// #																								
@@ -396,3 +396,147 @@
 [Type] == "Essence Scarab of Adaptation" # [ForceSellItem] == "true" //
 [Type] == "Horned Scarab of Glittering" # [ForceSellItem] == "true" //
 [Type] == "Bestiary Scarab of Duplicating" # [ForceSellItem] == "true" //
+
+// Sell all bad map//
+
+[Type] == "Lookout Map" # [ForceSellItem] == "true" //
+[Type] == "Beach Map" # [ForceSellItem] == "true" //
+[Type] == "Graveyard Map" # [ForceSellItem] == "true" //
+[Type] == "Dungeon Map" # [ForceSellItem] == "true" //
+[Type] == "Foundry Map" # [ForceSellItem] == "true" //
+[Type] == "Alleyways Map" # [ForceSellItem] == "true" //
+[Type] == "Pen Map" # [ForceSellItem] == "true" //
+[Type] == "Desert Map" # [ForceSellItem] == "true" //
+[Type] == "Arid Lake Map" # [ForceSellItem] == "true" //
+[Type] == "Flooded Mine Map" # [ForceSellItem] == "true" //
+[Type] == "Marshes Map" # [ForceSellItem] == "true" //
+[Type] == "Iceberg Map" # [ForceSellItem] == "true" //
+[Type] == "Cage Map" # [ForceSellItem] == "true" //
+[Type] == "Fungal Hollow Map" # [ForceSellItem] == "true" //
+[Type] == "Excavation Map" # [ForceSellItem] == "true" //
+[Type] == "Leyline Map" # [ForceSellItem] == "true" //
+[Type] == "Peninsula Map" # [ForceSellItem] == "true" //
+[Type] == "Port Map" # [ForceSellItem] == "true" //
+[Type] == "Burial Chambers Map" # [ForceSellItem] == "true" //
+[Type] == "Cells Map" # [ForceSellItem] == "true" //
+[Type] == "Arcade Map" # [ForceSellItem] == "true" //
+[Type] == "City Square Map" # [ForceSellItem] == "true" //
+[Type] == "Relic Chambers Map" # [ForceSellItem] == "true" //
+[Type] == "Courthouse Map" # [ForceSellItem] == "true" //
+[Type] == "Strand Map" # [ForceSellItem] == "true" //
+[Type] == "Chateau Map" # [ForceSellItem] == "true" //
+[Type] == "Grotto Map" # [ForceSellItem] == "true" //
+[Type] == "Glacier Map" # [ForceSellItem] == "true" //
+[Type] == "Volcano Map" # [ForceSellItem] == "true" //
+[Type] == "Lighthouse Map" # [ForceSellItem] == "true" //
+[Type] == "Frozen Cabins Map" # [ForceSellItem] == "true" //
+[Type] == "Grave Trough Map" # [ForceSellItem] == "true" //
+[Type] == "Crimson Township Map" # [ForceSellItem] == "true" //
+[Type] == "Forking River Map" # [ForceSellItem] == "true" //
+[Type] == "Cold River Map" # [ForceSellItem] == "true" //
+[Type] == "Forbidden Woods Map" # [ForceSellItem] == "true" //
+[Type] == "Conservatory Map" # [ForceSellItem] == "true" //
+[Type] == "Sulphur Vents Map" # [ForceSellItem] == "true" //
+[Type] == "Haunted Mansion Map" # [ForceSellItem] == "true" //
+[Type] == "Maze Map" # [ForceSellItem] == "true" //
+[Type] == "Channel Map" # [ForceSellItem] == "true" //
+[Type] == "Toxic Sewer Map" # [ForceSellItem] == "true" //
+[Type] == "Ancient City Map" # [ForceSellItem] == "true" //
+[Type] == "Ivory Temple Map" # [ForceSellItem] == "true" //
+[Type] == "Spider Lair Map" # [ForceSellItem] == "true" //
+[Type] == "Barrows Map" # [ForceSellItem] == "true" //
+[Type] == "Mausoleum Map" # [ForceSellItem] == "true" //
+[Type] == "Fields Map" # [ForceSellItem] == "true" //
+[Type] == "Jungle Valley Map" # [ForceSellItem] == "true" //
+[Type] == "Phantasmagoria Map" # [ForceSellItem] == "true" //
+[Type] == "Academy Map" # [ForceSellItem] == "true" //
+[Type] == "Thicket Map" # [ForceSellItem] == "true" //
+[Type] == "Wharf Map" # [ForceSellItem] == "true" //
+[Type] == "Ashen Wood Map" # [ForceSellItem] == "true" //
+[Type] == "Atoll Map" # [ForceSellItem] == "true" //
+[Type] == "Cemetery Map" # [ForceSellItem] == "true" //
+[Type] == "Underground Sea Map" # [ForceSellItem] == "true" //
+[Type] == "Crater Map" # [ForceSellItem] == "true" //
+[Type] == "Coral Ruins Map" # [ForceSellItem] == "true" //
+[Type] == "Lava Chamber Map" # [ForceSellItem] == "true" //
+[Type] == "Residence Map" # [ForceSellItem] == "true" //
+[Type] == "Ramparts Map" # [ForceSellItem] == "true" //
+[Type] == "Bone Crypt Map" # [ForceSellItem] == "true" //
+[Type] == "Underground River Map" # [ForceSellItem] == "true" //
+[Type] == "Gardens Map" # [ForceSellItem] == "true" //
+[Type] == "Arachnid Nest Map" # [ForceSellItem] == "true" //
+[Type] == "Bazaar Map" # [ForceSellItem] == "true" //
+[Type] == "Laboratory Map" # [ForceSellItem] == "true" //
+[Type] == "Infested Valley Map" # [ForceSellItem] == "true" //
+[Type] == "Overgrown Ruin Map" # [ForceSellItem] == "true" //
+[Type] == "Vaal Pyramid Map" # [ForceSellItem] == "true" //
+[Type] == "Geode Map" # [ForceSellItem] == "true" //
+[Type] == "Armoury Map" # [ForceSellItem] == "true" //
+[Type] == "Courtyard Map" # [ForceSellItem] == "true" //
+[Type] == "Shore Map" # [ForceSellItem] == "true" //
+[Type] == "Tropical Island Map" # [ForceSellItem] == "true" //
+[Type] == "Mineral Pools Map" # [ForceSellItem] == "true" //
+[Type] == "Moon Temple Map" # [ForceSellItem] == "true" //
+[Type] == "Sepulchre Map" # [ForceSellItem] == "true" //
+[Type] == "Tower Map" # [IgnoreMap] == "true" //
+[Type] == "Waste Pool Map" # [ForceSellItem] == "true" //
+[Type] == "Plateau Map" # [ForceSellItem] == "true" //
+[Type] == "Estuary Map" # [ForceSellItem] == "true" //
+[Type] == "Vault Map" # [IgnoreMap] == "true" //
+[Type] == "Temple Map" # [ForceSellItem] == "true" //
+[Type] == "Arena Map" # [ForceSellItem] == "true" //
+[Type] == "Museum Map" # [ForceSellItem] == "true" //
+[Type] == "Scriptorium Map" # [ForceSellItem] == "true" //
+[Type] == "Siege Map" # [IgnoreMap] == "true" //
+[Type] == "Shipyard Map" # [ForceSellItem] == "true" //
+[Type] == "Belfry Map" # [IgnoreMap] == "true" //
+[Type] == "Arachnid Tomb Map" # [ForceSellItem] == "true" //
+[Type] == "Wasteland Map" # [ForceSellItem] == "true" //
+[Type] == "Precinct Map" # [ForceSellItem] == "true" //
+[Type] == "Bog Map" # [ForceSellItem] == "true" //
+[Type] == "Pier Map" # [ForceSellItem] == "true" //
+[Type] == "Cursed Crypt Map" # [ForceSellItem] == "true" //
+[Type] == "Orchard Map" # [ForceSellItem] == "true" //
+[Type] == "Promenade Map" # [ForceSellItem] == "true" //
+[Type] == "Lair Map" # [ForceSellItem] == "true" //
+[Type] == "Colonnade Map" # [ForceSellItem] == "true" //
+[Type] == "Primordial Pool Map" # [ForceSellItem] == "true" //
+[Type] == "Spider Forest Map" # [ForceSellItem] == "true" //
+[Type] == "Coves Map" # [ForceSellItem] == "true" //
+[Type] == "Waterways Map" # [ForceSellItem] == "true" //
+[Type] == "Factory Map" # [ForceSellItem] == "true" //
+[Type] == "Mesa Map" # [ForceSellItem] == "true" //
+[Type] == "Pit Map" # [ForceSellItem] == "true" //
+[Type] == "Dry Sea Map" # [ForceSellItem] == "true" //
+[Type] == "Summit Map" # [ForceSellItem] == "true" //
+[Type] == "Overgrown Shrine Map" # [ForceSellItem] == "true" //
+[Type] == "Castle Ruins Map" # [ForceSellItem] == "true" //
+[Type] == "Crystal Ore Map" # [ForceSellItem] == "true" //
+[Type] == "Villa Map" # [ForceSellItem] == "true" //
+[Type] == "Primordial Blocks Map" # [ForceSellItem] == "true" //
+[Type] == "Necropolis Map" # [ForceSellItem] == "true" //
+[Type] == "Racecourse Map" # [ForceSellItem] == "true" //
+[Type] == "Caldera Map" # [ForceSellItem] == "true" //
+[Type] == "Ghetto Map" # [ForceSellItem] == "true" //
+[Type] == "Park Map" # [ForceSellItem] == "true" //
+[Type] == "Malformation Map" # [ForceSellItem] == "true" //
+[Type] == "Terrace Map" # [ForceSellItem] == "true" //
+[Type] == "Shrine Map" # [ForceSellItem] == "true" //
+[Type] == "Arsenal Map" # [ForceSellItem] == "true" //
+[Type] == "Desert Spring Map" # [ForceSellItem] == "true" //
+[Type] == "Core Map" # [IgnoreMap] == "true" //
+[Type] == "Colosseum Map" # [ForceSellItem] == "true" //
+[Type] == "Acid Caverns Map" # [ForceSellItem] == "true" //
+[Type] == "Dark Forest Map" # [ForceSellItem] == "true" //
+[Type] == "Crimson Temple Map" # [ForceSellItem] == "true" //
+[Type] == "Plaza Map" # [ForceSellItem] == "true" //
+[Type] == "Dig Map" # [IgnoreMap] == "true" //
+[Type] == "Palace Map" # [ForceSellItem] == "true" //
+[Type] == "Lava Lake Map" # [IgnoreMap] == "true" //
+[Type] == "Basilica Map" # [IgnoreMap] == "true" //
+[Type] == "Sunken City Map" # [IgnoreMap] == "true" //
+[Type] == "Reef Map" # [IgnoreMap] == "true" //
+[Type] == "Carcass Map" # [ForceSellItem] == "true" //
+[Type] == "Stagnation Map" # [IgnoreMap] == "true" //
+[Type] == "Bramble Valley Map" # [IgnoreMap] == "true" //
+[Type] == "Silo Map" # [IgnoreMap] == "true" //

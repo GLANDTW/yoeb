@@ -1,6 +1,9 @@
 [Rarity]== "Normal"#[UpgradeToMagic]== "true"//
 //[Rarity]== "Magic"#[AugmentIfPossible]== "true"//
 
+[Type] == "Mud Geyser Map" # [RunMap] == "true" //
+[Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
+
 [Type]=="Coves Map"&&[Rarity]=="Normal"#[RunMap]=="true"
 [Type]=="Canyon Map"&&[Rarity]=="Normal"#[RunMap]=="true"
 [Type]=="Dunes Map"&&[Rarity]=="Normal"#[RunMap]=="true"
@@ -22,12 +25,14 @@
 [Type]=="Precinct Map"#[ExitAfterBossKill]=="true"
 
 [Type]=="Synthesised Map"#[IgnoreMap]=="true"
+
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
 [Category]=="Map"&&[Rarity]=="Rare"&&[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
 
-[Category]=="Map"&&[map_zana_influence]=="1"#[IgnoreMap]=="true"
+[Category]=="Map"&&[map_zana_influence]=="1"#[IgnoreMap]=="true"//
+[map_zana_influence] == "1" # [IgnoreMap] == "true" //
 
 [Type]=="Forge of the PhoenixMap"#[IgnoreMap]=="true"//#
 [Type]=="Lair of the Hydra Map"#[IgnoreMap]=="true"//#
