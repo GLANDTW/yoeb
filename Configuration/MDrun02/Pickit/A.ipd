@@ -96,7 +96,7 @@
 [Type] == "Precinct Map" # [StashItem] == "true" 
 
 [Type] == "Canyon Map" # [ForceSellItem] == "true" 
-
+[Type] == "Defiled Cathedral Map" # [ForceSellItem] == "true" 
 
 
 //
