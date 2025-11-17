@@ -18,8 +18,8 @@
 ------------------基本设置
 g_needMinimizeGame=false			--最小化遊戲窗口 true为最小化 false或nil为不最小化
 g_imBoss=false				--如果是仓库号要为true 挂机号为false
-g_yiJieTimeOut=15*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
-g_timeOut=15*60				--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
+g_yiJieTimeOut=5*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
+g_timeOut=5*60				--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
 g_attackDis=40	                        --攻击距离
 g_sellSkillGem=true			--自动卖超过40品质的技能宝石
 g_notHuanYaoLv=82			--大于等于多少级只捡蓝色以上药
@@ -28,7 +28,7 @@ g_xiaoHaoGetZhuangBei=true		--挂机号向仓库号申请领高级换装中的装备
 g_duobiHpVal=0.5                       --打怪时HP少于多少躲避
 g_addHpVal=0.6                          --HP低于多少吃红药
 g_addMpVal=0.3                          --MP低于多少吃蓝药
-g_changeHunDunLv=70                     --多少级前不换C
+g_changeHunDunLv=90                     --多少级前不换C
 g_notShuaBaiPao=nil                     --是否不需要刷白袍 true为不需要 false或nil为需要
 g_wenWuChangeTime=60*60  	        --間隔多久检测一次文物兑换 单位为秒
 
@@ -38,15 +38,15 @@ AddUseGoodsData("天賦之書")             --添加天赋之书
 g_yiJieLv=70			        --够了多少级才去刷异界
 
 g_needYongBingLv=85                --数字型 满多少级打佣兵玩法 nil为一直不打
-g_noUseMapLv=16		--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
---g_useMinLvMapTianFuCnt=78       --取图时，地图天赋满多少点后 就从低阶地图开始取
-g_openQlkMaxMapTianFuCnt=78     --满多少天赋后不开奇拉克任务 nil为一直开
+g_noUseMapLv=17		--不使用、不捡多少阶及以上的地图 nil或0为忽略 设置优先的地图除外
+g_useMinLvMapTianFuCnt=999       -- 永远优先低阶地图(快速完成天赋)
+g_openQlkMaxMapTianFuCnt=nil     -- 不限制天赋数量
 
 ------------------挂机相关
 g_yijieNoWhiteMonster=true	--异界时是否不打白怪 true为不打 nil或false为打
 g_yijieNoWhiteBox=true		--异界时是否不开白箱子 true为不开 nil或false为开
-g_useYiJieWanChengDuLv=99	--使用下面异界完成度那个设置的等级，如果未到等则刷全图
-g_yiJieWanChengDu=0.9		--异界完成度 完成多少就回去 为1或1以下的小数
+g_useYiJieWanChengDuLv=68	--使用异界地图完成度机制的等级,68级开始
+g_yiJieWanChengDu=0.5		--异界完成度 50%即可回城 为1即1以下的小数
 g_yongHengShiBeiLv=85		--大于等于多少级打永恒石碑 
 g_needTaFangLv=90		--大于等于多少级打塔防
 g_needZhuangYuanLv=85           --大于等于多少级打庄园
@@ -65,7 +65,7 @@ g_mapUseZengFuLv=70		--大于等于多少级对蓝图使用增幅石 nil为永远不使用
 g_mapUseDianJingLv=80		--大于等于多少级对白图使用点金石 nil为永远不使用
 g_mapUseTuiBianLv=70		--大于等于多少级对白图使用蜕变石 nil为永远不使用
 g_mapUseJiHuiLv=80		--大于等于多少级对白图使用机会石 nil为永远不使用
-g_mapUseWaErLv=nil		--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
+g_mapUseWaErLv=80		--大于等于多少级对白、蓝地图使用瓦尔宝珠 nil为永远不使用
 g_mapUseDingZiLv=80		--大于等于多少级使用制图钉 nil为永远不使用
 g_mapUseOrangeMap=true		--true为使用橙图 nil或false为不使用
 g_czYouXianMap=true                             --是否重铸不打属性的优先地图 true为是 false或nil为不重铸 
@@ -455,7 +455,7 @@ SetNeedShiLianReward("隐匿混沌石","Metadata/Items/Currency/CurrencyRerollRareVei
 SetNeedShiLianReward("隱匿崇高石","Metadata/Items/Currency/CurrencyRerollRareVeiled")
 
 --SetZhuangBeiBoss(bossName,srvName)--设置发装仓库号 bossName=发装号名字 字符串型 srvName=服务器名字，如果多个区用同一份配置的话填上服务器名字可单独区分 如果不是可忽略 或填nil 
---SetZhuangBeiBoss("永恒苦痛之喉馬爾加什",nil)--发装备的仓库号 如果不需要 就注释掉
+--SetZhuangBeiBoss("GOST_GO",nil)--发装备的仓库号 如果不需要 就注释掉
 
 --添加在做到某个任务时购买技能宝石
 --AddNeedBuySkillTime(city,task)--city=城市索引数值型 1-11 task=任务类名 字符串型 任务类名可以在调试窗口中点击 所有任务 按钮查看到
@@ -605,26 +605,26 @@ SetMapCfg("畸形亡域","Metadata/Items/Maps/MapWorldsMalformation",true,true,true,
 --name 字符串型 地图名 
 --className 字符串型 地图类名 
 --color 字符串型 颜色 0白1蓝2黄3橙 中间用|隔开
-SetYouXianUseMapData("禁斷圍城","Metadata/Items/Maps/MapWorldsSiege","0|1|2|")
-SetYouXianUseMapData("墓地谷","Metadata/Items/Maps/MapWorldsGraveTrough","0|1|2|")
-SetYouXianUseMapData("岩漿熔湖","Metadata/Items/Maps/MapWorldsLavaLake","0|1|2|")
-SetYouXianUseMapData("象牙神殿","Metadata/Items/Maps/MapWorldsIvoryTemple","0|1|2|")
-SetYouXianUseMapData("濱海山丘","Metadata/Items/Maps/MapWorldsAtoll","0|1|2|")
-SetYouXianUseMapData("赤貧居所","Metadata/Items/Maps/MapWorldsGhetto","0|1|2|")
-SetYouXianUseMapData("遠古市集","Metadata/Items/Maps/MapWorldsBazaar","0|1|2|")
-SetYouXianUseMapData("海風高原","Metadata/Items/Maps/MapWorldsPlateau","0|1|2|")
-SetYouXianUseMapData("巨蛛之林","Metadata/Items/Maps/MapWorldsSpiderForest","0|1|2|")
-SetYouXianUseMapData("不潔教堂","Metadata/Items/Maps/MapWorldsDefiledCathedral","0|1|2|")
-SetYouXianUseMapData("致命岩灘","Metadata/Items/Maps/MapWorldsStrand","0|1|2|")
-SetYouXianUseMapData("魔影墓場","Metadata/Items/Maps/MapWorldsNecropolis","0|1|2|")
-SetYouXianUseMapData("濱海幽穴","Metadata/Items/Maps/MapWorldsUndergroundSea","0|1|2|")
-SetYouXianUseMapData("崩壞長廊","Metadata/Items/Maps/MapWorldsArcade","0|1|2|")
-SetYouXianUseMapData("平頂荒漠","Metadata/Items/Maps/MapWorldsMesa","0|1|2|")
-SetYouXianUseMapData("聖殿","Metadata/Items/Maps/MapWorldsBasilica","0|1|2|")
-SetYouXianUseMapData("濕地礦山","Metadata/Items/Maps/MapWorldsMineralPools","0|1|2|")
-SetYouXianUseMapData("危機水道","Metadata/Items/Maps/MapWorldsWaterways","0|1|2|")
-SetYouXianUseMapData("遠古危城","Metadata/Items/Maps/MapWorldsAncientCity","0|1|2|")
-SetYouXianUseMapData("荊棘谷","Metadata/Items/Maps/MapWorldsBrambleValley","0|1|2|")
+--SetYouXianUseMapData("禁斷圍城","Metadata/Items/Maps/MapWorldsSiege","0|1|2|")
+--SetYouXianUseMapData("墓地谷","Metadata/Items/Maps/MapWorldsGraveTrough","0|1|2|")
+--SetYouXianUseMapData("岩漿熔湖","Metadata/Items/Maps/MapWorldsLavaLake","0|1|2|")
+--SetYouXianUseMapData("象牙神殿","Metadata/Items/Maps/MapWorldsIvoryTemple","0|1|2|")
+--SetYouXianUseMapData("濱海山丘","Metadata/Items/Maps/MapWorldsAtoll","0|1|2|")
+--SetYouXianUseMapData("赤貧居所","Metadata/Items/Maps/MapWorldsGhetto","0|1|2|")
+--SetYouXianUseMapData("遠古市集","Metadata/Items/Maps/MapWorldsBazaar","0|1|2|")
+--SetYouXianUseMapData("海風高原","Metadata/Items/Maps/MapWorldsPlateau","0|1|2|")
+--SetYouXianUseMapData("巨蛛之林","Metadata/Items/Maps/MapWorldsSpiderForest","0|1|2|")
+--SetYouXianUseMapData("不潔教堂","Metadata/Items/Maps/MapWorldsDefiledCathedral","0|1|2|")
+--SetYouXianUseMapData("致命岩灘","Metadata/Items/Maps/MapWorldsStrand","0|1|2|")
+--SetYouXianUseMapData("魔影墓場","Metadata/Items/Maps/MapWorldsNecropolis","0|1|2|")
+--SetYouXianUseMapData("濱海幽穴","Metadata/Items/Maps/MapWorldsUndergroundSea","0|1|2|")
+--SetYouXianUseMapData("崩壞長廊","Metadata/Items/Maps/MapWorldsArcade","0|1|2|")
+--SetYouXianUseMapData("平頂荒漠","Metadata/Items/Maps/MapWorldsMesa","0|1|2|")
+--SetYouXianUseMapData("聖殿","Metadata/Items/Maps/MapWorldsBasilica","0|1|2|")
+--SetYouXianUseMapData("濕地礦山","Metadata/Items/Maps/MapWorldsMineralPools","0|1|2|")
+--SetYouXianUseMapData("危機水道","Metadata/Items/Maps/MapWorldsWaterways","0|1|2|")
+--SetYouXianUseMapData("遠古危城","Metadata/Items/Maps/MapWorldsAncientCity","0|1|2|")
+--SetYouXianUseMapData("荊棘谷","Metadata/Items/Maps/MapWorldsBrambleValley","0|1|2|")
 
 --SetNoUseMapShuXing(className)--设置不使用带有某种属性的地图,参数 className为属性类名
 SetNoUseMapShuXing("map_monsters_reflect_%_physical_damage")--设置不打物理反射属性
@@ -847,12 +847,12 @@ SetGoodsCaoZuo(nil,"0|2","永不知足","Metadata/Items/DivinationCards/DivinationCa
 
 SetNeedBuyGoodsData("知识卷轴","Metadata/Items/Currency/CurrencyIdentification",nil,"卷轴","Metadata/Items/Currency/CurrencyPortal")
 --SetNeedBuyGoodsData("传送卷轴","Metadata/Items/Currency/CurrencyPortal",200,"蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic")
-SetNeedBuyGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",200,"增幅石","Metadata/Items/Currency/CurrencyAddModToMagic")
+SetNeedBuyGoodsData("蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",100,"增幅石","Metadata/Items/Currency/CurrencyAddModToMagic")
 SetNeedBuyGoodsData("增幅石","Metadata/Items/Currency/CurrencyAddModToMagic",200,"改造石","Metadata/Items/Currency/CurrencyRerollMagic")
 --SetNeedBuyGoodsData("改造石","Metadata/Items/Currency/CurrencyRerollMagic",100,"工匠石","Metadata/Items/Currency/CurrencyRerollSocketNumbers")
-SetNeedBuyGoodsData("工匠石","Metadata/Items/Currency/CurrencyRerollSocketNumbers",100,"链结石","Metadata/Items/Currency/CurrencyRerollSocketLinks")
+SetNeedBuyGoodsData("工匠石","Metadata/Items/Currency/CurrencyRerollSocketNumbers",200,"链结石","Metadata/Items/Currency/CurrencyRerollSocketLinks")
 --SetNeedBuyGoodsData("链结石","Metadata/Items/Currency/CurrencyRerollSocketLinks",100,"机会石","Metadata/Items/Currency/CurrencyUpgradeRandomly")
-SetNeedBuyGoodsData("机会石","Metadata/Items/Currency/CurrencyUpgradeRandomly",100,"重铸石","Metadata/Items/Currency/CurrencyConvertToNormal")
+SetNeedBuyGoodsData("机会石","Metadata/Items/Currency/CurrencyUpgradeRandomly",200,"重铸石","Metadata/Items/Currency/CurrencyConvertToNormal")
 --SetNeedBuyGoodsData("重铸石","Metadata/Items/Currency/CurrencyConvertToNormal",40,"后悔石","Metadata/Items/Currency/CurrencyPassiveRefund")
 --SetNeedBuyGoodsData("后悔石","Metadata/Items/Currency/CurrencyPassiveRefund",10,"点金石","Metadata/Items/Currency/CurrencyUpgradeToRare")
 
@@ -869,7 +869,8 @@ SetNeedBuyGoodsData("机会石","Metadata/Items/Currency/CurrencyUpgradeRandomly",1
 --SocketCnt 数字型 总洞数量 忽略则填 nil
 --lineCnt 数字型 连洞数量 忽略则填 nil
 --checkCangKu 计算保留数量时是否连仓库内的数量也计算进去 nil或false为不计算仓库 true 为需要计算
-SetGoodsCaoZuo("通货|可堆叠通货|异界地图","0|2")--多个大类设置捡存
+SetGoodsCaoZuo("通货|可堆叠通货","0|2")
+SetGoodsCaoZuo("异界地图","0|2",nil,nil,nil,nil,nil,nil,"0|1|2")--拾取白色+蓝色+黄色地图
 SetGoodsCaoZuo("主动技能宝石|辅助技能宝石","0|2",nil,nil,nil,nil,5)--拾取品质超过5的技能宝石
 
 --SetGoodsCaoZuo("Convoking Wand|Bone Ring","0|1|4",nil,nil,nil,nil,nil,nil,"2")--拾取 鉴定 出售黄色物品珠宝
@@ -891,9 +892,12 @@ SetGoodsCaoZuo(nil,nil,"知识卷轴","Metadata/Items/Currency/CurrencyIdentificatio
 SetGoodsCaoZuo(nil,nil,"传送卷轴","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,79)--够了就不捡了
 SetGoodsCaoZuo(nil,"2","增幅石","Metadata/Items/Currency/CurrencyAddModToMagic",nil,nil,nil,20,nil,nil,nil,true)--够了就不捡了
 SetGoodsCaoZuo(nil,"2","蜕变石","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,20,nil,nil,nil,true)--够了就不捡了
---SetGoodsCaoZuo(nil,"0|3","玻璃弹珠","Metadata/Items/Currency/CurrencyFlaskQuality")--
+SetGoodsCaoZuo(nil,"0|2","富豪石","Metadata/Items/Currency/CurrencyUpgradeMagicToRar")--富豪石
+
+SetGoodsCaoZuo(nil,"0|3","玻璃弹珠","Metadata/Items/Currency/CurrencyFlaskQuality")--
 SetGoodsCaoZuo(nil,"0|3","磨刀石","Metadata/Items/Currency/CurrencyWeaponQuality")--磨刀石不存
 SetGoodsCaoZuo(nil,"0|3","护甲片","Metadata/Items/Currency/CurrencyArmourQuality")--护甲片不存
+
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSocketsShard",nil,nil,nil)--束縛石碎片
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil)--束縛石
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Currency/CurrencyStrongboxQualityShard",nil,nil,nil)--工程石碎片
@@ -1180,10 +1184,10 @@ SetSellGoodsData("忌妒之尖啸精华","Metadata/Items/Currency/CurrencyEssenceEnvy2"
 --AddJiaoYiTime(startHour,endHour)--添加交易时间段大于等于startHour 并且小于等于endHour 时会检测交易
 --StartHour 数字型 开始交易的小时 
 --endHour 数字型 结束交易的小时
-AddJiaoYiTime(0,24)--晚上11点到8点前会检测交易
+--AddJiaoYiTime(0,24)--晚上11点到8点前会检测交易
 
 --公会仓库存仓 fanxing
-AddJiaoYiBossName("gos",nil,nil,nil,true)
+AddJiaoYiBossName("FAN_GOST",nil,nil,nil,true)
 
 SetSaveIndex("可堆叠通货|通货","2|1|16",nil,nil,nil,nil,nil,true)
 SetSaveIndex("珠宝","1|20",nil,nil,nil,nil,nil,true)
@@ -2399,7 +2403,7 @@ SetJiaoYiGoods(nil,nil,nil,nil,"Replica Heatshiver")--"赝品．寒焰"
 SetJiaoYiGoods(nil,nil,nil,nil,"Replica Covenant")--"赝品．血誓"
 SetJiaoYiGoods(nil,nil,nil,nil,"Replica Badge of the Brotherhood")--"赝品．激情之章"
 SetJiaoYiGoods(nil,nil,nil,nil,"Pragmatism")--"实用主义"
---SetJiaoYiGoods(nil,nil,nil,nil,"Wraithlord")--"愤灵郡主"
+SetJiaoYiGoods(nil,nil,nil,nil,"Wraithlord")--"愤灵郡主"
 
 --值钱的药剂
 SetJiaoYiGoods(nil,nil,nil,nil,"Dying Sun")--"灭日"
@@ -2815,7 +2819,7 @@ SetJiaoYiGoods(nil,"自我約束","Metadata/Items/DivinationCards/DivinationCardTemp
 SetJiaoYiGoods(nil,"追擊之翼","Metadata/Items/DivinationCards/DivinationCardAvianPursuit",nil,nil,nil,nil)--命运卡
 
 --祭坛探险
-SetNeedAddTianFu("异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_essence_1_1-精髓稀有機率|atlas_essence_1_5-精髓稀有機率|atlas_essence_1_3-海量精華|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_harbinger_1_2_-額外神諭碎片|atlas_harbinger_1_4-額外神諭碎片|atlas_harbinger_1_3-不祥到來|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-聖甲蟲掉落率|atlas_map_drops_2-聖甲蟲掉落率|atlas_map_drops_4-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_harbinger_2_3-額外神諭機率|atlas_harbinger_2_5-額外神諭機率|atlas_harbinger_2_2-額外神諭機率|atlas_harbinger_2_4-初潮|atlas_boss_adjacent_maps_10-物品數量和稀有度|atlas_boss_adjacent_maps_11-物品數量和稀有度|atlas_essence_2_2-精髓機率|atlas_essence_2_4-強化能量|atlas_harbinger_3_1-額外神諭機率|atlas_harbinger_3_5-額外神諭碎片|atlas_harbinger_3_3-額外神諭碎片|atlas_harbinger_3_4-不可描述侵犯|atlas_harbinger_1_1-額外神諭碎片|atlas_essence_2_5-精髓機率|atlas_essence_2_3-精髓機率|atlas_path_93-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_essence_3_1-精髓機率|atlas_essence_3_2-禁錮怪物額外精髓機率|atlas_essence_3_3-禁錮怪物額外精髓機率|atlas_essence_3_5-水晶共振|atlas_harvest_4_1-豐收額外生靈之力|atlas_harvest_2_3-豐收額外生靈之力|atlas_harvest_2_4-豐收額外生靈之力|atlas_harvest_3_4__-豐收|atlas_harvest_2_1-豐收怪物複製機率|atlas_harvest_4_2-豐收怪物複製機率|atlas_harvest_2_5_-大豐收|atlas_boss_adjacent_maps_12-物品數量和稀有度|atlas_harvest_3_1-豐收階級 3 作物機率|atlas_harvest_2_6-密園之心|atlas_harvest_2_7-豐收階級 3 作物機率|atlas_harvest_3_3-豐收階級 3 作物機率|atlas_path_83-聖甲蟲掉落率|atlas_harvest_4222-豐收額外生靈之力|atlas_harvest_4220-豐收額外生靈之力|atlas_harvest_4225-豐收額外生靈之力|atlas_harvest_4212-倍增期|atlas_harvest_4218-豐收機率|atlas_harvest_3_2-豐收機率|atlas_harvest_3_5-豐收機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_harvest_1_2-豐收機率|atlas_harvest_1_3-豐收機率|atlas_harvest_1_1-豐收機率|atlas_harvest_1_4-密園呼喚|atlas_map_drops_16-聖甲蟲掉落率|atlas_map_drops_1-聖甲蟲掉落率|atlas_map_drops_10-聖甲蟲掉落率|atlas_map_drops_11-聖甲蟲掉落率|atlas_path_4-相鄰地圖掉落機率|atlas_path_7-相鄰地圖掉落機率|atlas_essence_4_1-禁錮怪物額外精髓機率|atlas_essence_4_2-禁錮怪物額外精髓機率|atlas_essence_4_3-禁錮怪物額外精髓機率|atlas_essence_4_4-水晶格|")
+--SetNeedAddTianFu("异界地图天赋=atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_essence_1_1-精髓稀有機率|atlas_essence_1_5-精髓稀有機率|atlas_essence_1_3-海量精華|atlas_path_23_-相鄰地圖掉落機率|atlas_boss_adjacent_maps_1-相鄰地圖掉落機率|atlas_boss_adjacent_maps_8-相鄰地圖掉落機率|atlas_path_38-相鄰地圖掉落機率|atlas_path_21-相鄰地圖掉落機率|atlas_harbinger_1_2_-額外神諭碎片|atlas_harbinger_1_4-額外神諭碎片|atlas_harbinger_1_3-不祥到來|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-聖甲蟲掉落率|atlas_map_drops_2-聖甲蟲掉落率|atlas_map_drops_4-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_harbinger_2_3-額外神諭機率|atlas_harbinger_2_5-額外神諭機率|atlas_harbinger_2_2-額外神諭機率|atlas_harbinger_2_4-初潮|atlas_boss_adjacent_maps_10-物品數量和稀有度|atlas_boss_adjacent_maps_11-物品數量和稀有度|atlas_essence_2_2-精髓機率|atlas_essence_2_4-強化能量|atlas_harbinger_3_1-額外神諭機率|atlas_harbinger_3_5-額外神諭碎片|atlas_harbinger_3_3-額外神諭碎片|atlas_harbinger_3_4-不可描述侵犯|atlas_harbinger_1_1-額外神諭碎片|atlas_essence_2_5-精髓機率|atlas_essence_2_3-精髓機率|atlas_path_93-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_essence_3_1-精髓機率|atlas_essence_3_2-禁錮怪物額外精髓機率|atlas_essence_3_3-禁錮怪物額外精髓機率|atlas_essence_3_5-水晶共振|atlas_harvest_4_1-豐收額外生靈之力|atlas_harvest_2_3-豐收額外生靈之力|atlas_harvest_2_4-豐收額外生靈之力|atlas_harvest_3_4__-豐收|atlas_harvest_2_1-豐收怪物複製機率|atlas_harvest_4_2-豐收怪物複製機率|atlas_harvest_2_5_-大豐收|atlas_boss_adjacent_maps_12-物品數量和稀有度|atlas_harvest_3_1-豐收階級 3 作物機率|atlas_harvest_2_6-密園之心|atlas_harvest_2_7-豐收階級 3 作物機率|atlas_harvest_3_3-豐收階級 3 作物機率|atlas_path_83-聖甲蟲掉落率|atlas_harvest_4222-豐收額外生靈之力|atlas_harvest_4220-豐收額外生靈之力|atlas_harvest_4225-豐收額外生靈之力|atlas_harvest_4212-倍增期|atlas_harvest_4218-豐收機率|atlas_harvest_3_2-豐收機率|atlas_harvest_3_5-豐收機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_harvest_1_2-豐收機率|atlas_harvest_1_3-豐收機率|atlas_harvest_1_1-豐收機率|atlas_harvest_1_4-密園呼喚|atlas_map_drops_16-聖甲蟲掉落率|atlas_map_drops_1-聖甲蟲掉落率|atlas_map_drops_10-聖甲蟲掉落率|atlas_map_drops_11-聖甲蟲掉落率|atlas_path_4-相鄰地圖掉落機率|atlas_path_7-相鄰地圖掉落機率|atlas_essence_4_1-禁錮怪物額外精髓機率|atlas_essence_4_2-禁錮怪物額外精髓機率|atlas_essence_4_3-禁錮怪物額外精髓機率|atlas_essence_4_4-水晶格|")
 
 
 --SetCheckHeistData(5*60,1000,nil,68,true,65,73,78,65,nil,6) --设置去夺宝 

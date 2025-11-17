@@ -15,7 +15,7 @@ g_yuyanCnt=99				--够多少银币去预言
 
 -- 阶段1: 1-10级 - 1洞即可 (快速获得插槽)
 SetGoodsCaoZuo(
-    "衣服|头盔|手套|鞋子|单手锤|盾",
+    "衣服|头盔|手套|鞋子|法杖|盾",
     "0|2",
     nil, nil, nil, nil, nil, nil,
     "0", 1, nil, nil,
@@ -24,7 +24,7 @@ SetGoodsCaoZuo(
         local role = GetMyRole()
         if not role then return false end
         local lv = role:GetLevel()
-        return lv >= 1 and lv <= 11
+        return lv >= 1 and lv <= 10
     end
 )
 
@@ -39,7 +39,7 @@ SetGoodsCaoZuo(
         local role = GetMyRole()
         if not role then return false end
         local lv = role:GetLevel()
-        return lv >= 12 and lv <= 30
+        return lv >= 11 and lv <= 30
     end
 )
 
@@ -150,15 +150,15 @@ SetTaskMiGongData("a9q1",nil,2)--在复活的梦魇这个任务时 做迷宫2
 --SetTaskMiGongDataByLv(lv,mgIndex)--设置到等级时做迷宫 lv 数字型 为大于等于多少级做 mgIndex=迷宫索引 数字型，只支持 1 2 3 对应3个迷宫
 SetTaskMiGongDataByLv(80,3)
 
---指定职业  野蛮人、野蛮人、贵族、游侠、决斗者、暗影、圣堂武僧、
-g_newRoleJob="野蛮人"
+--指定职业  野蛮人、女巫、贵族、游侠、决斗者、暗影、圣堂武僧、
+g_newRoleJob="女巫"
 --升华职业 勇士、暴徒、酋长、侠客、锐眼、追猎者、秘术家、元素使、召唤师、处刑者、卫士、冠军、判官、圣宗、守护者、暗影大师、欺诈师、破坏者、升华使徒、
-g_shengHuaJob="酋长"
+g_shengHuaJob="召唤师"
 --SetUseWeapon(str)--设置使用的武器 支持(盾}箭袋}爪}匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤) 如果需要用两样中间用|分开
 SetUseWeapon("法杖|盾")
 
 --SetUseZhuangBeiTypeData(typeStr,pos)--设置自己用的装备类型 
---typeStr=类型 支持("StrDex"为决斗者装+护甲闪避 "Str"为野蛮人装+护甲 "DexInt"为暗影装+闪避护盾 "Int"为野蛮人装+护盾 "Dex"为游侠装+闪避 "StrInt"为圣堂武僧装+力量护盾)
+--typeStr=类型 支持("StrDex"为决斗者装+护甲闪避 "Str"为野蛮人装+护甲 "DexInt"为暗影装+闪避护盾 "Int"为女巫装+护盾 "Dex"为游侠装+闪避 "StrInt"为圣堂武僧装+力量护盾)
 --pos=部位支持部位 支持(戒指|项链|腰带|鞋子|手套|衣服|头盔|盾|箭袋|爪}匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤) 不填或nil为设置所有
 SetUseZhuangBeiTypeData("Str|StrInt","盾")
 SetUseZhuangBeiTypeData("Int|StrInt","衣服")
@@ -210,10 +210,7 @@ AddNeedBuySkillTime(10,"a10q2")
 AddNeedBuySkillTime(11,"a11q1")
 
 --剧情主力技能设置
-SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
-SetNeedSkillLineData(110,"火球,nil|附加閃電傷害輔助,nil",5,nil,nil)
-SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
-SetNeedSkillLineData(130,"神聖火舌圖騰,nil",12,nil,nil)
+SetNeedSkillLineData(78,"火球,Metadata/Items/Gems/SkillGemFireball,nil",5,nil,0)--5级失效
 SetNeedSkillLineData(77,"召唤愤怒狂灵,Metadata/Items/Gems/SkillGemSummonRagingSpirit|秘术增强(辅),Metadata/Items/Gems/SupportGemArcaneSurge|召唤生物伤害(辅),Metadata/Items/Gems/SupportGemMinionDamage",25,nil,0)
 SetNeedSkillLineData(89,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|附加閃電傷害輔助,Metadata/Items/Gems/SupportGemAddedLightningDamage",nil,nil,0)
 SetNeedSkillLineData(87,"殭屍復甦,Metadata/Items/Gems/SkillGemRaiseZombie|豢養狂熱輔助,Metadata/Items/Gems/SupportGemFeedingFrenzy|召喚幻影輔助,Metadata/Items/Gems/SupportGemSummonGhostOnKill",nil,nil,0)
@@ -221,7 +218,7 @@ SetNeedSkillLineData(85,"召喚巨石魔像,Metadata/Items/Gems/SkillGemSummonRockGole
 SetNeedSkillLineData(83,"元素淨化,Metadata/Items/Gems/SkillGemPurity|血肉奉獻,Metadata/Items/Gems/SkillGemFleshOffering|號召,Metadata/Items/Gems/SkillGemConvocation",nil,nil,0)
 SetNeedSkillLineData(81,"神聖火舌圖騰,Metadata/Items/Gems/SkillGemFlameTotem|钢铁之肤,Metadata/Items/Gems/SkillGemSteelskin",nil,nil,0)
 SetNeedSkillLineData(79,"烈焰冲刺,Metadata/Items/Gems/SkillGemFlameDash|亵渎,Metadata/Items/Gems/SkillGemDesecrate",nil,nil,0)
-SetNeedSkillLineData(79,"重盾衝鋒,nil|快速攻擊輔助,nil|褻瀆,nil",nil,nil,0)
+
 --异界主力技能设置
 SetNeedSkillLineData(100,"召唤灵体,Metadata/Items/Gems/SkillGemRaiseSpectre,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|投射物返回輔助,Metadata/Items/Gems/SupportGemReturningProjectiles|精準破壞輔助,Metadata/Items/Gems/SupportGemControlledDestruction|穿透輔助,Metadata/Items/Gems/SupportGemPierce",nil,2,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)
 SetNeedSkillLineData(96,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--鞋子
@@ -251,11 +248,10 @@ SetSkillUseWaEr("赦免","Metadata/Items/Gems/SkillGemAbsolution","瓦爾．赦免","Me
 SetSkillUseWaEr("迅捷","Metadata/Items/Gems/SkillGemHaste","瓦爾．迅捷","Metadata/Items/Gems/SkillGemVaalHaste",6)
 
 --AddAttackSkillData(name,className,noLine)--添加攻击技能 name=技能名 className=技能类名 noLine=不在直线就能攻击 挑选攻击技能会从上到下寻找，要把厉害的技能加在前面
+--AddAttackSkillData("电弧","arc")
 AddAttackSkillData("赦免","absolution")
 AddAttackSkillData("召唤愤怒狂灵","summon_raging_spirit")
-AddAttackSkillData("裂地之擊","Ground Slam",false,40,0)--添加攻击技能
-AddAttackSkillData("火球","Fireball",false,35.0)
-AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
+AddAttackSkillData("火球","fireball")
 AddAttackSkillData("普通攻击","melee")
 
 --SetNeedZhaoHuanMonster(name,className,val)--设置需要召唤的灵体会自动选择比重大的召唤 name=怪物名 className=怪物类名 val=比重
@@ -288,123 +284,123 @@ SetNeedZhaoHuanMonster(nil,"Metadata/Monsters/Revenant/RevenantMapBossStandalone
 
 ---------------------------------------换装设置
 --SetAtuoChangeEquipData(job,pos,name,val,yijie) 计算方式如下 定义过的属性值乘以比重值  哪样装备高就会用哪样
---job 职业 支持(暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧) 可填多个，中间用|隔开
+--job 职业 支持(暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧) 可填多个，中间用|隔开
 --pos 部位 支持(戒指|项链|腰带|鞋子|手套|衣服|头盔|盾|箭袋|爪}匕首|法杖|单手剑|细剑|单手斧|单手锤|符文匕首|短杖|战杖|弓|长杖|双手剑|双手斧|双手锤) 可填多个，中间用|隔开
 --name 属性名 支持游戏内的装备属性名 还有其他的自定义名(物理伤害、护甲、护盾、闪避、连洞、总洞)
 --val 比重值 支持小数
 --nType 换装类型 0或nil或不填为一直有效 1为跑图时才有效 2为异界时才有效
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_and_cold_damage_resistance_%",0.2)--火焰与冰霜伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_and_lightning_damage_resistance_%",0.2)--火焰与闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","cold_and_lightning_damage_resistance_%",0.2)--冰霜与闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_resist_all_elements_%",0.3)--全元素抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_fire_damage_resistance_%",0.1)--基础火焰伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_cold_damage_resistance_%",0.1)--基础冰霜伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_lightning_damage_resistance_%",0.1)--基础闪电伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","cold_damage_resistance_%",0.1)--冰霜抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_damage_resistance_%",0.1)--火焰抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","lightning_damage_resistance_%",0.1)--闪电抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带","base_chaos_damage_resistance_%",0.15)--基础混沌伤害抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带","chaos_damage_resistance_%",0.15)--混沌抗性 %
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",10)--基础移动速度 +%
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","鞋子","movement_velocity_+%",10)--移动速度 +%
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","手套|衣服|头盔","连洞",100)--每连一线加xx点比重
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","爪|盾|鞋子","总洞",100,1)--每连一线加xx点比重
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链|戒指|腰带","base_maximum_life",0.4,1)--加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链","敏捷",0.5,0)--每点物理伤害加xx点比重
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","盾","护甲",0.6)--加基礎最大生命
--- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","爪","物理伤害",200,1)--每点物理伤害加xx点比重
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_and_cold_damage_resistance_%",0.2)--火焰与冰霜伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_and_lightning_damage_resistance_%",0.2)--火焰与闪电伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","cold_and_lightning_damage_resistance_%",0.2)--冰霜与闪电伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_resist_all_elements_%",0.3)--全元素抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_fire_damage_resistance_%",0.1)--基础火焰伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_cold_damage_resistance_%",0.1)--基础冰霜伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","base_lightning_damage_resistance_%",0.1)--基础闪电伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","cold_damage_resistance_%",0.1)--冰霜抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","fire_damage_resistance_%",0.1)--火焰抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔|盾","lightning_damage_resistance_%",0.1)--闪电抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带","base_chaos_damage_resistance_%",0.15)--基础混沌伤害抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带","chaos_damage_resistance_%",0.15)--混沌抗性 %
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",10)--基础移动速度 +%
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",10)--移动速度 +%
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","手套|衣服|头盔","连洞",100)--每连一线加xx点比重
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","爪|盾|鞋子","总洞",100,1)--每连一线加xx点比重
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链|戒指|腰带","base_maximum_life",0.4,1)--加基礎最大生命
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","敏捷",0.5,0)--每点物理伤害加xx点比重
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",0.6)--加基礎最大生命
+-- SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","爪","物理伤害",200,1)--每点物理伤害加xx点比重
 
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","手套","sacrifice_%_maximum_life_to_gain_as_es_on_spell_cast",-99999)--减分 恶魔缝补者
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","头盔","you_cannot_have_non_spectre_minions",-99999)--减分 不能有非幽魂的召喚物
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","腰带","you_have_no_armour_or_energy_shield",-99999)--减分 你沒有護甲和能量護盾
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","腰带","FireResistance",-99999)--减分 戴亚迪安的晨曦
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","life_reserved_by_stat_%",-99999)--减分 冥约
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","衣服","local_has_no_sockets",-99999)--减分 岡姆
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","手套","sacrifice_%_maximum_life_to_gain_as_es_on_spell_cast",-99999)--减分 恶魔缝补者
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","头盔","you_cannot_have_non_spectre_minions",-99999)--减分 不能有非幽魂的召喚物
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","腰带","you_have_no_armour_or_energy_shield",-99999)--减分 你沒有護甲和能量護盾
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","腰带","FireResistance",-99999)--减分 戴亚迪安的晨曦
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","life_reserved_by_stat_%",-99999)--减分 冥约
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","衣服","local_has_no_sockets",-99999)--减分 岡姆
 
 --剧情有效
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","盾","护甲",5,1)                                                   --护甲
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","盾","base_maximum_life",10,1)                                     --加基礎最大生命
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_damage_+%",10,1)                                    --召唤伤害基底
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_attack_and_cast_speed_+%",5,1)                      --后缀施法速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链","base_maximum_life",5,1)                                    --加基礎最大生命                 
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链","additional_strength",10,1)                                  --力量
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","base_resist_all_elements_%",20,1)                          --全元素抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","fire_and_cold_damage_resistance_%",6,1)                    --火焰与冰霜伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","fire_and_lightning_damage_resistance_%",6,1)               --火焰与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","cold_and_lightning_damage_resistance_%",5,1)               --冰霜与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_maximum_life",10,1)                 --加基礎最大生命
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_damage_resistance_%",4,1)           --火焰抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_damage_resistance_%",3,1)           --冰霜抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","lightning_damage_resistance_%",3,1)      --闪电抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","鞋子|手套|头盔|衣服|盾|法杖","总洞",30,1)                        --每加1孔加50点比重
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","鞋子|手套|头盔|衣服|盾|法杖","连洞",30,1)                        --每連1孔加40点比重
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",5,1)                                                   --护甲
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","base_maximum_life",10,1)                                     --加基礎最大生命
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_damage_+%",10,1)                                    --召唤伤害基底
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_attack_and_cast_speed_+%",5,1)                      --后缀施法速度
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","base_maximum_life",5,1)                                    --加基礎最大生命                 
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_strength",10,1)                                  --力量
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","base_resist_all_elements_%",20,1)                          --全元素抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","fire_and_cold_damage_resistance_%",6,1)                    --火焰与冰霜伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","fire_and_lightning_damage_resistance_%",6,1)               --火焰与闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","cold_and_lightning_damage_resistance_%",5,1)               --冰霜与闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_maximum_life",10,1)                 --加基礎最大生命
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_damage_resistance_%",4,1)           --火焰抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_damage_resistance_%",3,1)           --冰霜抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","lightning_damage_resistance_%",3,1)      --闪电抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子|手套|头盔|衣服|盾|法杖","总洞",30,1)                        --每加1孔加50点比重
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子|手套|头盔|衣服|盾|法杖","连洞",30,1)                        --每連1孔加40点比重
 
 --异界有效
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","盾","护甲",10,2)                                                 --护甲
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","盾","base_maximum_life",20,2)                                    --加基礎最大生命
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","鞋子","movement_velocity_+%",30,2)                               --移动速度 +%
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",40,2)                          --基础移动速度 +%
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_critical_strike_multiplier_+",30,2)               --召唤暴击加成
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_critical_strike_chance_+%",30,2)                  --召唤暴击
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_attack_and_cast_speed_+%",40,2)                  --召唤攻擊和施放速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_damage_+%",45,2)                                 --召唤伤害
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","spell_skill_gem_level_+%",100,2)                        --全部法术等级+1
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","法杖","minion_skill_gem_level_+%",120,2)                        --召唤物等级+1
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","minion_damage_+%",40,2)                                 --召唤伤害
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","minion_attack_and_cast_speed_+%",35,2)                  --召唤攻擊和施放速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","minion_movement_speed_+%",20,2)                          --召喚移動速度
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指","minion_elemental_resistance_%",25,2)                     --召唤抗性基底
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链","base_maximum_life",5,2)                                   --加基礎最大生命
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链","additional_strength",10,2)                                --力量
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","项链","additional_intelligence",10,2)                            --智慧
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_maximum_life",5,2)    --加基礎最大生命
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_resist_all_elements_%",10,2)--全元素抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_and_cold_damage_resistance_%",6,2)--火焰与冰霜伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","护甲",10,2)                                                 --护甲
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","盾","base_maximum_life",20,2)                                    --加基礎最大生命
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","movement_velocity_+%",30,2)                               --移动速度 +%
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","鞋子","base_movement_velocity_+%",40,2)                          --基础移动速度 +%
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_critical_strike_multiplier_+",30,2)               --召唤暴击加成
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_critical_strike_chance_+%",30,2)                  --召唤暴击
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_attack_and_cast_speed_+%",40,2)                  --召唤攻擊和施放速度
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_damage_+%",45,2)                                 --召唤伤害
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","spell_skill_gem_level_+%",100,2)                        --全部法术等级+1
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","法杖","minion_skill_gem_level_+%",120,2)                        --召唤物等级+1
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_damage_+%",40,2)                                 --召唤伤害
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_attack_and_cast_speed_+%",35,2)                  --召唤攻擊和施放速度
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_movement_speed_+%",20,2)                          --召喚移動速度
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指","minion_elemental_resistance_%",25,2)                     --召唤抗性基底
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","base_maximum_life",5,2)                                   --加基礎最大生命
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_strength",10,2)                                --力量
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","项链","additional_intelligence",10,2)                            --智慧
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_maximum_life",5,2)    --加基礎最大生命
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_resist_all_elements_%",10,2)--全元素抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_and_cold_damage_resistance_%",6,2)--火焰与冰霜伤害抗性 %
 
 ------------------------------------------------------------
 -- 召唤物额外核心属性 (伤害优先配置)
 ------------------------------------------------------------
 
 -- 法杖 - 召唤物生存与输出
-SetAtuoChangeEquipData("野蛮人","法杖","minion_maximum_life_+%",35,2)                -- 召唤生命
-SetAtuoChangeEquipData("野蛮人","法杖","minion_life_regeneration_rate_per_minute_%",18,2) -- 召唤回复
-SetAtuoChangeEquipData("野蛮人","法杖","minion_accuracy_rating_+%",20,2)             -- 召唤命中
+SetAtuoChangeEquipData("女巫","法杖","minion_maximum_life_+%",35,2)                -- 召唤生命
+SetAtuoChangeEquipData("女巫","法杖","minion_life_regeneration_rate_per_minute_%",18,2) -- 召唤回复
+SetAtuoChangeEquipData("女巫","法杖","minion_accuracy_rating_+%",20,2)             -- 召唤命中
 
 -- 戒指 - 召唤物生存
-SetAtuoChangeEquipData("野蛮人","戒指","minion_maximum_life_+%",30,2)                
-SetAtuoChangeEquipData("野蛮人","戒指","minion_accuracy_rating_+%",18,2)             
+SetAtuoChangeEquipData("女巫","戒指","minion_maximum_life_+%",30,2)                
+SetAtuoChangeEquipData("女巫","戒指","minion_accuracy_rating_+%",18,2)             
 
 -- 项链 - 召唤物核心
-SetAtuoChangeEquipData("野蛮人","项链","minion_damage_+%",45,2)                      -- 最高优先
-SetAtuoChangeEquipData("野蛮人","项链","minion_attack_and_cast_speed_+%",40,2)       
-SetAtuoChangeEquipData("野蛮人","项链","minion_skill_gem_level_+%",120,2)            
-SetAtuoChangeEquipData("野蛮人","项链","spell_skill_gem_level_+%",100,2)             
-SetAtuoChangeEquipData("野蛮人","项链","minion_maximum_life_+%",30,2)                
+SetAtuoChangeEquipData("女巫","项链","minion_damage_+%",45,2)                      -- 最高优先
+SetAtuoChangeEquipData("女巫","项链","minion_attack_and_cast_speed_+%",40,2)       
+SetAtuoChangeEquipData("女巫","项链","minion_skill_gem_level_+%",120,2)            
+SetAtuoChangeEquipData("女巫","项链","spell_skill_gem_level_+%",100,2)             
+SetAtuoChangeEquipData("女巫","项链","minion_maximum_life_+%",30,2)                
 
 -- 腰带 - 召唤物生存
-SetAtuoChangeEquipData("野蛮人","腰带","base_maximum_life",40,2)                     -- 玩家生命(最重要)
-SetAtuoChangeEquipData("野蛮人","腰带","minion_damage_+%",25,2)                      
-SetAtuoChangeEquipData("野蛮人","腰带","base_resist_all_elements_%",20,2)            
+SetAtuoChangeEquipData("女巫","腰带","base_maximum_life",40,2)                     -- 玩家生命(最重要)
+SetAtuoChangeEquipData("女巫","腰带","minion_damage_+%",25,2)                      
+SetAtuoChangeEquipData("女巫","腰带","base_resist_all_elements_%",20,2)            
 
 ------------------------------------------------------------
 -- 法术伤害系统 (赦免/火球等技能)
 ------------------------------------------------------------
 
 -- 法杖法术评分
-SetAtuoChangeEquipData("野蛮人","法杖","spell_damage_+%",25,2)                       -- 法术伤害
-SetAtuoChangeEquipData("野蛮人","法杖","base_cast_speed_+%",22,2)                    -- 施法速度
-SetAtuoChangeEquipData("野蛮人","法杖","spell_critical_strike_chance_+%",18,2)       -- 法术爆击
-SetAtuoChangeEquipData("野蛮人","法杖","spell_critical_strike_multiplier_+",18,2)    -- 法术爆击伤
-SetAtuoChangeEquipData("野蛮人","法杖","fire_damage_+%",15,2)                        -- 火焰伤害
-SetAtuoChangeEquipData("野蛮人","法杖","lightning_damage_+%",15,2)                   -- 闪电伤害
-SetAtuoChangeEquipData("野蛮人","法杖","elemental_damage_+%",20,2)                   -- 元素伤害
+SetAtuoChangeEquipData("女巫","法杖","spell_damage_+%",25,2)                       -- 法术伤害
+SetAtuoChangeEquipData("女巫","法杖","base_cast_speed_+%",22,2)                    -- 施法速度
+SetAtuoChangeEquipData("女巫","法杖","spell_critical_strike_chance_+%",18,2)       -- 法术爆击
+SetAtuoChangeEquipData("女巫","法杖","spell_critical_strike_multiplier_+",18,2)    -- 法术爆击伤
+SetAtuoChangeEquipData("女巫","法杖","fire_damage_+%",15,2)                        -- 火焰伤害
+SetAtuoChangeEquipData("女巫","法杖","lightning_damage_+%",15,2)                   -- 闪电伤害
+SetAtuoChangeEquipData("女巫","法杖","elemental_damage_+%",20,2)                   -- 元素伤害
 
 -- 戒指法术评分
-SetAtuoChangeEquipData("野蛮人","戒指","spell_damage_+%",18,2)                       
-SetAtuoChangeEquipData("野蛮人","戒指","base_cast_speed_+%",15,2)                    
-SetAtuoChangeEquipData("野蛮人","戒指","spell_critical_strike_chance_+%",12,2)       
-SetAtuoChangeEquipData("野蛮人","戒指","fire_damage_+%",10,2)                        
-SetAtuoChangeEquipData("野蛮人","戒指","lightning_damage_+%",10,2)                   
+SetAtuoChangeEquipData("女巫","戒指","spell_damage_+%",18,2)                       
+SetAtuoChangeEquipData("女巫","戒指","base_cast_speed_+%",15,2)                    
+SetAtuoChangeEquipData("女巫","戒指","spell_critical_strike_chance_+%",12,2)       
+SetAtuoChangeEquipData("女巫","戒指","fire_damage_+%",10,2)                        
+SetAtuoChangeEquipData("女巫","戒指","lightning_damage_+%",10,2)                   
 
 
 ------------------------------------------------------------
@@ -412,44 +408,44 @@ SetAtuoChangeEquipData("野蛮人","戒指","lightning_damage_+%",10,2)
 ------------------------------------------------------------
 
 -- 衣服 ES (最重要)
-SetAtuoChangeEquipData("野蛮人","衣服","base_maximum_energy_shield",30,2)            -- 最大ES
-SetAtuoChangeEquipData("野蛮人","衣服","energy_shield_recharge_rate_+%",18,2)        -- ES回复速度
-SetAtuoChangeEquipData("野蛮人","衣服","base_maximum_life",25,2)                     -- 生命值
+SetAtuoChangeEquipData("女巫","衣服","base_maximum_energy_shield",30,2)            -- 最大ES
+SetAtuoChangeEquipData("女巫","衣服","energy_shield_recharge_rate_+%",18,2)        -- ES回复速度
+SetAtuoChangeEquipData("女巫","衣服","base_maximum_life",25,2)                     -- 生命值
 
 -- 头盔 ES
-SetAtuoChangeEquipData("野蛮人","头盔","base_maximum_energy_shield",25,2)            
-SetAtuoChangeEquipData("野蛮人","头盔","energy_shield_recharge_rate_+%",15,2)        
-SetAtuoChangeEquipData("野蛮人","头盔","base_maximum_life",20,2)                     
+SetAtuoChangeEquipData("女巫","头盔","base_maximum_energy_shield",25,2)            
+SetAtuoChangeEquipData("女巫","头盔","energy_shield_recharge_rate_+%",15,2)        
+SetAtuoChangeEquipData("女巫","头盔","base_maximum_life",20,2)                     
 
 -- 手套/鞋子 ES
-SetAtuoChangeEquipData("野蛮人","手套","base_maximum_energy_shield",20,2)            
-SetAtuoChangeEquipData("野蛮人","手套","base_maximum_life",18,2)                     
-SetAtuoChangeEquipData("野蛮人","鞋子","base_maximum_energy_shield",20,2)            
+SetAtuoChangeEquipData("女巫","手套","base_maximum_energy_shield",20,2)            
+SetAtuoChangeEquipData("女巫","手套","base_maximum_life",18,2)                     
+SetAtuoChangeEquipData("女巫","鞋子","base_maximum_energy_shield",20,2)            
 
 -- 盾牌 ES
-SetAtuoChangeEquipData("野蛮人","盾","base_maximum_energy_shield",28,2)              
-SetAtuoChangeEquipData("野蛮人","盾","energy_shield_recharge_rate_+%",15,2)          
+SetAtuoChangeEquipData("女巫","盾","base_maximum_energy_shield",28,2)              
+SetAtuoChangeEquipData("女巫","盾","energy_shield_recharge_rate_+%",15,2)          
 
 -- 魔力相关
-SetAtuoChangeEquipData("野蛮人","法杖|项链","base_maximum_mana",15,2)                -- 最大魔力
-SetAtuoChangeEquipData("野蛮人","法杖|项链","base_mana_regeneration_rate_per_minute",12,2) -- 魔力回复
-SetAtuoChangeEquipData("野蛮人","戒指","base_maximum_mana",12,2)                     
+SetAtuoChangeEquipData("女巫","法杖|项链","base_maximum_mana",15,2)                -- 最大魔力
+SetAtuoChangeEquipData("女巫","法杖|项链","base_mana_regeneration_rate_per_minute",12,2) -- 魔力回复
+SetAtuoChangeEquipData("女巫","戒指","base_maximum_mana",12,2)                     
 
 -- 项链法术评分
-SetAtuoChangeEquipData("野蛮人","项链","spell_damage_+%",25,2)                       
-SetAtuoChangeEquipData("野蛮人","项链","base_cast_speed_+%",20,2)                    
-SetAtuoChangeEquipData("野蛮人","项链","spell_critical_strike_chance_+%",15,2)       
-SetAtuoChangeEquipData("野蛮人","项链","elemental_damage_+%",18,2)                   
+SetAtuoChangeEquipData("女巫","项链","spell_damage_+%",25,2)                       
+SetAtuoChangeEquipData("女巫","项链","base_cast_speed_+%",20,2)                    
+SetAtuoChangeEquipData("女巫","项链","spell_critical_strike_chance_+%",15,2)       
+SetAtuoChangeEquipData("女巫","项链","elemental_damage_+%",18,2)                   
 
 
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_and_lightning_damage_resistance_%",6,2)--火焰与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_and_lightning_damage_resistance_%",5,2)--冰霜与闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_fire_damage_resistance_%",4,2)--基础火焰伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_cold_damage_resistance_%",3,2)--基础冰霜伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_lightning_damage_resistance_%",3,2)--基础闪电伤害抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_damage_resistance_%",4,2)--火焰抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_damage_resistance_%",3,2)--冰霜抗性 %
-SetAtuoChangeEquipData("暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","lightning_damage_resistance_%",3,2)--闪电抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_and_lightning_damage_resistance_%",6,2)--火焰与闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_and_lightning_damage_resistance_%",5,2)--冰霜与闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_fire_damage_resistance_%",4,2)--基础火焰伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_cold_damage_resistance_%",3,2)--基础冰霜伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","base_lightning_damage_resistance_%",3,2)--基础闪电伤害抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","fire_damage_resistance_%",4,2)--火焰抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","cold_damage_resistance_%",3,2)--冰霜抗性 %
+SetAtuoChangeEquipData("暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧","戒指|项链|腰带|鞋子|手套|衣服|头盔","lightning_damage_resistance_%",3,2)--闪电抗性 %
 
 SetNeedFlaskData(1,"生命药剂","沸騰的,FlaskFullInstantRecovery1",60,"不朽生命藥劑","Metadata/Items/Flasks/FlaskLife11")
 SetNeedFlaskData(2,"生命药剂","受驚的,FlaskInstantRecoveryOnLowLife2",60,"不朽生命藥劑","Metadata/Items/Flasks/FlaskLife11")
@@ -477,8 +473,7 @@ SetZhengTiColorVarData(3,0,0,2,0,200,nil)
 SetZhengTiColorVarData(3,1,1,1,0,100,nil)
 
 --盾牌---红红红
-SetZhengTiColorVarData(4,2,1,0,1,600,true)--盾牌
-SetZhengTiColorVarData(4,2,0,3,1,500,true)--盾牌
+SetZhengTiColorVarData(4,0,0,3,1,500,true)--盾牌
 SetZhengTiColorVarData(4,2,1,0,0,400,nil)
 SetZhengTiColorVarData(4,2,0,1,0,300,nil)
 SetZhengTiColorVarData(4,2,0,0,0,200,nil)
@@ -505,7 +500,7 @@ SetZhengTiColorVarData(10,0,0,4,0,300,true)
 SetZhengTiColorVarData(10,0,0,3,0,200,true)
 SetZhengTiColorVarData(10,2,0,2,0,100,true)
 
---野蛮人--主线
+--女巫--主线
 --AddShengJiZhuangBeiGoodsData(name,className,color,minLv,nType)--设置升级装备颜色的物品
 --name 要用来升级的通货名字 字符串型 可填nil忽略 但必须要填下面的类名参数
 --className 要用来升级的通货类名 字符串型 可以填nil忽略 但必须要填上面的名字参数
@@ -535,7 +530,7 @@ SetZhuangBeiBoss("发装号电脑名",nil,nil,nil,true) --用发装号电脑名的方式指定发装
 
 --高级换装设置
 --SetGaoJiHuanZhuangData(job,name,className,wordName,wordClassName,lineSocketCnt,goodsLv,flaskPos,zbPos,color,nType,yxName,yxClassName,yxWordName,yxWordClassName,wxName,wxClassName,wxWordName,wxWordClassName,val,tianFuZhuBaoPos,minLv,maxLv)-- 高级换装设置 设置换指定的装备
---1job 职业 支持(暗影|野蛮人|决斗者|野蛮人|游侠|圣堂武僧) 可填多个，中间用|隔开
+--1job 职业 支持(暗影|野蛮人|决斗者|女巫|游侠|圣堂武僧) 可填多个，中间用|隔开
 --2name 物品名
 --3className 物品类名
 --4wordName 指定词缀
@@ -566,49 +561,44 @@ SetZhuangBeiBoss("发装号电脑名",nil,nil,nil,true) --用发装号电脑名的方式指定发装
 -- 优先获取连线装备,满足赦免技能插槽需求
 
 -- 胸甲: 优先5连或4连 (主技能组: 赦免+4个辅助)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,5,35,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,700,nil,1,69,nil)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,4,28,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,600,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,5,35,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,700,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,4,28,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,600,nil,1,69,nil)
 
 -- 头盔: 优先4连 (光环组: 迅捷+元素净化+雷电之盾+召唤圣物)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,4,28,nil,5,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,500,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,4,28,nil,5,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,500,nil,1,69,nil)
 
 -- 手套: 优先4连 (移动技能组)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,400,nil,1,69,nil)
 
 -- 鞋子: 优先4连或3连
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,350,nil,1,69,nil)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,3,15,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,300,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,350,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,3,15,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,300,nil,1,69,nil)
 
 -- 武器: 优先3连 (召唤物管理技能)
-SetGaoJiHuanZhuangData("野蛮人",nil,nil,nil,nil,3,15,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,250,nil,1,69,nil)
+SetGaoJiHuanZhuangData("女巫",nil,nil,nil,nil,3,15,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,250,nil,1,69,nil)
 
 ------------------------------------------------------------
 -- 70级后传奇装备 (以下为原有配置)
 ------------------------------------------------------------
-SetGaoJiHuanZhuangData("野蛮人","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)
---SetGaoJiHuanZhuangData("野蛮人","聖戰鎖甲","Metadata/Items/Armours/BodyArmours/BodyStrInt9","安姆布的戰甲","Ambu's Charge",4,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)
-SetGaoJiHuanZhuangData("野蛮人","堅毅塔盾","Metadata/Items/Armours/Shields/ShieldStr17","獅眼的榮耀之盾","Lioneye's Remorse",3,15,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--盾牌
---SetGaoJiHuanZhuangData("野蛮人","重革腰帶","Metadata/Items/Belts/Belt4","突圍","Siegebreaker",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--腰带
-SetGaoJiHuanZhuangData("野蛮人","重革腰帶","Metadata/Items/Belts/Belt4","狡徒束腰","Belt of the Deceiver",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--腰带
-SetGaoJiHuanZhuangData("野蛮人","黃晶護身符","Metadata/Items/Amulets/Amulet10","惡咒護符","The Jinxed Juju",nil,nil,nil,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--项链
-SetGaoJiHuanZhuangData("野蛮人","節慶之面","Metadata/Items/Armours/Helmets/HelmetDexInt4","共鳴之面","Leer Cast",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--头盔
---SetGaoJiHuanZhuangData("野蛮人","強化巨盔","Metadata/Items/Armours/Helmets/HelmetStrInt7","吉爾菲的榮光","Geofri's Crest",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--头盔
---SetGaoJiHuanZhuangData("野蛮人","繡布手套","Metadata/Items/Armours/Gloves/GlovesInt6","卡莉莎的優雅之影","Kalisa's Grace",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--手套
-SetGaoJiHuanZhuangData("野蛮人","軍團手套","Metadata/Items/Armours/Gloves/GlovesStrInt7","虛空","Null and Void",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--手套
---SetGaoJiHuanZhuangData("野蛮人","軍團長靴","Metadata/Items/Armours/Boots/BootsStrInt7","軍閥行軍","March of the Legion",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--鞋子
-SetGaoJiHuanZhuangData("野蛮人","咒者長靴","Metadata/Items/Armours/Boots/BootsInt7","虹幕","Rainbowstride",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--鞋子
---SetGaoJiHuanZhuangData("野蛮人","水银药剂","Metadata/Items/Flasks/FlaskUtility6","伤胃酒","Rotgut",nil,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--药水
-SetGaoJiHuanZhuangData("野蛮人","堅岩藥劑","Metadata/Items/Flasks/FlaskUtility5","魯米的靈藥","Rumi's Concoction",nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--药水
---SetGaoJiHuanZhuangData("野蛮人","大型复合药剂","Metadata/Items/Flasks/FlaskHybrid3","宝视精华","Divination Distillate",nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--药水
+SetGaoJiHuanZhuangData("女巫","简易之袍","Metadata/Items/Armours/BodyArmours/BodyInt1","无尽之衣","Tabula Rasa",nil,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)
+--SetGaoJiHuanZhuangData("女巫","聖戰鎖甲","Metadata/Items/Armours/BodyArmours/BodyStrInt9","安姆布的戰甲","Ambu's Charge",4,nil,nil,2,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)
+SetGaoJiHuanZhuangData("女巫","堅毅塔盾","Metadata/Items/Armours/Shields/ShieldStr17","獅眼的榮耀之盾","Lioneye's Remorse",3,15,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--盾牌
+--SetGaoJiHuanZhuangData("女巫","重革腰帶","Metadata/Items/Belts/Belt4","突圍","Siegebreaker",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--腰带
+SetGaoJiHuanZhuangData("女巫","重革腰帶","Metadata/Items/Belts/Belt4","狡徒束腰","Belt of the Deceiver",nil,nil,nil,11,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--腰带
+SetGaoJiHuanZhuangData("女巫","黃晶護身符","Metadata/Items/Amulets/Amulet10","惡咒護符","The Jinxed Juju",nil,nil,nil,6,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--项链
+SetGaoJiHuanZhuangData("女巫","節慶之面","Metadata/Items/Armours/Helmets/HelmetDexInt4","共鳴之面","Leer Cast",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--头盔
+--SetGaoJiHuanZhuangData("女巫","強化巨盔","Metadata/Items/Armours/Helmets/HelmetStrInt7","吉爾菲的榮光","Geofri's Crest",4,28,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--头盔
+--SetGaoJiHuanZhuangData("女巫","繡布手套","Metadata/Items/Armours/Gloves/GlovesInt6","卡莉莎的優雅之影","Kalisa's Grace",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--手套
+SetGaoJiHuanZhuangData("女巫","軍團手套","Metadata/Items/Armours/Gloves/GlovesStrInt7","虛空","Null and Void",4,28,nil,9,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--手套
+--SetGaoJiHuanZhuangData("女巫","軍團長靴","Metadata/Items/Armours/Boots/BootsStrInt7","軍閥行軍","March of the Legion",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--鞋子
+SetGaoJiHuanZhuangData("女巫","咒者長靴","Metadata/Items/Armours/Boots/BootsInt7","虹幕","Rainbowstride",4,28,nil,10,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--鞋子
+--SetGaoJiHuanZhuangData("女巫","水银药剂","Metadata/Items/Flasks/FlaskUtility6","伤胃酒","Rotgut",nil,nil,3,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--药水
+SetGaoJiHuanZhuangData("女巫","堅岩藥劑","Metadata/Items/Flasks/FlaskUtility5","魯米的靈藥","Rumi's Concoction",nil,nil,4,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--药水
+--SetGaoJiHuanZhuangData("女巫","大型复合药剂","Metadata/Items/Flasks/FlaskHybrid3","宝视精华","Divination Distillate",nil,nil,5,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,999999,nil,70,nil,nil)--药水
 
 --SetNeedAddTianFu(tfStr)--设置天赋加点 
-
---SetNeedAddTianFu("野蛮人=spell_damage721-法術傷害和魔力|intelligence922-智慧|intelligence920-智慧|intelligence918-智慧|strength828-力量|minion_duration2624_-召喚物傷害和持續時間|minion_duration2625-召喚物傷害和持續時間|minion_duration_notable2626-持久合作|savant901-奧術師之統御|stun_ignore1680-施放時避免干擾和元素抗性|stun_ignore_str_dex1678-化虛為實|life_mana1639-魔力和生命|life_mana_notable1638-心與靈|minion_damage285-召喚物傷害|lord_of_the_dead1122-亡靈之主|intelligence101-智慧|mana_spell_block2610-魔力和法術格擋|mana_spell_block_notable2611-神幻壁壘|mastery_mana162-魔力專精-64875|intelligence902-智慧|life1219-生命|divine_toughness1167-殘忍準備|intelligence882-智慧|mana388-魔力回復和生命|mana397-魔力回復和生命|life_mana_notable1730-快速回復|dexterity869-敏捷|intelligence885-智慧|spellcaster_notable1873-制裁|life1407-生命|discipline_and_training1194-嚴峻訓練|minion_damage1152-召喚物生命|minion_life1124-召喚物生命|additional_minions1150-獻祭|minion_damage769-召喚物攻擊和施放速度|player_and_minion_notable2237-精神號令|damage_and_minion_damage2226-召喚物攻擊和施放速度|intelligence904-智慧|shield_damage_elemental2554-法術格擋|shield_damage_elemental2555-法術格擋和元素抗性|shield_damage_elemental2556-法術格擋和元素抗性|shield_damage_elemental_notable2557-庇護|life187-生命和能量護盾|life182-生命和能量護盾|life1161-生命和能量護盾|fitness1212-肉體之純潔|mastery_life131-生命專精-34242|intelligence912-智慧|intelligence919-智慧|intelligence921-智慧|intelligence955-智慧|minion_life1125-召喚物生命和傷害|minion_damage1128-召喚物傷害|minion_damage1129-召喚物傷害|additional_spectre278-亡靈諧曲|aura_area_of_effect1205-光環效果範圍|reduced_mana_reservation1198-保留效用|reduced_mana_reservation1197-保留效用|aura_effect_reservation_cost_notable1559-主權|intelligence917-智慧|speed_and_minion_speed2231-召喚物傷害和攻擊和施放速度|speed_and_minion_speed2230-召喚物傷害和攻擊和施放速度|player_and_minion_notable2238-救贖|damage_and_minion_damage2228-召喚物傷害和生命|damage_and_minion_damage2227-召喚物傷害和生命|player_and_minion_notable2236-正義軍團|strength811-力量|strength824-力量|life1209-生命|fitness1186-奉獻|strength780-力量|strength784-力量|strength1012-力量|strength1002-力量|agility876-超群身法|strength827-力量|strength814-力量|shield_block32-持盾元素抗性|shield_defences1063-盾牌格擋和持盾元素抗性|shield_mastery34-庇護聖所|mastery_shield212-盾牌專精-30612|life_reduced_mana_cost1934-生命與減少消耗|life_reduced_mana_cost1936-生命與減少消耗|life_reduced_mana_cost1935-生命與減少消耗|life_reduced_mana_notable1937-冷酷|strength791-力量|strength806-力量|life_resistances1899-生命與元素抗性|life_resistances_notable1900-野蠻|strength787-力量|strength781-力量|life_and_armour1902-生命與護甲|life_armour_flask_life_notable1903-戰神|mastery_life134-護甲專精-48720|shield_damage_block2552-盾牌傷害|shield_damage_block2551-盾牌傷害和格擋|shield_damage_block_notable2553_-進擊的壁壘|strength775-力量|block_node_2933-格檔|block_node_2932-格檔|block_notable_2934-宛如神山|armour94-護甲和能量護盾|armour95-護甲和能量護盾|armour_crit_reduction_notable1944-靈思聖殿|mastery_armour9-護甲和能量護盾專精-16215|intelligence890-智慧|curse_mitigation2835-詛咒和混沌抗性|curse_mitigation2834-詛咒和混沌抗性|curse_mitigation_notable2836-避難所|mastery_resistance261-保護專精-9074|strength998-力量|dexterity973-敏捷|minion_damage1126-召喚物傷害和命中|minion_damage1127-召喚物傷害和命中|minion_damage284-召喚物傷害和命中|additional_minions1123-亡靈之約|accuracy_minion_accuracy_and_resists2234-召喚物傷害|accuracy_minion_accuracy_and_resists2235-召喚物傷害|")
-
-SetNeedAddTianFu("野蛮人升华=AscendancyChieftan5-生命回復、火焰抗性|AscendancyChieftan10-淨化之水．塔薩里奧|AscendancyChieftan4-生命回復、火焰傷害|AscendancyChieftan9-死之狂怒．悉妮蔻拉|")
-
-SetNeedAddTianFu("野蛮人=melee_damage687-近戰傷害和生命|strength810-力量|strength808-力量|strength809-力量|intelligence945-智慧|strength998-力量|strength1002-力量|agility876-超群身法|savant878-先祖智慧|strength1012-力量|strength784-力量|strength780-力量|strength824-力量|strength811-力量|intelligence917-智慧|speed_and_minion_speed2231-召喚物傷害和攻擊和施放速度|speed_and_minion_speed2230-召喚物傷害和攻擊和施放速度|player_and_minion_notable2238-救贖|intelligence912-智慧|aura_area_of_effect1205-光環效果範圍|reduced_mana_reservation1198-保留效用|reduced_mana_reservation1197-保留效用|aura_effect_reservation_cost_notable1559-主權|intelligence919-智慧|intelligence921-智慧|intelligence955-智慧|minion_life1125-召喚物生命和傷害|minion_damage1128-召喚物傷害|minion_damage1129-召喚物傷害|additional_spectre278-亡靈諧曲|intelligence886-智慧|intelligence911-智慧|elemental_overload_keystone2152-元素超載|life1161-生命和能量護盾|fitness1212-肉體之純潔|life182-生命和能量護盾|life187-生命和能量護盾|intelligence904-智慧|damage_and_minion_damage2226-召喚物攻擊和施放速度|minion_damage769-召喚物攻擊和施放速度|player_and_minion_notable2237-精神號令|minion_life1124-召喚物生命|additional_minions1150-獻祭|minion_damage1152-召喚物生命|shield_damage_elemental2554-法術格擋|shield_damage_elemental2555-法術格擋和元素抗性|shield_damage_elemental2556-法術格擋和元素抗性|shield_damage_elemental_notable2557-庇護|intelligence885-智慧|spellcaster_notable1873-制裁|life1407-生命|discipline_and_training1194-嚴峻訓練|dexterity869-敏捷|intelligence882-智慧|mana388-魔力回復和生命|mana397-魔力回復和生命|life_mana_notable1730-快速回復|strength828-力量|minion_duration2624_-召喚物傷害和持續時間|minion_duration2625-召喚物傷害和持續時間|minion_duration_notable2626-持久合作|intelligence890-智慧|curse_mitigation2835-詛咒和混沌抗性|curse_mitigation2834-詛咒和混沌抗性|curse_mitigation_notable2836-避難所|mana_arcane_surge2587-魔力和秘能波動效果|mana_arcane_surge2588_-魔力和秘能波動效果|mana_arcane_surge_notable2590-秘能容器|mastery_mana160-魔力專精-64875|damage_and_minion_damage2228-召喚物傷害和生命|damage_and_minion_damage2227-召喚物傷害和生命|player_and_minion_notable2236-正義軍團|dexterity973-敏捷|minion_damage1126-混沌抗性與召喚物傷害|minion_damage1127-混沌抗性與召喚物傷害|minion_damage284-混沌抗性與召喚物傷害|additional_minions1123-亡靈之約|strength827-力量|life_reduced_mana_cost1934-生命與減少消耗|life_reduced_mana_cost1936-生命與減少消耗|life_reduced_mana_cost1935-生命與減少消耗|life_reduced_mana_notable1937-冷酷|strength814-力量|shield_block32-持盾元素抗性|shield_defences1063-盾牌格擋和持盾元素抗性|shield_mastery34-庇護聖所|mastery_shield212-盾牌專精-30612|strength791-力量|strength806-力量|life_resistances1899-生命與元素抗性|life_resistances_notable1900-野蠻|strength787-力量|strength781-力量|life_and_armour1902-生命與護甲|life_armour_flask_life_notable1903-戰神|shield_damage_block2552-盾牌傷害|shield_damage_block2551-盾牌傷害和格擋|shield_damage_block_notable2553_-進擊的壁壘|strength775-力量|block_node_2933-格檔|block_node_2932-格檔|block_notable_2934-宛如神山|savant901-奧術師之統御|life_mana1639-魔力和生命|life_mana_notable1638-心與靈|minion_damage285-召喚物傷害|lord_of_the_dead1122-亡靈之主|")
-
+SetNeedAddTianFu("女巫=spell_damage721-法術傷害和魔力|intelligence922-智慧|intelligence920-智慧|intelligence918-智慧|strength828-力量|minion_duration2624_-召喚物傷害和持續時間|minion_duration2625-召喚物傷害和持續時間|minion_duration_notable2626-持久合作|savant901-奧術師之統御|stun_ignore1680-施放時避免干擾和元素抗性|stun_ignore_str_dex1678-化虛為實|life_mana1639-魔力和生命|life_mana_notable1638-心與靈|minion_damage285-召喚物傷害|lord_of_the_dead1122-亡靈之主|intelligence101-智慧|mana_spell_block2610-魔力和法術格擋|mana_spell_block_notable2611-神幻壁壘|mastery_mana162-魔力專精-64875|intelligence902-智慧|life1219-生命|divine_toughness1167-殘忍準備|intelligence882-智慧|mana388-魔力回復和生命|mana397-魔力回復和生命|life_mana_notable1730-快速回復|dexterity869-敏捷|intelligence885-智慧|spellcaster_notable1873-制裁|life1407-生命|discipline_and_training1194-嚴峻訓練|minion_damage1152-召喚物生命|minion_life1124-召喚物生命|additional_minions1150-獻祭|minion_damage769-召喚物攻擊和施放速度|player_and_minion_notable2237-精神號令|damage_and_minion_damage2226-召喚物攻擊和施放速度|intelligence904-智慧|shield_damage_elemental2554-法術格擋|shield_damage_elemental2555-法術格擋和元素抗性|shield_damage_elemental2556-法術格擋和元素抗性|shield_damage_elemental_notable2557-庇護|life187-生命和能量護盾|life182-生命和能量護盾|life1161-生命和能量護盾|fitness1212-肉體之純潔|mastery_life131-生命專精-34242|intelligence912-智慧|intelligence919-智慧|intelligence921-智慧|intelligence955-智慧|minion_life1125-召喚物生命和傷害|minion_damage1128-召喚物傷害|minion_damage1129-召喚物傷害|additional_spectre278-亡靈諧曲|aura_area_of_effect1205-光環效果範圍|reduced_mana_reservation1198-保留效用|reduced_mana_reservation1197-保留效用|aura_effect_reservation_cost_notable1559-主權|intelligence917-智慧|speed_and_minion_speed2231-召喚物傷害和攻擊和施放速度|speed_and_minion_speed2230-召喚物傷害和攻擊和施放速度|player_and_minion_notable2238-救贖|damage_and_minion_damage2228-召喚物傷害和生命|damage_and_minion_damage2227-召喚物傷害和生命|player_and_minion_notable2236-正義軍團|strength811-力量|strength824-力量|life1209-生命|fitness1186-奉獻|strength780-力量|strength784-力量|strength1012-力量|strength1002-力量|agility876-超群身法|strength827-力量|strength814-力量|shield_block32-持盾元素抗性|shield_defences1063-盾牌格擋和持盾元素抗性|shield_mastery34-庇護聖所|mastery_shield212-盾牌專精-30612|life_reduced_mana_cost1934-生命與減少消耗|life_reduced_mana_cost1936-生命與減少消耗|life_reduced_mana_cost1935-生命與減少消耗|life_reduced_mana_notable1937-冷酷|strength791-力量|strength806-力量|life_resistances1899-生命與元素抗性|life_resistances_notable1900-野蠻|strength787-力量|strength781-力量|life_and_armour1902-生命與護甲|life_armour_flask_life_notable1903-戰神|mastery_life134-護甲專精-48720|shield_damage_block2552-盾牌傷害|shield_damage_block2551-盾牌傷害和格擋|shield_damage_block_notable2553_-進擊的壁壘|strength775-力量|block_node_2933-格檔|block_node_2932-格檔|block_notable_2934-宛如神山|armour94-護甲和能量護盾|armour95-護甲和能量護盾|armour_crit_reduction_notable1944-靈思聖殿|mastery_armour9-護甲和能量護盾專精-16215|intelligence890-智慧|curse_mitigation2835-詛咒和混沌抗性|curse_mitigation2834-詛咒和混沌抗性|curse_mitigation_notable2836-避難所|mastery_resistance261-保護專精-9074|strength998-力量|dexterity973-敏捷|minion_damage1126-召喚物傷害和命中|minion_damage1127-召喚物傷害和命中|minion_damage284-召喚物傷害和命中|additional_minions1123-亡靈之約|accuracy_minion_accuracy_and_resists2234-召喚物傷害|accuracy_minion_accuracy_and_resists2235-召喚物傷害|")
+SetNeedAddTianFu("女巫升华=AscendancyNecromancer6-召喚物傷害、光環效果|AscendancyNecromancer12-黑暗統御者|AscendancyNecromancer13-召喚物傷害和生命|AscendancyNecromancer7-無意識侵略|AscendancyNecromancer1-召喚物傷害、施放速度|AscendancyNecromancer9-骸骨屏障|")
 
 --异界天赋 種子-精髓-神諭-炸墳-寶箱
 --SetNeedAddTianFu([[异界地图天赋=atlas_path_22-相鄰地圖掉落機率|atlas_path_12-相鄰地圖掉落機率|atlas_path_24_-相鄰地圖掉落機率|atlas_path_16-相鄰地圖掉落機率|atlas_path_25_-相鄰地圖掉落機率|atlas_path_27-相鄰地圖掉落機率|atlas_path_28-相鄰地圖掉落機率|atlas_map_drops_20-聖甲蟲掉落率|atlas_map_drops_2-聖甲蟲掉落率|atlas_map_drops_4-聖甲蟲掉落率|atlas_map_drops_8-聖甲蟲掉落率|atlas_path_92-聖甲蟲掉落率|atlas_path_61-物品數量|atlas_path_44-物品數量|atlas_path_35-物品數量|atlas_path_39-物品數量|atlas_path_34-物品數量|atlas_path_80-地圖詞綴效果|atlas_map_drops_7-地圖詞綴效果|atlas_mod_effect_6-地圖詞綴效果|atlas_keystone_nofragments_1-堅定不移的遠見|atlas_harbinger_1_1-額外神諭碎片|atlas_harbinger_1_2_-額外神諭碎片|atlas_harbinger_1_4-額外神諭碎片|atlas_harbinger_1_3-不祥到來|atlas_harbinger_3_1-額外神諭機率|atlas_harbinger_3_5-額外神諭碎片|atlas_harbinger_3_3-額外神諭碎片|atlas_harbinger_3_4-不可描述侵犯|atlas_harbinger_3_2-額外神諭機率|atlas_harbinger_3_6-額外神諭機率|atlas_harbinger_2_3-額外神諭機率|atlas_harbinger_2_5-額外神諭機率|atlas_harbinger_2_2-額外神諭機率|atlas_path_14-相鄰地圖掉落機率|atlas_path_26-相鄰地圖掉落機率|atlas_harvest_1_2-豐收機率|atlas_harvest_1_3-豐收機率|atlas_harvest_1_1-豐收機率|atlas_harvest_1_4-密園呼喚|atlas_harvest_2_1-豐收怪物複製機率|atlas_harvest_3_2-豐收機率|atlas_harvest_3_5-豐收機率|atlas_harvest_4_1-豐收額外生靈之力|atlas_harvest_2_3-豐收額外生靈之力|atlas_harvest_2_4-豐收額外生靈之力|atlas_harvest_3_4__-豐收|atlas_harvest_4_2-豐收怪物複製機率|atlas_harvest_2_5_-大豐收|atlas_path_83-聖甲蟲掉落率|atlas_harvest_4222-豐收額外生靈之力|atlas_harvest_4220-豐收額外生靈之力|atlas_harvest_4225-豐收額外生靈之力|atlas_harvest_4212-倍增期|atlas_harvest_4218-豐收機率|atlas_boss_adjacent_maps_10-物品數量和稀有度|atlas_boss_adjacent_maps_12-物品數量和稀有度|atlas_harvest_3_1-豐收階級 3 作物機率|atlas_harvest_2_6-密園之心|atlas_harvest_2_7-豐收階級 3 作物機率|atlas_harvest_3_3-豐收階級 3 作物機率|atlas_boss_adjacent_maps_2-相鄰地圖掉落機率|atlas_essence_1_1-精髓稀有機率|atlas_essence_1_5-精髓稀有機率|atlas_essence_1_3-海量精華|atlas_boss_adjacent_maps_11-物品數量和稀有度|atlas_essence_2_2-精髓機率|atlas_essence_2_4-強化能量|atlas_essence_2_5-精髓機率|atlas_essence_2_3-精髓機率|atlas_path_93-聖甲蟲掉落率|atlas_map_drops_9-聖甲蟲掉落率|atlas_map_drops_15-聖甲蟲掉落率|atlas_essence_3_1-精髓機率|atlas_essence_3_2-禁錮怪物額外精髓機率|atlas_essence_3_3-禁錮怪物額外精髓機率|atlas_essence_3_5-水晶共振|atlas_map_drops_16-聖甲蟲掉落率|atlas_map_drops_1-聖甲蟲掉落率|atlas_map_drops_10-聖甲蟲掉落率|atlas_map_drops_11-聖甲蟲掉落率|atlas_path_4-相鄰地圖掉落機率|atlas_path_7-相鄰地圖掉落機率|atlas_essence_4_1-禁錮怪物額外精髓機率|atlas_essence_4_2-禁錮怪物額外精髓機率|atlas_essence_4_3-禁錮怪物額外精髓機率|atlas_essence_4_4-水晶格|atlas_expedition_3_3_-探險機率|atlas_keystone_expedition_single_explosive-極限考古學|atlas_expedition_3_4-探險商人重骰通貨機率|atlas_expedition_3_5-古文|atlas_expedition_1_2-探險機率|atlas_expedition_4209-探險機率|atlas_expedition_4208-探險機率|atlas_expedition_1_3-尋找答案|atlas_expedition_4_1-探險機率|atlas_expedition_4_2-爆裂物放置距離|atlas_expedition_1_4-傑出的拆遷專家|atlas_strongbox_1_2-保險箱額外怪物群機率|atlas_strongbox_1_4-保險箱額外怪物群機率|atlas_strongbox_1_1-二次誘惑|atlas_strongbox_2_3-重新開啟保險箱機率|atlas_strongbox_2_2-重新開啟保險箱機率|atlas_strongbox_2_1-防篡改|atlas_strongbox_2_4-重新開啟保險箱機率|atlas_strongbox_2_5-秘密伏擊|atlas_strongbox_3_1-保險箱物品數量|atlas_strongbox_3_2-奧術師的保險箱機率|atlas_strongbox_3_6-奧術師的保險箱機率|atlas_strongbox_3_5-備份暫存|atlas_expedition_4_5-探險機率|atlas_expedition_3_7-探險機率|atlas_expedition_4_7-探險機率|atlas_expedition_4_4-探險文物數量|atlas_expedition_1_1-探險文物數量|]])
