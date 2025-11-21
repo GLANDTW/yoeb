@@ -68,4 +68,8 @@
 [map_monsters_cannot_be_leeched_from] > "0" && [Rarity] == "Magic" #   [RerollMods] == "true" //
 [map_monsters_cannot_be_leeched_from]  > "0" && [Rarity] == "Rare" #   [RerollMods] == "true" //
 [map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #    [RerollMods] == "true" //
-[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [RerollMods] == "true" //
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [RerollMods] == "true" // 
+
+[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
+
+[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
