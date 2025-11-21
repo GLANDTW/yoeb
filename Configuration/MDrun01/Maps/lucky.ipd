@@ -4,6 +4,10 @@
 [Type] == "Mud Geyser Map" # [RunMap] == "true" //
 [Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
 
+
+[Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Defiled Cathedral Map" # [ExitAfterBossKill] == "true" //
+
 [Type]=="Coves Map"&&[Rarity]=="Normal"#[RunMap]=="true"
 [Type]=="Canyon Map"&&[Rarity]=="Normal"#[RunMap]=="true"
 [Type]=="Dunes Map"&&[Rarity]=="Normal"#[RunMap]=="true"
