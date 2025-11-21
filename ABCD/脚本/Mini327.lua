@@ -212,7 +212,6 @@ AddNeedBuySkillTime(11,"a11q1")
 --剧情主力技能设置
 SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
 SetNeedSkillLineData(130,"虛空匕首,nil|機率流血輔助,nil",8,nil,nil)
-SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(130,"神聖火舌圖騰,nil",12,nil,nil)
 SetNeedSkillLineData(77,"召唤愤怒狂灵,Metadata/Items/Gems/SkillGemSummonRagingSpirit|秘术增强(辅),Metadata/Items/Gems/SupportGemArcaneSurge|召唤生物伤害(辅),Metadata/Items/Gems/SupportGemMinionDamage",25,nil,0)
 SetNeedSkillLineData(89,"赦免,Metadata/Items/Gems/SkillGemAbsolution,1|施放迴響輔助,Metadata/Items/Gems/SupportGemMulticast|物理轉閃電輔助,Metadata/Items/Gems/SupportGemPhysicalToLightning|召喚物傷害輔助,Metadata/Items/Gems/SupportGemMinionDamage|附加閃電傷害輔助,Metadata/Items/Gems/SupportGemAddedLightningDamage",nil,nil,0)
@@ -254,7 +253,6 @@ SetSkillUseWaEr("迅捷","Metadata/Items/Gems/SkillGemHaste","瓦爾．迅捷","Metadat
 AddAttackSkillData("赦免","absolution")
 AddAttackSkillData("召唤愤怒狂灵","summon_raging_spirit")
 AddAttackSkillData("虛空匕首","Ethereal Knives",false,40.0)
-AddAttackSkillData("裂地之擊","Ground Slam",false,35,0)--添加攻击技能
 AddAttackSkillData("沉重之擊","Heavy Strike",false,30,0)
 AddAttackSkillData("普通攻击","melee")
 
