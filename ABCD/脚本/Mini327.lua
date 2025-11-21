@@ -211,7 +211,7 @@ AddNeedBuySkillTime(11,"a11q1")
 
 --剧情主力技能设置
 SetNeedSkillLineData(100,"沉重之擊,nil|殘暴輔助,nil",2,nil,nil)
-SetNeedSkillLineData(130,"虛空匕首,nil|附加閃電傷害輔助,nil",5,nil,nil)
+SetNeedSkillLineData(130,"虛空匕首,nil|附加閃電傷害輔助,nil",8,nil,nil)
 SetNeedSkillLineData(120,"裂地之擊,nil|殘暴輔助,nil|機率流血輔助,nil",12,nil,nil)
 SetNeedSkillLineData(130,"神聖火舌圖騰,nil",12,nil,nil)
 SetNeedSkillLineData(77,"召唤愤怒狂灵,Metadata/Items/Gems/SkillGemSummonRagingSpirit|秘术增强(辅),Metadata/Items/Gems/SupportGemArcaneSurge|召唤生物伤害(辅),Metadata/Items/Gems/SupportGemMinionDamage",25,nil,0)
