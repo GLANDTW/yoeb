@@ -118,6 +118,9 @@
 
 [Category] == "Map" && [map_zana_influence] == "1" # [StashItem] == "true" 
 
+[Type] == "Shipyard Map" # [StashItem] == "true" //
+[Type] == "Toxic Sewer Map" # [StashItem] == "true" //
+[
 [Type]== "Forge of the Phoenix Map"#[StashItem]== "true"// #																								
 [Type]== "Lair of the Hydra Map"#[StashItem]== "true"// #																								
 [Type]== "Maze of the Minotaur Map"#[StashItem]== "true"// #																								
@@ -440,7 +443,6 @@
 [Type] == "Haunted Mansion Map" # [ForceSellItem] == "true" //
 [Type] == "Maze Map" # [ForceSellItem] == "true" //
 [Type] == "Channel Map" # [ForceSellItem] == "true" //
-[Type] == "Toxic Sewer Map" # [ForceSellItem] == "true" //
 [Type] == "Ancient City Map" # [ForceSellItem] == "true" //
 [Type] == "Ivory Temple Map" # [ForceSellItem] == "true" //
 [Type] == "Spider Lair Map" # [ForceSellItem] == "true" //
@@ -488,7 +490,7 @@
 [Type] == "Museum Map" # [ForceSellItem] == "true" //
 [Type] == "Scriptorium Map" # [ForceSellItem] == "true" //
 [Type] == "Siege Map" # [ForceSellItem] == "true" //
-[Type] == "Shipyard Map" # [ForceSellItem] == "true" //
+//[Type] == "Shipyard Map" # [ForceSellItem] == "true" //
 [Type] == "Belfry Map" # [ForceSellItem] == "true" //
 [Type] == "Arachnid Tomb Map" # [ForceSellItem] == "true" //
 [Type] == "Wasteland Map" # [ForceSellItem] == "true" //
