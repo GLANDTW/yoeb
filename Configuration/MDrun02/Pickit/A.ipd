@@ -124,7 +124,7 @@
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 [Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
 [Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
-[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
+//[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
 //[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 
