@@ -120,7 +120,15 @@
 
 [Type] == "Shipyard Map" # [StashItem] == "true" //
 [Type] == "Toxic Sewer Map" # [StashItem] == "true" //
-[
+
+/////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
+//[Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
+//[Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+//[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
+//[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+/////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
+
+
 [Type]== "Forge of the Phoenix Map"#[StashItem]== "true"// #																								
 [Type]== "Lair of the Hydra Map"#[StashItem]== "true"// #																								
 [Type]== "Maze of the Minotaur Map"#[StashItem]== "true"// #																								
@@ -197,6 +205,8 @@
 //[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//
 [Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
 [Type] == "Blessed Orb" # [StashItem] == "true" //	//
+
+[Type] == "Orb of Alchemy" # [StashItem] =="true"// Dian Jin
 
 //[Type] == "Forbidden Tome" # [StashItem] == "true" // 
 
