@@ -7,7 +7,8 @@
 [Type] == "Shipyard Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Toxic Sewer Map" # [ExitAfterBossKill] == "true" //
 
-
+[Type] == "Bone Crypt Map" # [RunMap] == "true" //
+[Type] == "Bone Crypt Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Shipyard Map" # [RunMap] == "true" //
 [Type] == "Toxic Sewer Map" # [RunMap] == "true" //
 
