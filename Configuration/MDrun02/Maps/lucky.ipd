@@ -9,6 +9,7 @@
 [Type] == "Bone Crypt" #[RunMap] == "true" //
 [Type] == "Mud Geyser Map" # [RunMap] == "true" //
 [Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
+[Type] == "Bone Crypt" # [RunMap] == "true" //
 
 
 [Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
