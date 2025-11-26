@@ -9,8 +9,11 @@
 [Type] == "Bone Crypt Map" #[RunMap] == "true" //
 [Type] == "Mud Geyser Map" # [RunMap] == "true" //
 [Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
+[Type] == "Volcano Map" # [RunMap] == "true" //
+[Type] == "Coves Map" # [RunMap] == "true" //
 
-
+[Type] == "Volcano Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Coves Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Defiled Cathedral Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Shipyard Map" # [ExitAfterBossKill] == "true" //

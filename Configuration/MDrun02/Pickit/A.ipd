@@ -129,6 +129,7 @@
 
 [Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
 [Type] == "Bone Crypt Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+[Type] == "Coves Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
 
 //[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
 //[Type] == "Bone Crypt Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
@@ -447,7 +448,7 @@
 [Type] == "Chateau Map" # [ForceSellItem] == "true" //
 [Type] == "Grotto Map" # [ForceSellItem] == "true" //
 [Type] == "Glacier Map" # [ForceSellItem] == "true" //
-[Type] == "Volcano Map" # [ForceSellItem] == "true" //
+//[Type] == "Volcano Map" # [ForceSellItem] == "true" //
 [Type] == "Lighthouse Map" # [ForceSellItem] == "true" //
 [Type] == "Frozen Cabins Map" # [ForceSellItem] == "true" //
 [Type] == "Grave Trough Map" # [ForceSellItem] == "true" //
@@ -521,7 +522,7 @@
 [Type] == "Colonnade Map" # [ForceSellItem] == "true" //
 [Type] == "Primordial Pool Map" # [ForceSellItem] == "true" //
 [Type] == "Spider Forest Map" # [ForceSellItem] == "true" //
-[Type] == "Coves Map" # [ForceSellItem] == "true" //
+//[Type] == "Coves Map" # [ForceSellItem] == "true" //
 [Type] == "Waterways Map" # [ForceSellItem] == "true" //
 [Type] == "Factory Map" # [ForceSellItem] == "true" //
 [Type] == "Mesa Map" # [ForceSellItem] == "true" //
