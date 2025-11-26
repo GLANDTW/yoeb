@@ -120,7 +120,7 @@
 
 [Type] == "Shipyard Map" # [StashItem] == "true" //
 [Type] == "Toxic Sewer Map" # [StashItem] == "true" //
-[Type] == "Bone Crypt" # [StashItem] == "true" //
+[Type] == "Bone Crypt Map" # [StashItem] == "true" //
 
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 [Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
@@ -128,10 +128,10 @@
 //[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
 [Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
-[Type] == "Bone Crypt" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+[Type] == "Bone Crypt Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
 
-//[Type] == "Bone Crypt" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
-//[Type] == "Bone Crypt" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+//[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
+//[Type] == "Bone Crypt Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 

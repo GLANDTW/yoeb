@@ -6,10 +6,9 @@
 
 [Type] == "Shipyard Map" # [RunMap] == "true" //
 [Type] == "Toxic Sewer Map" # [RunMap] == "true" //
-[Type] == "Bone Crypt" #[RunMap] == "true" //
+[Type] == "Bone Crypt Map" #[RunMap] == "true" //
 [Type] == "Mud Geyser Map" # [RunMap] == "true" //
 [Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
-[Type] == "Bone Crypt Map" # [RunMap] == "true" //
 
 
 [Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
