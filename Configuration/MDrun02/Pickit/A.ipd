@@ -120,12 +120,19 @@
 
 [Type] == "Shipyard Map" # [StashItem] == "true" //
 [Type] == "Toxic Sewer Map" # [StashItem] == "true" //
+[Type] == "Bone Crypt" # [StashItem] == "true" //
 
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 [Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-[Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
 //[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
 //[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+
+[Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+[Type] == "Bone Crypt" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+
+//[Type] == "Bone Crypt" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
+//[Type] == "Bone Crypt" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 
 
@@ -473,7 +480,7 @@
 [Type] == "Lava Chamber Map" # [ForceSellItem] == "true" //
 [Type] == "Residence Map" # [ForceSellItem] == "true" //
 [Type] == "Ramparts Map" # [ForceSellItem] == "true" //
-[Type] == "Bone Crypt Map" # [ForceSellItem] == "true" //
+//[Type] == "Bone Crypt Map" # [ForceSellItem] == "true" //
 [Type] == "Underground River Map" # [ForceSellItem] == "true" //
 [Type] == "Gardens Map" # [ForceSellItem] == "true" //
 [Type] == "Arachnid Nest Map" # [ForceSellItem] == "true" //

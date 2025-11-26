@@ -1,19 +1,21 @@
-[Rarity]== "Normal"#[UpgradeToMagic]== "true"//
+//[Rarity]== "Normal"#[UpgradeToMagic]== "true"//
+[Rarity]== "Normal"#[UpgradeToRare]== "true"//
 //[Rarity]== "Magic"#[AugmentIfPossible]== "true"//
 
-[Type] == "Mud Geyser Map" # [RunMap] == "true" //
-[Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
-
-[Type] == "Shipyard Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Toxic Sewer Map" # [ExitAfterBossKill] == "true" //
 
 
 [Type] == "Shipyard Map" # [RunMap] == "true" //
 [Type] == "Toxic Sewer Map" # [RunMap] == "true" //
+[Type] == "Bone Crypt" #[RunMap] == "true" //
+[Type] == "Mud Geyser Map" # [RunMap] == "true" //
+[Type] == "Defiled Cathedral Map" # [RunMap] == "true" //
 
 
 [Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Defiled Cathedral Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Shipyard Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Toxic Sewer Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Bone Crypt" # [ExitAfterBossKill] == "true" //
 
 [Type]=="Coves Map"&&[Rarity]=="Normal"#[RunMap]=="true"
 [Type]=="Canyon Map"&&[Rarity]=="Normal"#[RunMap]=="true"
@@ -84,5 +86,5 @@
 [map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
 [map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
 [map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Magic" # [RerollMods] =="true" //
- [map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Rare" # [RerollMods] =="true" //
+[map_monsters_life_leech_resistance_%] >= "1" && [Rarity] == "Rare" # [RerollMods] =="true" //
 
