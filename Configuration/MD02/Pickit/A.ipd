@@ -233,7 +233,7 @@
 [Type] == "Orb of Alchemy" # [StashItem] =="true"// Dian Jin
 
 //[Type] == "Forbidden Tome" # [StashItem] == "true" // 
-
+[Type] == "Comprehensive Scouting Report" # [StashItem] == "true" // 
 [Type] == "Singular Scouting Report" # [StashItem] == "true" //	//
 [Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//
 [Type] == "Influenced Scouting Report" # [StashItem] == "true" //	//
