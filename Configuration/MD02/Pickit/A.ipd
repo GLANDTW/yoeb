@@ -127,7 +127,7 @@
 
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 [Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-//[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
+[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
 //[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
 [Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
@@ -142,7 +142,7 @@
 //[Type] == "Coves Mapp" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
 //[Type] == "Coves Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
-//[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
+[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
 [Type] == "Bone Crypt Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
 //[Type] == "Bone Crypt Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
