@@ -127,12 +127,12 @@
 
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 [Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
-//[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+//[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
+[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
 [Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
 //[Type] == "Toxic Sewer Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
-//[Type] == "Toxic Sewer Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+[Type] == "Toxic Sewer Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
 [Type] == "Valcano Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
 //[Type] == "Valcano Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
@@ -142,13 +142,23 @@
 //[Type] == "Coves Mapp" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
 //[Type] == "Coves Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
-[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
+//[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
 [Type] == "Bone Crypt Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
-//[Type] == "Bone Crypt Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+[Type] == "Bone Crypt Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
 
 //[Type] == "Thicket Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
 [Type] == "Thicket Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
 //[Type] == "Thicket Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+
+//[Type] == "Canyon Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
+[Type] == "Canyon Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+//[Type] == "Canyon Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+
+
+//[Type] == "Dunes Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
+[Type] == "Dunes Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
+[Type] == "Dunes Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+
 
 /////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
 
