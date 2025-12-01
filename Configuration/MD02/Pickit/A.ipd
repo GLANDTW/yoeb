@@ -3,7 +3,7 @@
 //[Type] == "Ancient Wombgift" # [StashItem] == "true" 
 //[Type] == "Growing Wombgift" # [StashItem] == "true" 
 //[Type] == "Mysterious Wombgift" # [StashItem] == "true" 
-
+[Type] == "Reflecting Mist" # [StashItem] == "true"//
 //
 //[Type] == "Blueprint: Bunker" # [StashItem] == "true" 
 //[Type] == "Blueprint: Laboratory" # [StashItem] == "true" 
