@@ -12,6 +12,7 @@
 [Type] == "Volcano Map" # [RunMap] == "true" //
 [Type] == "Coves Map" # [RunMap] == "true" //
 [Type] == "Thicket Map" # [RunMap] == "true" //
+[Type] == "Canyon Map" # [RunMap] == "true" //
 
 [Type] == "Volcano Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Coves Map" # [ExitAfterBossKill] == "true" //
