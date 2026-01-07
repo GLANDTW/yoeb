@@ -239,7 +239,7 @@ SetNeedSkillLineData(85,"ÕÙ»½ÁéÌå,Metadata/Items/Gems/SkillGemRaiseSpectre|ÕÙ†¾¾
 SetNeedSkillLineData(83,"ÔªËØœQ»¯,Metadata/Items/Gems/SkillGemPurity|ÑªÈâ·î«I,Metadata/Items/Gems/SkillGemFleshOffering|Ì–ÕÙ,Metadata/Items/Gems/SkillGemConvocation",nil,nil,0)
 SetNeedSkillLineData(81,"ÉñÂ}»ğÉàˆDòv,Metadata/Items/Gems/SkillGemFlameTotem|¸ÖÌúÖ®·ô,Metadata/Items/Gems/SkillGemSteelskin",nil,nil,0)
 SetNeedSkillLineData(79,"ÁÒÑæ³å´Ì,Metadata/Items/Gems/SkillGemFlameDash|ÙôäÂ,Metadata/Items/Gems/SkillGemDesecrate",nil,nil,0)
-SetNeedSkillLineData(79,"ÖØ¶ÜĞnäh,nil|¿ìËÙ¹¥“ôİoÖú,nil|ÒC^,nil",nil,nil,0)
+SetNeedSkillLineData(78,"ÖØ¶ÜĞnäh,nil|¿ìËÙ¹¥“ôİoÖú,nil|ÒC^,nil",nil,nil,0)
 --Òì½çÖ÷Á¦¼¼ÄÜÉèÖÃ
 SetNeedSkillLineData(100,"ÕÙ»½ÁéÌå,Metadata/Items/Gems/SkillGemRaiseSpectre,1|Ê©·ÅŞ’í‘İoÖú,Metadata/Items/Gems/SupportGemMulticast|ÕÙ†¾Îï‚ûº¦İoÖú,Metadata/Items/Gems/SupportGemMinionDamage|Í¶ÉäÎï·µ»ØİoÖú,Metadata/Items/Gems/SupportGemReturningProjectiles|¾«œÊÆÆ‰ÄİoÖú,Metadata/Items/Gems/SupportGemControlledDestruction|´©Í¸İoÖú,Metadata/Items/Gems/SupportGemPierce",nil,2,1,nil,nil,nil,nil,nil,nil,nil,nil,true,nil)
 SetNeedSkillLineData(96,"ÉâÃâ,Metadata/Items/Gems/SkillGemAbsolution,1|ÎïÀíŞDéWëŠİoÖú,Metadata/Items/Gems/SupportGemPhysicalToLightning|Ê©·ÅŞ’í‘İoÖú,Metadata/Items/Gems/SupportGemMulticast|ÕÙ†¾Îï‚ûº¦İoÖú,Metadata/Items/Gems/SupportGemMinionDamage",nil,10,1)--Ğ¬×Ó
