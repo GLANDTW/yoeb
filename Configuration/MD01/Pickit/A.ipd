@@ -16,6 +16,16 @@
 //[Type] == "Blueprint: Underbelly" # [StashItem] == "true" 
 //[Type] == "Blueprint: Mansion" # [StashItem] == "true" 
 
+//Tier0 Weapon Unique
+
+[Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"
+[Type] == "Hellion's Paw" && [Rarity] == "Unique" # [UniqueName] == "Bloodseeker" && [StashItem] == "true"
+[Type] == "Vaal Claw" && [Rarity] == "Unique" # [UniqueName] == "Essentia Sanguis" && [StashItem] == "true"
+[Type] == "Slaughter Knife" && [Rarity] == "Unique" # [UniqueName] == "Bino's Kitchen Knife" && [StashItem] == "true"
+[Type] == "Dusk Blade" && [Rarity] == "Unique" # [UniqueName] == "Ephemeral Edge" && [StashItem] == "true"
+[Type] == "Void Axe" && [Rarity] == "Unique" # [UniqueName] == "Kitava's Feast" && [StashItem] == "true"
+[Type] == "Imperial Bow" && [Rarity] == "Unique" # [UniqueName] == "Lioneye's Glare" && [StashItem] == "true"
+
 //3.22
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Stormshroud" && [StashItem] == "true"  
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Quickening Covenant" && [StashItem] == "true" 
@@ -89,80 +99,46 @@
 //[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
 
-////
+//// 3.28 Map ////
 
-[Type] == "Coves Map" # [StashItem] == "true" 
-[Type] == "Canyon Map" # [StashItem] == "true" 
-[Type] == "Dunes Map" # [StashItem] == "true" 
-[Type] == "Precinct Map" # [StashItem] == "true" 
-
-
-
-//
+[Type] == "Map" && [Rarity] == "Magic"  # [StashItem] == "true" //
+[Type] == "Map" && [Rarity] == "Normal"  # [StashItem] == "true" //
+[Type] == "Map" && [Rarity] == "Rare"  # [StashItem] == "true" //
 
 [Category] == "Map" # [StashItem] == "true" 
 
-//[Category] == "Map" && [MapTier] <= "10" # [ForceSellItem] == "true" 
-//[Category] == "Map" && [MapTier] <= "5" # [ForceSellItem] == "true" 
 
-//
-[Type] == "Coves Map" && [MapTier] <= "13" # [ForceSellItem] == "true" 
-[Type] == "Canyon Map" && [MapTier] <= "13" # [ForceSellItem] == "true" 
-[Type] == "Dunes Map" && [MapTier] <= "13" # [ForceSellItem] == "true" 
-[Type] == "Precinct Map" && [MapTier] <= "13" # [ForceSellItem] == "true" 
+//Specil Map//
 
 [Type] == "Synthesised Map" # [StashItem] == "true" 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
-[Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps
-[Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps																		
-
 [Category] == "Map" && [map_zana_influence] == "1" # [StashItem] == "true" 
 
-[Type] == "Shipyard Map" # [StashItem] == "true" //
-[Type] == "Toxic Sewer Map" # [StashItem] == "true" //
-[Type] == "Bone Crypt Map" # [StashItem] == "true" //
-[Type] == "Thicket Map" # [StashItem] == "true" //
-[Type] == "Valcano Map"  # [StashItem] == "true" //
-[Type] == "Coves Map"  # [StashItem] == "true" //
+[Type] == "Nightmare Map" # [StashItem] == true" //
+[Type] == "Shaper Guardian Map" # [StashItem] == true" //
 
-/////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
-//[Type] == "Shipyard Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-//[Type] == "Shipyard Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
-//[Type] == "Shipyard Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
+//3.28 currency//
 
-//[Type] == "Toxic Sewer Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-//[Type] == "Toxic Sewer Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
-//[Type] == "Toxic Sewer Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
-
-//[Type] == "Valcano Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-//[Type] == "Valcano Map" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
-//[Type] == "Valcano Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
-
-//[Type] == "Coves Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
-//[Type] == "Coves Mapp" && [Rarity] == "Normal"  # [ForceSellItem] == "true" //
-//[Type] == "Coves Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
-
-//[Type] == "Bone Crypt Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
-//[Type] == "Bone Crypt Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
-//[Type] == "Bone Crypt Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
-
-//[Type] == "Thicket Map" && [Rarity] == "Normal"  # [ForceSellItem]  == "true" //
-//[Type] == "Thicket Map" && [Rarity] == "Magic"  # [ForceSellItem]  == "true" //
-//[Type] == "Thicket Map" && [Rarity] == "Rare"  # [ForceSellItem] == "true" //
-/////////////////////////////////////////////////CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE///CARE//CARE//
-
-
-[Type]== "Forge of the Phoenix Map"#[StashItem]== "true"// #																								
-[Type]== "Lair of the Hydra Map"#[StashItem]== "true"// #																								
-[Type]== "Maze of the Minotaur Map"#[StashItem]== "true"// #																								
-[Type]== "Pit of the Chimera Map"#[StashItem]== "true"// #		
-
-[Type] == "Sanctuary" # [StashItem] == true" //
-[Type] == "Citadel" # [StashItem] == true" //
-[Type] == "Fortress" # [StashItem] == true" //
-[Type] == "Abomination" # [StashItem] == true" //
-[Type] == "Ziggurat" # [StashItem] == true" //
+[Type] == "Chaotic Astrolabe" # [StashItem] == "true" //	
+[Type] == "Enshrouded Astrolabe" # [StashItem] == "true" //	
+[Type] == "Fruiting Astrolabe" # [StashItem] == "true" //	
+[Type] == "Fungal Astrolabe" # [StashItem] == "true" //	
+[Type] == "Grasping Astrolabe" # [StashItem] == "true" //	
+[Type] == "Lightless Astrolabe" # [StashItem] == "true" //
+[Type] == "Nameless Astrolabe" # [StashItem] == "true" //
+[Type] == "Runic Astrolabe" # [StashItem] == "true" //
+[Type] == "Templar Astrolabe" # [StashItem] == "true" //
+[Type] == "Timeless Astrolabe" # [StashItem] == "true" //
+[Type] == "Ancient Wombgift" # [StashItem] == "true" //
+[Type] == "Refracting Fog" # [StashItem] == "true" //
+[Type] == "Flesh of Xesht" # [StashItem] == "true" //
+[Type] == "Essence of Desolation" # [StashItem] == "true" //
+[Type] == "Crystallised Rancour" # [StashItem] == "true" //
+[Type] == "Coin of Power" # [StashItem] == "true" //
+[Type] == "Coin of Knowledge" # [StashItem] == "true" //
+[Type] == "Coin of Skill" # [StashItem] == "true" //
+[Type] == "The Black Barya" # [StashItem] == "true" //
 
 
 
@@ -354,6 +330,14 @@
 [Type]=="Temperance" # [StashItem] == "true" //
 [Type]=="Toxic Tidings" # [StashItem] == "true" //
 [Type]=="The Enforcer" # [StashItem] == "true" //
+[Type] == "Apocalypse" # [StashItem] == "true" //
+[Type] == "Lucky Bastion" # [StashItem] == "true" //
+[Type] == "Reflection of the Heart" # [StashItem] == "true" //
+[Type] == "The Everlasting" # [StashItem] == "true" //
+[Type] == "The Forbidden Fruit" # [StashItem] == "true" //
+[Type] == "The Miracle" # [StashItem] == "true" //
+[Type] == "The Silly Boy" # [StashItem] == "true" //
+[Type] == "The Slumbering Beast" # [ForceSellItem] == "true" //
 
 /////////
 
@@ -488,7 +472,7 @@
 [Type] == "Academy Map" # [ForceSellItem] == "true" //
 //[Type] == "Thicket Map" # [ForceSellItem] == "true" //
 [Type] == "Wharf Map" # [ForceSellItem] == "true" //
-[Type] == "Ashen Wood Map" # [ForceSellItem] == "true" //
+//[Type] == "Ashen Wood Map" # [ForceSellItem] == "true" //
 [Type] == "Atoll Map" # [ForceSellItem] == "true" //
 [Type] == "Cemetery Map" # [ForceSellItem] == "true" //
 [Type] == "Underground Sea Map" # [ForceSellItem] == "true" //
@@ -550,7 +534,7 @@
 [Type] == "Crystal Ore Map" # [ForceSellItem] == "true" //
 [Type] == "Villa Map" # [ForceSellItem] == "true" //
 [Type] == "Primordial Blocks Map" # [ForceSellItem] == "true" //
-[Type] == "Necropolis Map" # [ForceSellItem] == "true" //
+//[Type] == "Necropolis Map" # [ForceSellItem] == "true" //
 [Type] == "Racecourse Map" # [ForceSellItem] == "true" //
 [Type] == "Caldera Map" # [ForceSellItem] == "true" //
 [Type] == "Ghetto Map" # [ForceSellItem] == "true" //
