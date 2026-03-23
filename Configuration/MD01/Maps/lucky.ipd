@@ -41,8 +41,8 @@
 
 // Tiers to run (difficult to use since a Map can have multiple tiers)
 [MapTier] >= "13" && [MapTier] <= "16" && [Rarity] == "Rare" # [RunMap] == "true"
-
-
+[MapTier] >= "13" && [MapTier] <= "16" && [Rarity] == "Normal" # [RunMap] == "true"
+[MapTier] >= "13" && [MapTier] <= "16" && [Rarity] == "Magic" # [RunMap] == "true"
 //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // 1 Map Types RunMap
 //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
