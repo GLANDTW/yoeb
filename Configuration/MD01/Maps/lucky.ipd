@@ -83,11 +83,7 @@
 [Type] == "Fortress Map" # [IgnoreMap] == "true"  // T17
 [Type] == "Abomination Map" # [IgnoreMap] == "true"  // T17
 [Type] == "Citadel Map" # [IgnoreMap] == "true"  // T17
-[Type] == "Forge of the Phoenix Map" # [IgnoreMap] == "true"  // ÐºÐ°Ñ€Ñ‚Ñ‹ ÑÐ¾Ð·Ð´Ð°Ñ‚ÐµÐ»Ñ
-[Type] == "Lair of the Hydra Map" # [IgnoreMap] == "true"  // ÐºÐ°Ñ€Ñ‚Ñ‹ ÑÐ¾Ð·Ð´Ð°Ñ‚ÐµÐ»Ñ
-[Type] == "Maze of the Minotaur Map" # [IgnoreMap] == "true"  // ÐºÐ°Ñ€Ñ‚Ñ‹ ÑÐ¾Ð·Ð´Ð°Ñ‚ÐµÐ»Ñ
-[Type] == "Pit of the Chimera Map" # [IgnoreMap] == "true"  // ÐºÐ°Ñ€Ñ‚Ñ‹ ÑÐ¾Ð·Ð´Ð°Ñ‚ÐµÐ»Ñ
-
+[Type] == "Forge of the Phoenix Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?[Type] == "Lair of the Hydra Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?[Type] == "Maze of the Minotaur Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?[Type] == "Pit of the Chimera Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?
 // IgnoreMap and UpgradeMapTier
 
 
@@ -349,7 +345,7 @@
 [Type] == "Maze Map" 				&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Doryani's Machinarium
 [Type] == "Promenade Map" 			&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Hall of Grandmasters
 [Type] == "Cemetery Map" 			&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Hallowed Ground
-[Type] == "Atoll Map" 				&& [Rarity] == "Unique" # [IgnoreMap] == "true" // MaelstrÃ¶m of Chaos
+[Type] == "Atoll Map" 				&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Maelstr脙露m of Chaos
 [Type] == "Shore Map" 				&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Mao Kun
 [Type] == "Underground Sea Map" 	&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Oba's Cursed Trove
 [Type] == "Bone Crypt Map" 			&& [Rarity] == "Unique" # [IgnoreMap] == "true" // Olmec's Sanctum
