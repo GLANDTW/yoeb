@@ -49,7 +49,7 @@
 
 
 
-[Type] == "Coves Map" # [RunMap] == "true"
+[Type] == "Dunes Map" # [RunMap] == "true"
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -381,14 +381,22 @@
 // 9 -- Post Script
 // Priority list of actions is: [UpgradeMapTier](3) >> [IgnoreMap] >> [UpgradeToRare] >> [UpgradeToMagic] >> [RunMap]
 // If you enabled UpgradeMapTier and RunMap simultaneously for a Map, the bot will run that Map
-// created by Impuls, updated by Kintaro
-// All the Map mods can be found in ModsList.html file.
-// Big thanks to jps42 for updating and improving this file.
-// Example: Run rare Maps level less than 3
-// [MapTier] >= "1" && [MapTier] < "3" && [Rarity] == "Rare" # [RunMap] == "true"
+// created by Impuls, updated by Kintaro
+
+// All the Map mods can be found in ModsList.html file.
+
+// Big thanks to jps42 for updating and improving this file.
+
+// Example: Run rare Maps level less than 3
+
+// [MapTier] >= "1" && [MapTier] < "3" && [Rarity] == "Rare" # [RunMap] == "true"
+
 
 [Type] == "Coves Map" # [ExitAfterBossKill] == "true" //
-
-// 9 -- Post Script
-// Priority list of actions is: [UpgradeMapTier](3) >> [IgnoreMap] >> [UpgradeToRare] >> [UpgradeToMagic] >> [RunMap]
+[Type] == "Dunes Map" # [ExitAfterBossKill] == "true" //
+
+// 9 -- Post Script
+
+// Priority list of actions is: [UpgradeMapTier](3) >> [IgnoreMap] >> [UpgradeToRare] >> [UpgradeToMagic] >> [RunMap]
+
 // If you enabled UpgradeMapTier and RunMap simultaneously for a Map,
