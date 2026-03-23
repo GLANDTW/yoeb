@@ -3,26 +3,9 @@
 //[Rarity]== "Magic"#[AugmentIfPossible]== "true"//
 
 
-
-
-[Type] == "Dunes Map" # [RunMap] == "true" //
 [Type] == "Coves Map" # [RunMap] == "true" //
 
-[Type] == "Volcano Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Coves Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Mud Geyser Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Defiled Cathedral Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Shipyard Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Toxic Sewer Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Bone Crypt Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Thicket Map" # [ExitAfterBossKill] == "true" //
-[Type]=="Canyon Map"#[ExitAfterBossKill]=="true" //
-[Type]=="Dunes Map"#[ExitAfterBossKill]=="true" //
-[Type]=="Precinct Map"#[ExitAfterBossKill]=="true" //
-[Type] == "Necropolis Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Ashen Wood Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Coves" # [ExitAfterBossKill] == "true" //
-
 
 [Type]=="Synthesised Map"#[IgnoreMap]=="true"
 
