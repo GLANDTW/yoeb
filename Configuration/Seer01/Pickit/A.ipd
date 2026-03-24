@@ -15,7 +15,7 @@
 //[Type] == "Blueprint: Tunnels" # [StashItem] == "true" 
 //[Type] == "Blueprint: Underbelly" # [StashItem] == "true" 
 //[Type] == "Blueprint: Mansion" # [StashItem] == "true" 
-
+[Type] == "Domination Scarab" # [StashItem] == "true" 
 //Tier0 Weapon Unique
 
 [Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"
