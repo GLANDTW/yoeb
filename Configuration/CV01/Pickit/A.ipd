@@ -106,7 +106,7 @@
 [Type] == "Map" && [Rarity] == "Rare"  # [StashItem] == "true" //
 
 [Category] == "Map" # [StashItem] == "true" 
-[Category] == "Map" && [Rarity] == "Unique"  # [StashItem] == "true" 
+[Category] == "Map" && [Rarity] == "Unique"  # [ForceSellItem] == "true" 
 
 //Specil Map//
 
