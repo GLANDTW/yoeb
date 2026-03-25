@@ -91,27 +91,25 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-[map_monsters_cannot_be_leeched_from] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Cannot Leech
-[map_monsters_cannot_be_leeched_from] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Cannot Leech
-[map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
-[map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
-[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #    [RerollMods] == "true" //
-[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [RerollMods] == "true" //
-
-
 // -- 4 Map Mods Important Reroll
 // REROLL magic maps with Alteration
-// [map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
-// [map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
-// REROLL rare maps with Chaos
-// [map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
-// [map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+//[map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
+[map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
+[map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!  IGNORE rare maps
-//[map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
-//[map_player_life_and_es_recovery_speed_+%_final] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Less Recovery
-//[map_additional_player_maximum_resistances_%] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // Minus Max Resistance
-//[map_player_non_curse_aura_effect_+%] 	>= "1" && [Rarity] == "Rare" # [IgnoreMap] == "true" // less non-curse aura effect
+// REROLL rare maps with Chaos
+//[map_monsters_reflect_%_elemental_damage] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Mirrored -- Monsters Reflect % Elemental Damage
+[map_monsters_reflect_%_physical_damage] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Punishing -- Monsters Reflect % Physical Damage
+[map_players_no_regeneration_including_es] 	>= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Statis -- Players have no Life or Mana Regeneration
+
+[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
+[map_monsters_cannot_be_leeched_from] >= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
+[map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Temporal Chains -- Players are cursed with Temporal Chains
+[map_player_has_level_X_temporal_chains] >= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Temporal Chains -- Players are cursed with Temporal Chains
+
+
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Magic" #    [RerollMods] == "true" //
+[map_monsters_steal_charges] >= "1" && [Rarity] == "Rare" #   [RerollMods] == "true" //
 
 
 
@@ -398,7 +396,6 @@
 [Type] == "Coves Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Dunes Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Cemetery Map" # [ExitAfterBossKill] == "true" //
-[Type] == "Map" # [ExitAfterBossKill] == "true" //
 
 // 9 -- Post Script
 

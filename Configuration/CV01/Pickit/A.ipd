@@ -100,7 +100,8 @@
 //[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
 
 //// 3.28 Map ////
-
+//[Type] == "Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
+/////////
 [Type] == "Map" && [Rarity] == "Magic"  # [StashItem] == "true" //
 [Type] == "Map" && [Rarity] == "Normal"  # [StashItem] == "true" //
 [Type] == "Map" && [Rarity] == "Rare"  # [StashItem] == "true" //
@@ -193,18 +194,18 @@
 ////
 
 [Type] == "Orb of Alteration" # [StashItem] == "true"////
-[Type] == "Orb of Regret"# [StashItem] == "true"////
-[Type] == "Orb of Unmaking"# [StashItem] == "true"////
-[Type] == "Enkindling Orb"# [StashItem] == "true"////
-[Type] == "Instilling Orb" # [StashItem] == "true" //	//
-[Type] == "Orb of Scouring"# [StashItem] == "true"////
-[Type] == "Regal Orb" # [StashItem] == "true"////
+//[Type] == "Orb of Regret"# [StashItem] == "true"////
+//[Type] == "Orb of Unmaking"# [StashItem] == "true"////
+//[Type] == "Enkindling Orb"# [StashItem] == "true"////
+//[Type] == "Instilling Orb" # [StashItem] == "true" //	//
+//[Type] == "Orb of Scouring"# [StashItem] == "true"////
+//[Type] == "Regal Orb" # [StashItem] == "true"////
 //[Type] == "Orb of Horizons"# [StashItem] == "true"////
 [Type] == "Enhance Support" #[StashItem] == "true"////
 //[Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//
 //[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//
-[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
-[Type] == "Blessed Orb" # [StashItem] == "true" //	//
+//[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
+//[Type] == "Blessed Orb" # [StashItem] == "true" //	//
 
 [Type] == "Orb of Alchemy" # [StashItem] =="true"// Dian Jin
 
