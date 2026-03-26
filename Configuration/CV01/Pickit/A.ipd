@@ -6,15 +6,25 @@
 
 [Type] == "Reflecting Mist" # [StashItem] == "true"//
 //
-//[Type] == "Blueprint: Bunker" # [StashItem] == "true" 
-//[Type] == "Blueprint: Laboratory" # [StashItem] == "true" 
-//[Type] == "Blueprint: Prohibited Library" # [StashItem] == "true" 
-//[Type] == "Blueprint: Records Office" # [StashItem] == "true" 
-//[Type] == "Blueprint: Repository" # [StashItem] == "true" 
-//[Type] == "Blueprint: Smuggler's Den" # [StashItem] == "true" 
-//[Type] == "Blueprint: Tunnels" # [StashItem] == "true" 
-//[Type] == "Blueprint: Underbelly" # [StashItem] == "true" 
-//[Type] == "Blueprint: Mansion" # [StashItem] == "true" 
+[Type] == "Blueprint: Bunker" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Laboratory" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Prohibited Library" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Records Office" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Repository" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Smuggler's Den" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Tunnels" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Underbelly" # [ForceSellItem] == "true" 
+[Type] == "Blueprint: Mansion" # [ForceSellItem] == "true" 
+
+[Type] == "Contract: Bunker" # [ForceSellItem] == "true" //
+[Type] == "Contract: Smuggler's Den" # [ForceSellItem] == "true" //
+[Type] == "Contract: Laboratory" # [ForceSellItem] == "true" //
+[Type] == "Contract: Repository" # [ForceSellItem] == "true" //
+[Type] == "Contract: Prohibited Library" # [ForceSellItem] == "true" //
+[Type] == "Contract: Tunnels" # [ForceSellItem] == "true" //
+[Type] == "Contract: Underbelly" # [ForceSellItem] == "true" //
+[Type] == "Contract: Records Office" # [ForceSellItem] == "true" //
+[Type] == "Contract: Mansion" # [ForceSellItem] == "true" //
 
 //Tier0 Weapon Unique
 
