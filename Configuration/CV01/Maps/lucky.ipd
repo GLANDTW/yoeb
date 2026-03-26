@@ -40,9 +40,9 @@
 
 
 // Tiers to run (difficult to use since a Map can have multiple tiers)
-[MapTier] >= "13" && [MapTier] <= "16" && [Rarity] == "Rare" # [RunMap] == "true"
-[MapTier] >= "13" && [MapTier] <= "16" && [Rarity] == "Normal" # [RunMap] == "true"
-[MapTier] >= "13" && [MapTier] <= "16" && [Rarity] == "Magic" # [RunMap] == "true"
+[MapTier] >= "16" && [Rarity] == "Rare" # [RunMap] == "true"
+[MapTier] >= "16" && [Rarity] == "Normal" # [RunMap] == "true"
+[MapTier] >= "16" && [Rarity] == "Magic" # [RunMap] == "true"
 //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // 1 Map Types RunMap
 //   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -396,6 +396,7 @@
 [Type] == "Coves Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Dunes Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Cemetery Map" # [ExitAfterBossKill] == "true" //
+[Type] == "Map" # [ExitAfterBossKill] == "true" //
 
 // 9 -- Post Script
 
