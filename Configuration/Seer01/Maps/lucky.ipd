@@ -83,8 +83,9 @@
 [Type] == "Fortress Map" # [IgnoreMap] == "true"  // T17
 [Type] == "Abomination Map" # [IgnoreMap] == "true"  // T17
 [Type] == "Citadel Map" # [IgnoreMap] == "true"  // T17
-[Type] == "Forge of the Phoenix Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?[Type] == "Lair of the Hydra Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?[Type] == "Maze of the Minotaur Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?[Type] == "Pit of the Chimera Map" # [IgnoreMap] == "true"  // 脨潞脨掳脩鈧戔€毭戔€?脩聛脨戮脨路脨麓脨掳脩鈥毭惵得惵幻懧?
-// IgnoreMap and UpgradeMapTier
+[Type] == "NightMare Map" #[IgnoreMap]=="true"//T17
+[map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
+[map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
 
 
 
