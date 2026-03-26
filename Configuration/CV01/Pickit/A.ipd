@@ -70,45 +70,6 @@
 [Type] == "Omen of Fortune" # [StashItem] == "true" //	
 [Type] == "Incandescent Invitation" # [StashItem] == "true"//
 
-//3.22
-
-//[Type] == "Portal" # [StashItem] == "true"
-
-//
-//[Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	
-//[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	
-//[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	
-//[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	
-//[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	
-//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	
-//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	
-//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	
-//[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	
-//[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	
-//[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	
-
-
-//
-//[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Springleaf" && [StashItem] == "true"	
-//[Type] == "Topaz Ring" && [Rarity] == "Unique" # [UniqueName] == "Kikazaru" && [StashItem] == "true"	
-//[Type] == "Agate Amulet" && [Rarity] == "Unique" # [UniqueName] == "Shaper's Seed" && [StashItem] == "true"	
-//[Type] == "Leather Belt" && [Rarity] == "Unique" # [UniqueName] == "Immortal Flesh" && [StashItem] == "true"	
-//[Type] == "Basket Rapier" && [Rarity] == "Unique" # [UniqueName] == "Aurumvorax" && [StashItem] == "true"	
-//[Type] == "Glorious Plate" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Heart" && [StashItem] == "true"	
-
-
-//
-//[Type] == "Divine Life Flask"&& [ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-//[Type] == "Silver Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-//[Type] == "Diamond Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-//[Type] == "Jade Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-//[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-
-
-//[Type] == "Amethyst Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-//[Type] == "Bismuth Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-//[Type] == "Granite Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" 
-
 //// 3.28 Map ////
 //[Type] == "Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
 /////////
@@ -573,32 +534,34 @@
 [Type] == "Silo Map" # [ForceSellItem] == "true" //
 
 
-// --- 常見傳奇地圖 ---
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Whakawairua Tuahu" && [ForceSellItem] == "true" // 售出禁閉祭壇
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Doryani's Machinarium" && [ForceSellItem] == "true" // 售出多里亞尼的機械迷城
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Maelström of Chaos" && [ForceSellItem] == "true" // 售出混沌之淵
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Hallowed Ground" && [ForceSellItem] == "true" // 售出萬聖之地
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Oba's Cursed Trove" && [ForceSellItem] == "true" // 售出歐霸的咒怨寶庫
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Pillars of Arun" && [ForceSellItem] == "true" // 售出艾倫之柱
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Replica Pillars of Arun" && [ForceSellItem] == "true" // 售出贗品．艾倫之柱
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Olmec's Sanctum" && [ForceSellItem] == "true" // 售出遠古之印
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Caer Blaidd, Wolfpack's Den" && [ForceSellItem] == "true" // 售出塞爾．佈雷德狼穴
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Vaults of Atziri" && [ForceSellItem] == "true" // 售出阿茲里的秘寶庫
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Vinktar Square" && [ForceSellItem] == "true" // 售出維克塔廣場
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Mao Kun" && [ForceSellItem] == "true" // 售出賊窩
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Twilight Temple" && [ForceSellItem] == "true" // 售出暮色神廟
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Poorjoy's Asylum" && [ForceSellItem] == "true" // 售出沉淪之間
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Replica Poorjoy's Asylum" && [ForceSellItem] == "true" // 售出贗品．沉淪之間
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Putrid Cloister" && [ForceSellItem] == "true" // 售出腐臭迴廊
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Coward's Trial" && [ForceSellItem] == "true" // 售出懦者的試驗
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Hall of Grandmasters" && [ForceSellItem] == "true" // 售出元帥殿堂
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Acton's Nightmare" && [ForceSellItem] == "true" // 售出輪迴的夢魘
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Death and Taxes" && [ForceSellItem] == "true" // 售出亡者之財
+//
 
-// --- 追憶系列地圖 ---
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Cortex" && [ForceSellItem] == "true" // 售出深沉記憶
-[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Replica Cortex" && [ForceSellItem] == "true" // 售出贗品．深沉記憶
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Altered Distant Memory" && [ForceSellItem] == "true" // 售出遙遠記憶：編造
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Augmented Distant Memory" && [ForceSellItem] == "true" // 售出遙遠記憶：增幅
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Twisted Distant Memory" && [ForceSellItem] == "true" // 售出遙遠記憶：扭曲
-//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Rewritten Distant Memory" && [ForceSellItem] == "true" // 售出遙遠記憶：改寫
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Whakawairua Tuahu" && [ForceSellItem] == "true"
+//[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Doryani's Machinarium" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Maelström of Chaos" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Hallowed Ground" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Oba's Cursed Trove" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Pillars of Arun" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Replica Pillars of Arun" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Olmec's Sanctum" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Caer Blaidd, Wolfpack's Den" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Vaults of Atziri" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Vinktar Square" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Mao Kun" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Twilight Temple" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Poorjoy's Asylum" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Replica Poorjoy's Asylum" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Putrid Cloister" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Coward's Trial" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Hall of Grandmasters" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Acton's Nightmare" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Death and Taxes" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Perandus Manor" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Cortex" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Replica Cortex" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Altered Distant Memory" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Augmented Distant Memory" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Twisted Distant Memory" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Rewritten Distant Memory" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "The Beachhead" && [ForceSellItem] == "true"
+[Type] == "Map" && [Rarity] == "Unique" # [UniqueName] == "Infused Beachhead" && [ForceSellItem] == "true"
