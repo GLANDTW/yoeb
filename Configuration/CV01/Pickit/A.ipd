@@ -71,7 +71,7 @@
 [Type] == "Incandescent Invitation" # [StashItem] == "true"//
 
 //// 3.28 Map ////
-//[Type] == "Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
+[Type] == "Map" && [Rarity] == "Magic"  # [ForceSellItem] == "true" //
 /////////
 [Type] == "Map" && [Rarity] == "Magic"  # [StashItem] == "true" //
 [Type] == "Map" && [Rarity] == "Normal"  # [StashItem] == "true" //
