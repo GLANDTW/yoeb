@@ -399,6 +399,7 @@
 [Type] == "Dunes Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Cemetery Map" # [ExitAfterBossKill] == "true" //
 [Type] == "Map" # [ExitAfterBossKill] == "true" //
+[Category] == "Map" #  [ExitAfterBossKill]  == "true"//
 
 // 9 -- Post Script
 
