@@ -164,7 +164,7 @@
 
 ////
 
-[Type] == "Orb of Alteration" # [StashItem] == "true"////
+//[Type] == "Orb of Alteration" # [StashItem] == "true"////
 //[Type] == "Orb of Regret"# [StashItem] == "true"////
 //[Type] == "Orb of Unmaking"# [StashItem] == "true"////
 //[Type] == "Enkindling Orb"# [StashItem] == "true"////
