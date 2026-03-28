@@ -22,6 +22,15 @@
 
 # 【特殊語法-六連裝備】0001
 
+#極地之邀隱藏
+Hide
+    BaseType "Polaric Invitation"
+    SetTextColor 255 255 255
+    SetBackgroundColor 33 19 38
+    SetBorderColor 255 0 0
+    SetFontSize 44
+
+
 #地圖已汙染
 Hide
 　　Corrupted True
