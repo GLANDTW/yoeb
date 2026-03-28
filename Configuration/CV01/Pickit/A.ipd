@@ -4,6 +4,8 @@
 //[Type] == "Growing Wombgift" # [StashItem] == "true" 
 //[Type] == "Mysterious Wombgift" # [StashItem] == "true" 
 
+[Type] == "Shaper Guardian Map" # [ForceSellItem] == "true" //
+
 [Type] == "Reflecting Mist" # [StashItem] == "true"//
 //
 [Type] == "Blueprint: Bunker" # [ForceSellItem] == "true" 
