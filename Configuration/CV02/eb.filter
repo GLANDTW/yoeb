@@ -3902,7 +3902,7 @@ Show # 裝備 - 傳奇裝備 - 一般傳奇
 
 # 【藥劑-功能藥劑】7001
 
-Show # 藥劑 - 功能藥劑
+Hide # 藥劑 - 功能藥劑
     Class "Utility Flasks"
     SetTextColor 255 255 255
     SetBackgroundColor 163 141 109
@@ -3931,7 +3931,7 @@ Hide # 藥劑 - 生命藥劑 - 中階(高階/聖語/祝福)
     SetBorderColor 153 0 0
     SetFontSize 40
 
-Show # 藥劑 - 生命藥劑 - 高階(聖化/不朽/永恆)
+Hide # 藥劑 - 生命藥劑 - 高階(聖化/不朽/永恆)
     Class "Life Flasks"
     BaseType "Sanctified Life Flask" "Divine Life Flask" "Eternal Life Flask"
     SetTextColor 153 0 0
