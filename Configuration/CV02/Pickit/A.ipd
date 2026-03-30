@@ -48,8 +48,8 @@
 
 //3.22//
 //[Type] == "Short Bow" && [Rarity] == "Unique" #  [UniqueName] == "Quill Rain" && [StashItem] == "true"  
-[Type] == "Prophecy Wand" && [Rarity] == "Unique" # [UniqueName] == "Void Battery" && [StashItem] == "true"  
-[Type] == "Assassin Bow" && [Rarity] == "Unique" # [UniqueName] == "Darkscorn" && [StashItem] == "true"	
+//[Type] == "Prophecy Wand" && [Rarity] == "Unique" # [UniqueName] == "Void Battery" && [StashItem] == "true"  
+//[Type] == "Assassin Bow" && [Rarity] == "Unique" # [UniqueName] == "Darkscorn" && [StashItem] == "true"	
 //[Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"	
 [Type] == "Fiend Dagger" && [Rarity] == "Unique" #  [UniqueName] == "Arakaali's Fang" && [StashItem] == "true" 
 [Type] == "Spine Bow" && [Rarity] == "Unique" #  [UniqueName] == "Voltaxic Rift" && [StashItem] == "true" 
