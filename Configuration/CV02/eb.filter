@@ -1,4 +1,4 @@
-﻿# Script edited with Filtration - https://github.com/ben-wallis/Filtration
+# Script edited with Filtration - https://github.com/ben-wallis/Filtration
 # EnableBlockGroups
 
 #============
@@ -31,7 +31,7 @@ Hide
 
 # 【特殊語法-六連裝備】0001
 Hide
-    Rarity Rare
+    Rarity >= Magic
     Class "Helmets" "Body Armours" "Gloves" "Boots" "Belts" "Rings" "Amulets" "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "One Hand Maces" "Two Hand Maces" "Sceptres" "Staves" "One Hand Swords" "Two Hand Swords" "Wands" "Shields" "Quivers"
 
 
@@ -3959,7 +3959,7 @@ Hide # 藥劑 - 魔力藥劑 - 中階(高階/聖語/祝福)
     SetBorderColor 0 102 204
     SetFontSize 40
 
-Show # 藥劑 - 魔力藥劑 - 高階(聖化/不朽/永恆)
+Hide # 藥劑 - 魔力藥劑 - 高階(聖化/不朽/永恆)
     Rarity <= Magic
     Class "Mana Flasks"
     BaseType "Sanctified Mana Flask" "Divine Mana Flask" "Eternal Mana Flask"
@@ -3988,7 +3988,7 @@ Hide # 藥劑 - 複合藥劑 - 中階(大型/高階)
     SetBorderColor 76 0 153
     SetFontSize 40
 
-Show # 藥劑 - 複合藥劑 - 高階(聖語/祝福)
+Hide # 藥劑 - 複合藥劑 - 高階(聖語/祝福)
     Rarity <= Magic
     Class "Hybrid Flasks"
     BaseType "Sacred Hybrid Flask" "Hallowed Hybrid Flask"
@@ -3999,7 +3999,7 @@ Show # 藥劑 - 複合藥劑 - 高階(聖語/祝福)
 
 # 【裝備-高T詞綴裝備】
 
-Show # 裝備 - 高T詞綴裝備 - 魔法 - 單物傷詞綴
+Hide # 裝備 - 高T詞綴裝備 - 魔法 - 單物傷詞綴
 	  Corrupted False
 	  Rarity = Magic
     HasExplicitMod "Merciless"
@@ -4009,7 +4009,7 @@ Show # 裝備 - 高T詞綴裝備 - 魔法 - 單物傷詞綴
     MinimapIcon 2 Blue Hexagon
     PlayEffect Blue
 
-Show # 裝備 - 高T詞綴裝備 - 魔法 - 雙物理詞綴
+Hide # 裝備 - 高T詞綴裝備 - 魔法 - 雙物理詞綴
 	  Corrupted False
 	  Rarity = Magic
 	  Class "Dagger" "Wands" "Claws" "One Hand" "Bow"
