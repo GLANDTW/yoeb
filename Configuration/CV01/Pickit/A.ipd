@@ -48,8 +48,8 @@
 
 //3.22//
 //[Type] == "Short Bow" && [Rarity] == "Unique" #  [UniqueName] == "Quill Rain" && [StashItem] == "true"  
-[Type] == "Prophecy Wand" && [Rarity] == "Unique" # [UniqueName] == "Void Battery" && [StashItem] == "true"  
-[Type] == "Assassin Bow" && [Rarity] == "Unique" # [UniqueName] == "Darkscorn" && [StashItem] == "true"	
+//[Type] == "Prophecy Wand" && [Rarity] == "Unique" # [UniqueName] == "Void Battery" && [StashItem] == "true"  
+//[Type] == "Assassin Bow" && [Rarity] == "Unique" # [UniqueName] == "Darkscorn" && [StashItem] == "true"	
 //[Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"	
 [Type] == "Fiend Dagger" && [Rarity] == "Unique" #  [UniqueName] == "Arakaali's Fang" && [StashItem] == "true" 
 [Type] == "Spine Bow" && [Rarity] == "Unique" #  [UniqueName] == "Voltaxic Rift" && [StashItem] == "true" 
@@ -63,7 +63,7 @@
 //[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	
 //[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
 //[Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	
-[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
+//[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
 //[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" 
 //
 [Type] == "Omen of Connections" # [StashItem] == "true"////
@@ -349,14 +349,14 @@
 	[Type] == "Synthesised Map" && [Rarity] == "Unique" # [UniqueName] == "Rewritten Distant Memory" && [StashItem] == "true"	
 
 //	[Type] == "Prophecy Wand" && [Rarity] == "Unique" # [UniqueName] == "Void Battery" && [StashItem] == "true"	
-	[Type] == "Archon Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Prism Guardian" && [StashItem] == "true"	
-	[Type] == "Champion Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Aegis Aurora" && [StashItem] == "true"	
+//	[Type] == "Archon Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Prism Guardian" && [StashItem] == "true"	
+//	[Type] == "Champion Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Aegis Aurora" && [StashItem] == "true"	
 	[Type] == "Spidersilk Robe" && [Rarity] == "Unique" # [UniqueName] == "The Covenant" && [StashItem] == "true"	
 	[Type] == "Sage's Robe" && [Rarity] == "Unique" # [UniqueName] == "Dialla's Malefaction" && [StashItem] == "true"	
 	[Type] == "Siege Axe" && [Rarity] == "Unique" # [UniqueName] == "Soul Taker" && [StashItem] == "true"	
 	[Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [UniqueName] == "The Squire" && [StashItem] == "true"	
 	[Type] == "Carnal Armour" && [Rarity] == "Unique" # [UniqueName] == "Stasis Prison" && [StashItem] == "true"	
-[Type] == "Defiance of Destiny" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	
+[Type] == "Paua Amulet" && [Rarity] == "Unique" # [UniqueName] == "Defiance of Destiny" && [StashItem] == "true"	
 
 //
 ////
