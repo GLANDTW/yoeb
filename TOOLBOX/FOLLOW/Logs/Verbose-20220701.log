@@ -1,5 +1,0 @@
-2022-07-01 22:57:13.065 +08:00 [INF] PerfTimer =-> Load files from memory (120.0274 ms) Thread #[5]
-2022-07-01 23:02:09.448 +08:00 [ERR] System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
-   於 POEAutoFollow.frmMain.BvyJWZ12MU0yGLbCPfo(Object )
-   於 POEAutoFollow.frmMain.GetAction()
-   於 POEAutoFollow.frmMain.RenderEvent()
