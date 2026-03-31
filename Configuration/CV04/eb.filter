@@ -33,7 +33,7 @@ Hide
 Hide
     Rarity <= Rare
     Class "Helmets" "Body Armours" "Gloves" "Boots" "Belts" "Rings" "Amulets" "One Hand Axes" "Two Hand Axes" "Bows" "Claws" "Daggers" "One Hand Maces" "Two Hand Maces" "Sceptres" "Staves" "One Hand Swords" "Two Hand Swords" "Wands" "Shields" "Quivers"
-
+    LinkedSockets <= 5
 
 # 【特殊語法-六連裝備】0001
 
