@@ -50,7 +50,7 @@
 [Type] == "Map (Tier 16)" && [Rarity] == "Normal" # [StashItem] == "true" 
 //[Type] == "Map (Tier 16)" && [Rarity] == "Magic" # [StashItem] == "true" 
 [Type] == "Map (Tier 16)" && [Rarity] == "Rare" # [StashItem] == "true" 
-
+[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true" 
 
 //Specil Map//
 [Type] == "Synthesised Map" # [StashItem] == "true" 
