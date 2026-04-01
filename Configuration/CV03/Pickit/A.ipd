@@ -50,8 +50,12 @@
 [Type] == "Map (Tier 16)" && [Rarity] == "Normal" # [StashItem] == "true" 
 [Type] == "Map (Tier 16)" && [Rarity] == "Magic" # [StashItem] == "true" 
 [Type] == "Map (Tier 16)" && [Rarity] == "Rare" # [StashItem] == "true" 
-[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true" 
 
+////////////////////////////////ForceSell/////////////////////////////////
+
+[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_contains_citadel]>="1"# [ForceSellItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_elder_boss_variation]>="1"# [ForceSellItem] =="true" 
 
 //Specil Map//
 [Type] == "Synthesised Map" # [StashItem] == "true" 
