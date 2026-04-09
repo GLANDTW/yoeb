@@ -87,6 +87,8 @@
 [map_contains_citadel]>="1"#[IgnoreMap]=="true"//13855CitadelMaps
 [map_elder_boss_variation]>="1"#[IgnoreMap]=="true"//6551ElderMaps
 
+[map_players_cannot_leech] >= "1" && [Rarity] == "Magic" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
+[map_players_cannot_leech] >= "1" && [Rarity] == "Rare" # [RerollMods] == "true" // Of Congealment -- Cannot Leech Life/Mana From Monsters
 
 
 
