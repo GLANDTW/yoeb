@@ -44,6 +44,7 @@
 [Type] == "Incandescent Invitation" # [StashItem] == "true"//
 [Type] == "Screaming Invitation" # [StashItem] == "true"//
 
+
 //// 3.28 Map ////
 /////////
 [Type] == "Nightmare Map" # [StashItem] == "true" 
@@ -66,6 +67,15 @@
 [Type] == "Nightmare Map" # [StashItem] == true" //
 //[Type] == "Shaper Guardian Map" # [StashItem] == true" //
 
+
+//3.29//
+[Type] == "Society's Remorse" # [StashItem] == "true" // 
+[Type] == "Scrying Orb" # [StashItem] == "true" //
+[Type] == "Pearls Before Swine" # [StashItem] == "true" //
+[Type] == "Energy Sword" # [StashItem] == "true" //
+
+
+
 //3.28 currency//
 
 [Type] == "Chaotic Astrolabe" # [StashItem] == "true" //	
@@ -87,6 +97,7 @@
 [Type] == "Coin of Knowledge" # [StashItem] == "true" //
 [Type] == "Coin of Skill" # [StashItem] == "true" //
 [Type] == "The Black Barya" # [StashItem] == "true" //
+[Type] == "Chromatic Orb" # [StashItem] == "true" //
 
 ////
 
