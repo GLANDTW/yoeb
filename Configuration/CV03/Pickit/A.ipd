@@ -61,9 +61,9 @@
 
 ////////////////////////////////ForceSell/////////////////////////////////
 
-[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true" 
-[Type] == "Map (Tier 16)" && [map_contains_citadel]>="1"# [ForceSellItem] =="true" 
-[Type] == "Map (Tier 16)" && [map_elder_boss_variation]>="1"# [ForceSellItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [StashItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_contains_citadel]>="1"# [StashItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_elder_boss_variation]>="1"# [StashItem] =="true" 
 
 //Specil Map//
 [Type] == "Synthesised Map" # [StashItem] == "true" 
