@@ -50,6 +50,7 @@
 [Type] == "Coral Forest Chart" # [StashItem] == "true" //
 [Type] == "Coral Reef Chart" # [StashItem] == "true" //
 [Type] == "Thermal Vents Chart" # [StashItem] == "true" //
+[Type] == "The Last Supper" # [StashItem] == "true" //
 
 //// 3.28 Map ////
 /////////
