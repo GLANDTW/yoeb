@@ -29,12 +29,12 @@
 
 //3.22
 //[Type] == "Necromancer Silks" && [Rarity] == "Unique" # [UniqueName] == "Fleshcrafter" && [StashItem] == "true"  
-//[Type] == "Sadist Garb" && [Rarity] == "Unique" #  [UniqueName] == "Inpulsa's Broken Heart" && [StashItem] == "true" 
-//[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	
-//[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
-//[Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	
-//[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
-//[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" 
+[Type] == "Sadist Garb" && [Rarity] == "Unique" #  [UniqueName] == "Inpulsa's Broken Heart" && [StashItem] == "true" 
+[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	
+[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
+[Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	
+[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
+[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" 
 //
 [Type] == "Omen of Connections" # [StashItem] == "true"////
 [Type] == "Omen of Blanching" # [StashItem] == "true"////
@@ -44,17 +44,26 @@
 [Type] == "Incandescent Invitation" # [StashItem] == "true"//
 [Type] == "Screaming Invitation" # [StashItem] == "true"//
 
+//3.29//
+[Type] == "Polaric Invitation" # [StashItem] == "true" //
+[Type] == "Sandy Seabed Chart" # [StashItem] == "true" //
+[Type] == "Coral Forest Chart" # [StashItem] == "true" //
+[Type] == "Coral Reef Chart" # [StashItem] == "true" //
+[Type] == "Thermal Vents Chart" # [StashItem] == "true" //
+[Type] == "The Last Supper" # [StashItem] == "true" //
+
 //// 3.28 Map ////
 /////////
 [Type] == "Nightmare Map" # [StashItem] == "true" 
 [Type] == "Map (Tier 16)" && [Rarity] == "Normal" # [StashItem] == "true" 
-//[Type] == "Map (Tier 16)" && [Rarity] == "Magic" # [StashItem] == "true" 
+[Type] == "Map (Tier 16)" && [Rarity] == "Magic" # [StashItem] == "true" 
 [Type] == "Map (Tier 16)" && [Rarity] == "Rare" # [StashItem] == "true" 
+
 ////////////////////////////////ForceSell/////////////////////////////////
 
-[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [ForceSellItem] =="true" 
-[Type] == "Map (Tier 16)" && [map_contains_citadel]>="1"# [ForceSellItem] =="true" 
-[Type] == "Map (Tier 16)" && [map_elder_boss_variation]>="1"# [ForceSellItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_zana_influence] >= "1" # [StashItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_contains_citadel]>="1"# [StashItem] =="true" 
+[Type] == "Map (Tier 16)" && [map_elder_boss_variation]>="1"# [StashItem] =="true" 
 
 //Specil Map//
 [Type] == "Synthesised Map" # [StashItem] == "true" 
@@ -64,6 +73,15 @@
 
 [Type] == "Nightmare Map" # [StashItem] == true" //
 //[Type] == "Shaper Guardian Map" # [StashItem] == true" //
+
+
+//3.29//
+[Type] == "Society's Remorse" # [StashItem] == "true" // 
+[Type] == "Scrying Orb" # [StashItem] == "true" //
+[Type] == "Pearls Before Swine" # [StashItem] == "true" //
+[Type] == "Energy Sword" # [StashItem] == "true" //
+
+
 
 //3.28 currency//
 
@@ -86,6 +104,7 @@
 [Type] == "Coin of Knowledge" # [StashItem] == "true" //
 [Type] == "Coin of Skill" # [StashItem] == "true" //
 [Type] == "The Black Barya" # [StashItem] == "true" //
+[Type] == "Chromatic Orb" # [StashItem] == "true" //
 
 ////
 
@@ -135,10 +154,10 @@
 ////
 
 
-////
+//// Low Price Currency
 
-//[Type] == "Orb of Alteration" # [StashItem] == "true"////
-//[Type] == "Orb of Regret"# [StashItem] == "true"////
+[Type] == "Orb of Alteration" # [StashItem] == "true"////
+[Type] == "Orb of Regret"# [StashItem] == "true"////
 //[Type] == "Orb of Unmaking"# [StashItem] == "true"////
 //[Type] == "Enkindling Orb"# [StashItem] == "true"////
 //[Type] == "Instilling Orb" # [StashItem] == "true" //	//
@@ -151,7 +170,7 @@
 //[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//
 //[Type] == "Blessed Orb" # [StashItem] == "true" //	//
 
-//[Type] == "Orb of Alchemy" # [StashItem] =="true"// Dian Jin
+[Type] == "Orb of Alchemy" # [StashItem] =="true"// Dian Jin
 
 
 
