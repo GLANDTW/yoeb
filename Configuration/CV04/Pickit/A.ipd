@@ -1,3 +1,5 @@
+//[Type] == "Scrying Orb" # [StashItem] == "true" //
+
 //Tier0 Weapon Unique
 
 [Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"
@@ -21,11 +23,11 @@
 //[Type] == "Prophecy Wand" && [Rarity] == "Unique" # [UniqueName] == "Void Battery" && [StashItem] == "true"  
 //[Type] == "Assassin Bow" && [Rarity] == "Unique" # [UniqueName] == "Darkscorn" && [StashItem] == "true"	
 //[Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"	
-[Type] == "Fiend Dagger" && [Rarity] == "Unique" #  [UniqueName] == "Arakaali's Fang" && [StashItem] == "true" 
-[Type] == "Spine Bow" && [Rarity] == "Unique" #  [UniqueName] == "Voltaxic Rift" && [StashItem] == "true" 
-[Type] == "Maata's Teaching Karui Sceptre" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	
-[Type] == "Ezomyte Staff" && [Rarity] == "Unique" # [UniqueName] == "The Fulcrum" && [StashItem] == "true"
-[Type] == "Engraved Greatsword" && [Rarity] == "Unique" # [UniqueName] == "Rakiata's Dance" && [StashItem] == "true"
+//[Type] == "Fiend Dagger" && [Rarity] == "Unique" #  [UniqueName] == "Arakaali's Fang" && [StashItem] == "true" 
+//[Type] == "Spine Bow" && [Rarity] == "Unique" #  [UniqueName] == "Voltaxic Rift" && [StashItem] == "true" 
+//[Type] == "Maata's Teaching Karui Sceptre" && [Rarity] == "Unique" # [UniqueName] == "" && [StashItem] == "true"	
+//[Type] == "Ezomyte Staff" && [Rarity] == "Unique" # [UniqueName] == "The Fulcrum" && [StashItem] == "true"
+//[Type] == "Engraved Greatsword" && [Rarity] == "Unique" # [UniqueName] == "Rakiata's Dance" && [StashItem] == "true"
 
 //3.22
 //[Type] == "Necromancer Silks" && [Rarity] == "Unique" # [UniqueName] == "Fleshcrafter" && [StashItem] == "true"  
@@ -77,7 +79,6 @@
 
 //3.29//
 [Type] == "Society's Remorse" # [StashItem] == "true" // 
-[Type] == "Scrying Orb" # [StashItem] == "true" //
 [Type] == "Pearls Before Swine" # [StashItem] == "true" //
 [Type] == "Energy Sword" # [StashItem] == "true" //
 
