@@ -31,12 +31,12 @@
 
 //3.22
 //[Type] == "Necromancer Silks" && [Rarity] == "Unique" # [UniqueName] == "Fleshcrafter" && [StashItem] == "true"  
-[Type] == "Sadist Garb" && [Rarity] == "Unique" #  [UniqueName] == "Inpulsa's Broken Heart" && [StashItem] == "true" 
-[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	
-[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
+//[Type] == "Sadist Garb" && [Rarity] == "Unique" #  [UniqueName] == "Inpulsa's Broken Heart" && [StashItem] == "true" 
+//[Type] == "Murder Mitts" && [Rarity] == "Unique" # [UniqueName] == "Thunderfist" && [StashItem] == "true"	
+//[Type] == "Exquisite Leather" && [Rarity] == "Unique" # [UniqueName] == "Yriel's Fostering" && [StashItem] == "true" 
 [Type] == "Riveted Boots" && [Rarity] == "Unique" # [UniqueName] == "Ralakesh's Impatience" && [StashItem] == "true"	
-[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
-[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" 
+//[Type] == "Carnal Boots" && [Rarity] == "Unique" # [UniqueName] == "Corpsewalker" && [StashItem] == "true"	
+//[Type] == "Sinner Tricorne" && [Rarity] == "Unique" # [UniqueName] == "Alpha's Howl" && [StashItem] == "true" 
 //
 [Type] == "Omen of Connections" # [StashItem] == "true"////
 [Type] == "Omen of Blanching" # [StashItem] == "true"////
@@ -48,7 +48,7 @@
 
 //3.29//
 //[Type] == "Polaric Invitation" # [StashItem] == "true" //
-[Type] == "Sandy Seabed Chart" # [StashItem] == "true" //
+//[Type] == "Sandy Seabed Chart" # [StashItem] == "true" //
 //[Type] == "Coral Forest Chart" # [StashItem] == "true" //
 //[Type] == "Coral Reef Chart" # [StashItem] == "true" //
 //[Type] == "Thermal Vents Chart" # [StashItem] == "true" //
@@ -158,8 +158,8 @@
 
 //// Low Price Currency
 
-[Type] == "Orb of Alteration" # [StashItem] == "true"////
-[Type] == "Orb of Regret"# [StashItem] == "true"////
+//[Type] == "Orb of Alteration" # [StashItem] == "true"////
+//[Type] == "Orb of Regret"# [StashItem] == "true"////
 //[Type] == "Orb of Unmaking"# [StashItem] == "true"////
 //[Type] == "Enkindling Orb"# [StashItem] == "true"////
 //[Type] == "Instilling Orb" # [StashItem] == "true" //	//
