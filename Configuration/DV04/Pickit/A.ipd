@@ -48,7 +48,7 @@
 
 //3.29//
 //[Type] == "Polaric Invitation" # [StashItem] == "true" //
-//[Type] == "Sandy Seabed Chart" # [StashItem] == "true" //
+[Type] == "Sandy Seabed Chart" # [StashItem] == "true" //
 //[Type] == "Coral Forest Chart" # [StashItem] == "true" //
 //[Type] == "Coral Reef Chart" # [StashItem] == "true" //
 //[Type] == "Thermal Vents Chart" # [StashItem] == "true" //
