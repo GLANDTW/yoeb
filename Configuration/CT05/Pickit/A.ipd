@@ -1,4 +1,4 @@
-[Type] == "Scrying Orb" # [StashItem] == "true" //
+//[Type] == "Scrying Orb" # [StashItem] == "true" //
 
 [Type] == "Portal"# [StashItem] == "true" //
 
