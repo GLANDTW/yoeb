@@ -64,7 +64,7 @@
 [Type] == "Screaming Invitation" # [StashItem] == "true"//
 
 //3.29//
-[Type] == "Polaric Invitation" # [StashItem] == "true" //
+//[Type] == "Polaric Invitation" # [StashItem] == "true" //
 [Type] == "Sandy Seabed Chart" # [StashItem] == "true" //
 [Type] == "Coral Forest Chart" # [StashItem] == "true" //
 [Type] == "Coral Reef Chart" # [StashItem] == "true" //
