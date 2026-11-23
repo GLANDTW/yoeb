@@ -17,6 +17,12 @@
 [Type] == "Primordial Exalted Orb" # [StashItem] == "true" //
 [Type] == "Originator's Exalted Orb" # [StashItem] == "true" //
 
+[Type] == "Cord Belt" # [StashItem] == "true" //
+[Type] == "Focused Amulet" # [StashItem] == "true" //
+[Type] == "Helical Ring" # [StashItem] == "true" //
+[Type] == "Manifold Ring" # [StashItem] == "true" //
+[Type] == "Simplex Amulet" # [StashItem] == "true" //
+
 //Tier0 Weapon Unique
 
 [Type] == "Imperial Skean" && [Rarity] == "Unique" # [UniqueName] == "Divinarius" && [StashItem] == "true"
